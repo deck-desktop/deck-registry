@@ -1,0 +1,552 @@
+{
+  "generated": "2026-10-02T19:50:22.905Z",
+  "schema": 2,
+  "plugins": [
+    {
+      "kind": "plugin",
+      "id": "buildmon",
+      "version": "1.0.1",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-buildmon/main/README.md",
+      "name": "Builds",
+      "description": "Watches backend build ids and tells you when one redeploys.",
+      "icon": "Radar",
+      "minDeck": "0.8.0",
+      "files": {
+        "plugin.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-buildmon/main/plugin.json",
+          "sha256": "b7bf67a59e6ac8aac8b462043608937fe73a2718b1655479492a19de90295e42",
+          "bytes": 186
+        },
+        "plugin.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-buildmon/main/plugin.js",
+          "sha256": "6db3197db2144595147e4fa50af18b94e4971e22aa2b71597c863506681b2c8a",
+          "bytes": 16728
+        }
+      }
+    },
+    {
+      "kind": "plugin",
+      "id": "calendar",
+      "version": "1.0.0",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-calendar/main/README.md",
+      "name": "Calendar",
+      "description": "Your Google Calendar in a modal, with a reminder before each meeting.",
+      "icon": "CalendarDays",
+      "minDeck": "0.12.0",
+      "files": {
+        "plugin.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-calendar/main/plugin.json",
+          "sha256": "52576560f83bbe8ef3a056f5b91926062f9746f6d389c76d4994131014753824",
+          "bytes": 206
+        },
+        "plugin.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-calendar/main/plugin.js",
+          "sha256": "00dfc6d244dce7ee1709077d38340032616f5da616932f57629b222334b25b40",
+          "bytes": 20619
+        }
+      }
+    },
+    {
+      "kind": "plugin",
+      "id": "clock",
+      "version": "1.0.0",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-clock/main/README.md",
+      "name": "Clock",
+      "description": "The time in the footer, in any timezone you pick.",
+      "icon": "Clock",
+      "minDeck": "0.8.0",
+      "files": {
+        "plugin.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-clock/main/plugin.json",
+          "sha256": "edbdaef8bfb38245d2c75c005ed68ca92f8e15c7718884ed9d8814460b21c3b7",
+          "bytes": 172
+        },
+        "plugin.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-clock/main/plugin.js",
+          "sha256": "730ab6f42959fdb4d6becc37577fd6831a463c8d479f6f770ea505dc5de7f4b4",
+          "bytes": 5145
+        }
+      }
+    },
+    {
+      "kind": "plugin",
+      "id": "db",
+      "version": "2.0.0",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-db/main/README.md",
+      "name": "Databases",
+      "description": "Browse SQLite files, Postgres and MySQL, and run queries against them.",
+      "icon": "Database",
+      "minDeck": "0.9.0",
+      "files": {
+        "plugin.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-db/main/plugin.json",
+          "sha256": "bcf14ffbd37bc30cc291837a9de1afc9b15c348321a189bc97e42387f56b8339",
+          "bytes": 197
+        },
+        "plugin.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-db/main/plugin.js",
+          "sha256": "0df4020fa211294f1bccc42ee0ee01e0414294f2d6749918240d7426c170a027",
+          "bytes": 955368
+        }
+      }
+    },
+    {
+      "kind": "plugin",
+      "id": "flutter",
+      "version": "1.1.0",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-flutter/main/README.md",
+      "name": "Flutter",
+      "description": "Launch a Flutter app on a device, then hot reload it from the footer.",
+      "icon": "Zap",
+      "minDeck": "0.11.0",
+      "files": {
+        "plugin.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-flutter/main/plugin.json",
+          "sha256": "3675b7c9850daed89f0e7e245a3098d046ba0297915cd8c638dfee2446ea19af",
+          "bytes": 195
+        },
+        "plugin.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-flutter/main/plugin.js",
+          "sha256": "59621a98a17b0e1637b321019d1477dd49589f4d4f34ede74aa63a57b5f33f1a",
+          "bytes": 24106
+        },
+        "mcp.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-flutter/main/mcp.js",
+          "sha256": "c6e5465882b64e07144cdb4269ebfd1d3dce62f338bc6fed73c4068ccfc6ae53",
+          "bytes": 8617
+        }
+      }
+    },
+    {
+      "kind": "plugin",
+      "id": "jira",
+      "version": "1.0.0",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-jira/main/README.md",
+      "name": "Jira",
+      "description": "The tickets assigned to you, read straight from your Jira with an API token.",
+      "icon": "SquareKanban",
+      "minDeck": "0.15.0",
+      "files": {
+        "plugin.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-jira/main/plugin.json",
+          "sha256": "1e4aeef166f7c45a5b0505322a7027ebd845379c46f3d50a2055c147ee930ba8",
+          "bytes": 205
+        },
+        "plugin.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-jira/main/plugin.js",
+          "sha256": "70bf4730ee9901c95ae5ebee37a7f1df0a55bcad44226b3d84567c7d3f8476e9",
+          "bytes": 11132
+        }
+      }
+    },
+    {
+      "kind": "plugin",
+      "id": "music",
+      "version": "1.0.0",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-music/main/README.md",
+      "name": "Music",
+      "description": "Local music player, with the phone as a remote.",
+      "icon": "Music",
+      "minDeck": "0.7.0",
+      "files": {
+        "plugin.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-music/main/plugin.json",
+          "sha256": "a8ddb15586914dd40c740dd6c2ce1a7fc2e270011d2daa8f13e3827d210cd60b",
+          "bytes": 170
+        },
+        "plugin.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-music/main/plugin.js",
+          "sha256": "08f4aa7d62c09b67321aec262ac6516a56ebd19748d30c60b6162baf32340215",
+          "bytes": 52411
+        },
+        "mcp.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-music/main/mcp.js",
+          "sha256": "7d19c575824e3c4f2b96f4e6aad7b716645a4949fe57f572f93e19f9b10ef2ad",
+          "bytes": 3056
+        }
+      }
+    },
+    {
+      "kind": "plugin",
+      "id": "npm",
+      "version": "1.0.0",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-npm/main/README.md",
+      "name": "Scripts",
+      "description": "Run a package.json script, watch its output, and stop or restart it from the footer.",
+      "icon": "Package",
+      "minDeck": "0.11.0",
+      "files": {
+        "plugin.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-npm/main/plugin.json",
+          "sha256": "459a6bdbcf87a456a6bab38f371942012304277d2e1739d438423b609cc00263",
+          "bytes": 210
+        },
+        "plugin.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-npm/main/plugin.js",
+          "sha256": "e9e7e61dbc72ee9abb3bfd6a0085cfb040bbceaaf8b837bbedfd3c8afd5ad340",
+          "bytes": 18756
+        },
+        "mcp.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-npm/main/mcp.js",
+          "sha256": "e0b678d54a879f072e50ea435e47b01008375db6de6713932fa30275e25c240c",
+          "bytes": 11538
+        }
+      }
+    },
+    {
+      "kind": "plugin",
+      "id": "schedules",
+      "version": "1.0.0",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-schedules/main/README.md",
+      "name": "Schedules",
+      "description": "Startup programs, app timers and power timers.",
+      "icon": "CalendarClock",
+      "minDeck": "0.8.0",
+      "files": {
+        "plugin.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-schedules/main/plugin.json",
+          "sha256": "bc329528939bdcf482c5b7d0b14026145b8ebdc5501874d480ca3bb4b8839aaa",
+          "bytes": 185
+        },
+        "plugin.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-schedules/main/plugin.js",
+          "sha256": "582bde15cff471a2eda2a991aa0f4fbeb13b2af4c71e9af9bdbb53d749fd94d0",
+          "bytes": 26455
+        },
+        "mcp.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-schedules/main/mcp.js",
+          "sha256": "08cba1e659cae74ff2e0d939662df1cb8824cbf6ef3779aef641576d429829b8",
+          "bytes": 4469
+        }
+      }
+    },
+    {
+      "kind": "plugin",
+      "id": "script-runner",
+      "version": "1.0.0",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-script-runner/main/README.md",
+      "name": "Script Runner",
+      "description": "Runs scripts on a schedule, here or on the VPS.",
+      "icon": "Terminal",
+      "minDeck": "0.8.0",
+      "files": {
+        "plugin.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-script-runner/main/plugin.json",
+          "sha256": "c401f017e99aec88931989b77490517e9948fd07c5c83b5528823c02139e48a6",
+          "bytes": 189
+        },
+        "plugin.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-script-runner/main/plugin.js",
+          "sha256": "4e49c8bf2d6ec7fb4d08ff1c6b5cbf096f389a6583b43fa93ea32e28eaec7d70",
+          "bytes": 17588
+        },
+        "mcp.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-script-runner/main/mcp.js",
+          "sha256": "ce75701fea08998fb33352f69a8afb458cef1e475a15e6dfa313b9838f795fe7",
+          "bytes": 2524
+        }
+      }
+    },
+    {
+      "kind": "plugin",
+      "id": "sorter",
+      "version": "1.0.0",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-sorter/main/README.md",
+      "name": "Sorter",
+      "description": "Files new downloads into folders by type.",
+      "icon": "FolderInput",
+      "minDeck": "0.7.0",
+      "files": {
+        "plugin.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-sorter/main/plugin.json",
+          "sha256": "3c9de90e61cac4c5a5bcfb34f87f5ef5f41d4331db9c570cfced76507f6f70f3",
+          "bytes": 172
+        },
+        "plugin.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-sorter/main/plugin.js",
+          "sha256": "dd87aca4d255a719ca32586723ee626a66153b89a52deb3652839c92a7c464b9",
+          "bytes": 9855
+        },
+        "mcp.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-sorter/main/mcp.js",
+          "sha256": "523c70f1a5c49ae032d5975fd06ed8423420a9759f4b9ee00ae923e03150d3a1",
+          "bytes": 4494
+        }
+      }
+    },
+    {
+      "kind": "plugin",
+      "id": "vault",
+      "version": "1.0.0",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vault/main/README.md",
+      "name": "Vault",
+      "description": "Browse and edit the Obsidian vault as live-preview markdown, with wikilinks and backlinks.",
+      "icon": "NotebookText",
+      "minDeck": "0.10.0",
+      "files": {
+        "plugin.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vault/main/plugin.json",
+          "sha256": "47724147ffa9f094dd34ceca306e438a83b52464908376a2813d4aa77859cae0",
+          "bytes": 242
+        },
+        "plugin.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vault/main/plugin.js",
+          "sha256": "420b4778ad84ef4e3c81a02b17378f8b2f9bfcb8d932621a3e6c8f46f8f8d022",
+          "bytes": 23139
+        }
+      }
+    },
+    {
+      "kind": "plugin",
+      "id": "vps",
+      "version": "1.0.0",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vps/main/README.md",
+      "name": "VPS",
+      "description": "Host stats and container control for your own server, through a small service you deploy to it.",
+      "icon": "Server",
+      "minDeck": "0.15.0",
+      "files": {
+        "plugin.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vps/main/plugin.json",
+          "sha256": "7b6481b5e7dead6032a90085a7f7728a66def0620ab5dcf3aa14f94c5616de7c",
+          "bytes": 216
+        },
+        "plugin.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vps/main/plugin.js",
+          "sha256": "dbc52d79f5942cf5c110574396f21e8ac94bf1fedaf7ccc593b119209a7ed8aa",
+          "bytes": 17284
+        }
+      }
+    },
+    {
+      "kind": "language",
+      "id": "dart",
+      "version": "2026-10-02",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-dart/main/README.md",
+      "name": "dart",
+      "description": ".dart — dart",
+      "icon": "FileCode",
+      "minDeck": null,
+      "requires": "dart",
+      "extensions": [
+        "dart"
+      ],
+      "files": {
+        "language.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-dart/main/language.json",
+          "sha256": "6ac04f9a81ea6e67ca34d844327256dcf36771a6e877e1ca84563765a1c362d7",
+          "bytes": 854
+        },
+        "snippets/awesome-flutter.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-dart/main/snippets/awesome-flutter.json",
+          "sha256": "a5e09659379e4c8ba91c7c38f706759c2d86889d3802307bfa636685043ce937",
+          "bytes": 17616
+        }
+      }
+    },
+    {
+      "kind": "language",
+      "id": "javascript",
+      "version": "2026-10-02",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-javascript/main/README.md",
+      "name": "javascript",
+      "description": ".js, .jsx — typescript-language-server",
+      "icon": "FileCode",
+      "minDeck": null,
+      "requires": "typescript-language-server",
+      "extensions": [
+        "js",
+        "jsx"
+      ],
+      "files": {
+        "language.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-javascript/main/language.json",
+          "sha256": "3ed8835730f0e1823808dc50c844d687605c7e2fc320633fb03851cf7e9e6a23",
+          "bytes": 703
+        }
+      }
+    },
+    {
+      "kind": "language",
+      "id": "php",
+      "version": "2026-10-02",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-php/main/README.md",
+      "name": "php",
+      "description": ".php, .phtml — intelephense",
+      "icon": "FileCode",
+      "minDeck": null,
+      "requires": "intelephense",
+      "extensions": [
+        "php",
+        "phtml"
+      ],
+      "files": {
+        "language.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-php/main/language.json",
+          "sha256": "41b205ea30d8b0400d0172a566957546dc66a2f861ccb91c5fe1c2d659e7d2b4",
+          "bytes": 1793
+        }
+      }
+    },
+    {
+      "kind": "language",
+      "id": "python",
+      "version": "2026-10-02",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-python/main/README.md",
+      "name": "python",
+      "description": ".py, .pyi — basedpyright-langserver",
+      "icon": "FileCode",
+      "minDeck": null,
+      "requires": "basedpyright-langserver",
+      "extensions": [
+        "py",
+        "pyi"
+      ],
+      "files": {
+        "language.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-python/main/language.json",
+          "sha256": "1542831ad291a16a6edf10a4b40f0f7fecdadb3f074d6d79a5c16cff7d2b00d8",
+          "bytes": 844
+        }
+      }
+    },
+    {
+      "kind": "language",
+      "id": "rust",
+      "version": "2026-10-02",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-rust/main/README.md",
+      "name": "rust",
+      "description": ".rs — rust-analyzer",
+      "icon": "FileCode",
+      "minDeck": null,
+      "requires": "rust-analyzer",
+      "extensions": [
+        "rs"
+      ],
+      "files": {
+        "language.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-rust/main/language.json",
+          "sha256": "ec01434748896f7762f1989e0dae841ec3616284d0aac33f65e570ebbddc4ed2",
+          "bytes": 3532
+        }
+      }
+    },
+    {
+      "kind": "language",
+      "id": "typescript",
+      "version": "2026-10-02",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-typescript/main/README.md",
+      "name": "typescript",
+      "description": ".ts, .tsx — typescript-language-server",
+      "icon": "FileCode",
+      "minDeck": null,
+      "requires": "typescript-language-server",
+      "extensions": [
+        "ts",
+        "tsx"
+      ],
+      "files": {
+        "language.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-typescript/main/language.json",
+          "sha256": "ecdf4b2191ac0efdb978e0d79d439a645a89ba86490d69205751b4dca82d0127",
+          "bytes": 704
+        }
+      }
+    }
+  ]
+}
