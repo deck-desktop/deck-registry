@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-09T18:50:11.096Z",
+  "generated": "2026-10-09T19:04:45.762Z",
   "schema": 2,
   "plugins": [
     {
@@ -413,7 +413,7 @@
     {
       "kind": "language",
       "id": "dart",
-      "version": "2026-10-09",
+      "version": "1.0.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -431,8 +431,8 @@
       "files": {
         "language.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-dart/main/language.json",
-          "sha256": "ee2c6df30e8c263b1ea8aa6fccd6c69ce3d7a47e22b29a7c154583959be899bf",
-          "bytes": 1358
+          "sha256": "05e991b92ba26b0f1b6c719889c7a610a3ea3220145d4cb02b9f9e2e37d74973",
+          "bytes": 1380
         },
         "snippets/awesome-flutter.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-dart/main/snippets/awesome-flutter.json",
@@ -444,7 +444,7 @@
     {
       "kind": "language",
       "id": "javascript",
-      "version": "2026-10-09",
+      "version": "1.0.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -463,15 +463,15 @@
       "files": {
         "language.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-javascript/main/language.json",
-          "sha256": "f0b139116313eb460b9cc9418c0f86d6929c0d393f8d9dc978a26855670a3fae",
-          "bytes": 1617
+          "sha256": "03799af98d1ebb1c34a072594b97fae3ce2eef3e7a9fbdea2ef709e419167627",
+          "bytes": 1639
         }
       }
     },
     {
       "kind": "language",
       "id": "php",
-      "version": "2026-10-09",
+      "version": "1.0.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -490,15 +490,15 @@
       "files": {
         "language.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-php/main/language.json",
-          "sha256": "41b205ea30d8b0400d0172a566957546dc66a2f861ccb91c5fe1c2d659e7d2b4",
-          "bytes": 1793
+          "sha256": "bfd9bacdbf3bc839070dafe16a3d6e74ec02bb76aee140caf0dbd43f62617076",
+          "bytes": 1815
         }
       }
     },
     {
       "kind": "language",
       "id": "python",
-      "version": "2026-10-09",
+      "version": "1.0.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -517,15 +517,15 @@
       "files": {
         "language.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-python/main/language.json",
-          "sha256": "0240e5fc57d54e468278947f16ff2b1928c576479daf0251ac81182ac2bdb479",
-          "bytes": 1290
+          "sha256": "a74b1cbd4eb31ec8e4b7d9235ca45e9b7ec172ae85e80a80b48036285c2ac544",
+          "bytes": 1312
         }
       }
     },
     {
       "kind": "language",
       "id": "rust",
-      "version": "2026-10-09",
+      "version": "1.0.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -543,15 +543,15 @@
       "files": {
         "language.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-rust/main/language.json",
-          "sha256": "ec01434748896f7762f1989e0dae841ec3616284d0aac33f65e570ebbddc4ed2",
-          "bytes": 3532
+          "sha256": "768868d2550882c2c15c4d958623569b7c84b0c2b5621996c2229a7714d3e592",
+          "bytes": 3554
         }
       }
     },
     {
       "kind": "language",
       "id": "typescript",
-      "version": "2026-10-09",
+      "version": "1.0.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -570,8 +570,8 @@
       "files": {
         "language.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-typescript/main/language.json",
-          "sha256": "057c74981def3db0a1de7916f46fba38c85074a98290197e48c56b8598a67a1f",
-          "bytes": 1618
+          "sha256": "e5bce477c7c7ad570d776009bfb1dedd8b06d16134d75b7372275f0a3f66d652",
+          "bytes": 1640
         }
       }
     }
