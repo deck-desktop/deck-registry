@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T19:50:22.905Z",
+  "generated": "2026-10-09T18:50:11.096Z",
   "schema": 2,
   "plugins": [
     {
@@ -24,8 +24,8 @@
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-buildmon/main/plugin.js",
-          "sha256": "6db3197db2144595147e4fa50af18b94e4971e22aa2b71597c863506681b2c8a",
-          "bytes": 16728
+          "sha256": "6d8d36e2f47865957b80f43025301bc7688b7cc50748358b6c4dea865972707e",
+          "bytes": 16816
         }
       }
     },
@@ -51,7 +51,7 @@
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-calendar/main/plugin.js",
-          "sha256": "00dfc6d244dce7ee1709077d38340032616f5da616932f57629b222334b25b40",
+          "sha256": "1e5683a1913966e3e5a11713371e438fec9137a79407fae9499b31aa1597e402",
           "bytes": 20619
         }
       }
@@ -78,7 +78,7 @@
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-clock/main/plugin.js",
-          "sha256": "730ab6f42959fdb4d6becc37577fd6831a463c8d479f6f770ea505dc5de7f4b4",
+          "sha256": "350cc0f2455d77a3da9a25295f0dbb75c536e2f549544ee124a0fb6d3cbc64d8",
           "bytes": 5145
         }
       }
@@ -113,7 +113,7 @@
     {
       "kind": "plugin",
       "id": "flutter",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -127,18 +127,45 @@
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-flutter/main/plugin.json",
-          "sha256": "3675b7c9850daed89f0e7e245a3098d046ba0297915cd8c638dfee2446ea19af",
+          "sha256": "ed3487692e3d2b90cb3838bfa4710b30d7e9061657e5e1432f7532d33deb94c6",
           "bytes": 195
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-flutter/main/plugin.js",
-          "sha256": "59621a98a17b0e1637b321019d1477dd49589f4d4f34ede74aa63a57b5f33f1a",
-          "bytes": 24106
+          "sha256": "49d2c117d620f268fee7454784bb5e9e9e818a8938a6783661a8bd4911a79760",
+          "bytes": 38023
         },
         "mcp.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-flutter/main/mcp.js",
           "sha256": "c6e5465882b64e07144cdb4269ebfd1d3dce62f338bc6fed73c4068ccfc6ae53",
           "bytes": 8617
+        }
+      }
+    },
+    {
+      "kind": "plugin",
+      "id": "games",
+      "version": "1.0.0",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-games/main/README.md",
+      "name": "Games",
+      "description": "Mini games in a pane: 2048, Minesweeper, Snake, Sudoku, Tetris, Words, Solitaire and Sokoban. Each is saved as you play and comes back after a restart.",
+      "icon": "Gamepad2",
+      "minDeck": "0.19.0",
+      "files": {
+        "plugin.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-games/main/plugin.json",
+          "sha256": "e897fc2ac5b8bc611c1408650c54bd2e18532e903ac5b565e9465048066915bd",
+          "bytes": 278
+        },
+        "plugin.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-games/main/plugin.js",
+          "sha256": "87165b408406bf5ad13339cb85db85f2ebad7e78c16968ad3ca1b3156de5b3ba",
+          "bytes": 64020
         }
       }
     },
@@ -164,7 +191,7 @@
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-jira/main/plugin.js",
-          "sha256": "70bf4730ee9901c95ae5ebee37a7f1df0a55bcad44226b3d84567c7d3f8476e9",
+          "sha256": "ccbea93bfc1ba4e2d7d877dd686cfe00bdfc75451861292138595a999fd21f4b",
           "bytes": 11132
         }
       }
@@ -191,8 +218,8 @@
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-music/main/plugin.js",
-          "sha256": "08f4aa7d62c09b67321aec262ac6516a56ebd19748d30c60b6162baf32340215",
-          "bytes": 52411
+          "sha256": "f33976d22f25da4e5af9e85a8adb797681a07d410677413cda03e6cbc1a703ef",
+          "bytes": 52934
         },
         "mcp.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-music/main/mcp.js",
@@ -223,8 +250,8 @@
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-npm/main/plugin.js",
-          "sha256": "e9e7e61dbc72ee9abb3bfd6a0085cfb040bbceaaf8b837bbedfd3c8afd5ad340",
-          "bytes": 18756
+          "sha256": "72ab1617c695536f41462799e1aca02f306498be3476c0753bbad40755ac644e",
+          "bytes": 18886
         },
         "mcp.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-npm/main/mcp.js",
@@ -255,8 +282,8 @@
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-schedules/main/plugin.js",
-          "sha256": "582bde15cff471a2eda2a991aa0f4fbeb13b2af4c71e9af9bdbb53d749fd94d0",
-          "bytes": 26455
+          "sha256": "35a4a022992f05a61b0b23e402f8a4020161d0520686178150cd4835a11fdcdf",
+          "bytes": 26561
         },
         "mcp.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-schedules/main/mcp.js",
@@ -287,8 +314,8 @@
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-script-runner/main/plugin.js",
-          "sha256": "4e49c8bf2d6ec7fb4d08ff1c6b5cbf096f389a6583b43fa93ea32e28eaec7d70",
-          "bytes": 17588
+          "sha256": "3c9c91d9a6be7db3ce4597564a3c5b9912de1c67fd1d79be831f08856b1fcfd3",
+          "bytes": 17692
         },
         "mcp.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-script-runner/main/mcp.js",
@@ -319,8 +346,8 @@
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-sorter/main/plugin.js",
-          "sha256": "dd87aca4d255a719ca32586723ee626a66153b89a52deb3652839c92a7c464b9",
-          "bytes": 9855
+          "sha256": "d94eb85ffd1ad1fee0490c67878ef08a9c3d24a1a7d01061690748d7aa75b262",
+          "bytes": 9905
         },
         "mcp.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-sorter/main/mcp.js",
@@ -378,7 +405,7 @@
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vps/main/plugin.js",
-          "sha256": "dbc52d79f5942cf5c110574396f21e8ac94bf1fedaf7ccc593b119209a7ed8aa",
+          "sha256": "8a391a0825dd651f2ba8b1c063c6744d281e5a19007a9e92150784f50dd91ca9",
           "bytes": 17284
         }
       }
@@ -386,7 +413,7 @@
     {
       "kind": "language",
       "id": "dart",
-      "version": "2026-10-02",
+      "version": "2026-10-09",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -404,8 +431,8 @@
       "files": {
         "language.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-dart/main/language.json",
-          "sha256": "6ac04f9a81ea6e67ca34d844327256dcf36771a6e877e1ca84563765a1c362d7",
-          "bytes": 854
+          "sha256": "ee2c6df30e8c263b1ea8aa6fccd6c69ce3d7a47e22b29a7c154583959be899bf",
+          "bytes": 1358
         },
         "snippets/awesome-flutter.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-dart/main/snippets/awesome-flutter.json",
@@ -417,7 +444,7 @@
     {
       "kind": "language",
       "id": "javascript",
-      "version": "2026-10-02",
+      "version": "2026-10-09",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -436,15 +463,15 @@
       "files": {
         "language.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-javascript/main/language.json",
-          "sha256": "3ed8835730f0e1823808dc50c844d687605c7e2fc320633fb03851cf7e9e6a23",
-          "bytes": 703
+          "sha256": "f0b139116313eb460b9cc9418c0f86d6929c0d393f8d9dc978a26855670a3fae",
+          "bytes": 1617
         }
       }
     },
     {
       "kind": "language",
       "id": "php",
-      "version": "2026-10-02",
+      "version": "2026-10-09",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -471,7 +498,7 @@
     {
       "kind": "language",
       "id": "python",
-      "version": "2026-10-02",
+      "version": "2026-10-09",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -490,15 +517,15 @@
       "files": {
         "language.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-python/main/language.json",
-          "sha256": "1542831ad291a16a6edf10a4b40f0f7fecdadb3f074d6d79a5c16cff7d2b00d8",
-          "bytes": 844
+          "sha256": "0240e5fc57d54e468278947f16ff2b1928c576479daf0251ac81182ac2bdb479",
+          "bytes": 1290
         }
       }
     },
     {
       "kind": "language",
       "id": "rust",
-      "version": "2026-10-02",
+      "version": "2026-10-09",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -524,7 +551,7 @@
     {
       "kind": "language",
       "id": "typescript",
-      "version": "2026-10-02",
+      "version": "2026-10-09",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -543,8 +570,8 @@
       "files": {
         "language.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-typescript/main/language.json",
-          "sha256": "ecdf4b2191ac0efdb978e0d79d439a645a89ba86490d69205751b4dca82d0127",
-          "bytes": 704
+          "sha256": "057c74981def3db0a1de7916f46fba38c85074a98290197e48c56b8598a67a1f",
+          "bytes": 1618
         }
       }
     }
