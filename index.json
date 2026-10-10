@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-10T13:01:22.219Z",
+  "generated": "2026-10-10T19:54:12.889Z",
   "schema": 2,
   "plugins": [
     {
@@ -132,7 +132,7 @@
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-flutter/main/plugin.js",
-          "sha256": "49d2c117d620f268fee7454784bb5e9e9e818a8938a6783661a8bd4911a79760",
+          "sha256": "21de729a9223c1cc01500fa892b2f3d160ad6397ded67a37526f8beea6913247",
           "bytes": 38023
         },
         "mcp.js": {
@@ -226,7 +226,7 @@
     {
       "kind": "plugin",
       "id": "music",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -234,19 +234,19 @@
       "signature": null,
       "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-music/main/README.md",
       "name": "Music",
-      "description": "Local music player, with the phone as a remote.",
+      "description": "A local music player for your own folders, with YouTube downloads and suggestions.",
       "icon": "Music",
-      "minDeck": "0.7.0",
+      "minDeck": "0.22.0",
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-music/main/plugin.json",
-          "sha256": "a8ddb15586914dd40c740dd6c2ce1a7fc2e270011d2daa8f13e3827d210cd60b",
-          "bytes": 170
+          "sha256": "758eecedf9a77f08bcdd7cc9b474ee061c6f8eda8555dfd1adbd8093454e650b",
+          "bytes": 206
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-music/main/plugin.js",
-          "sha256": "67d7092223fb49aee016a7f873ef5847f38fdda3bea6a734388ff3f020da7eed",
-          "bytes": 52934
+          "sha256": "4fc713eeed753778645c928844608fff4105213c8c50190111e277cadaf82482",
+          "bytes": 52146
         },
         "mcp.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-music/main/mcp.js",
@@ -309,7 +309,7 @@
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-schedules/main/plugin.js",
-          "sha256": "35a4a022992f05a61b0b23e402f8a4020161d0520686178150cd4835a11fdcdf",
+          "sha256": "670bff40b000c4287c9c0b006b1b6318afd714bab725a75315c76c5e75c08651",
           "bytes": 26561
         },
         "mcp.js": {
@@ -322,7 +322,7 @@
     {
       "kind": "plugin",
       "id": "script-runner",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -332,17 +332,17 @@
       "name": "Script Runner",
       "description": "Runs scripts on a schedule, here or on the VPS.",
       "icon": "Terminal",
-      "minDeck": "0.8.0",
+      "minDeck": "0.22.0",
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-script-runner/main/plugin.json",
-          "sha256": "c401f017e99aec88931989b77490517e9948fd07c5c83b5528823c02139e48a6",
-          "bytes": 189
+          "sha256": "01687fd9d6eb6a06676fd082c0ee247faff7b59d9f843efbc183bef376601670",
+          "bytes": 190
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-script-runner/main/plugin.js",
-          "sha256": "af3d6c7bb7cf443ff9ff914978e77fa77db941d10b43b29dca967a536890812f",
-          "bytes": 17692
+          "sha256": "e6949835cad7ba6f0bf9daff3b3501534be801e736393a9147716b3f60f25adb",
+          "bytes": 18299
         },
         "mcp.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-script-runner/main/mcp.js",
@@ -373,7 +373,7 @@
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-sorter/main/plugin.js",
-          "sha256": "be6e1b99848f9dff84985037fd7664888d614df1df517b8d387e422412866bb0",
+          "sha256": "efd01907a8fd790002eaaf129ad71f615062ad316b1b3b6f94288994e6e83a19",
           "bytes": 9905
         },
         "mcp.js": {
@@ -386,7 +386,7 @@
     {
       "kind": "plugin",
       "id": "vault",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -400,13 +400,13 @@
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vault/main/plugin.json",
-          "sha256": "47724147ffa9f094dd34ceca306e438a83b52464908376a2813d4aa77859cae0",
+          "sha256": "fc4388673eeb0f3dea3cbc8a5b4a79ee2a27908043581fd23eca0c6074006bd7",
           "bytes": 242
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vault/main/plugin.js",
-          "sha256": "420b4778ad84ef4e3c81a02b17378f8b2f9bfcb8d932621a3e6c8f46f8f8d022",
-          "bytes": 23139
+          "sha256": "236489bd8798248951e4c402ca587dda18faa059484e6b3dbf330e8a63db30d6",
+          "bytes": 24340
         }
       }
     },
