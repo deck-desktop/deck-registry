@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-09T19:04:45.762Z",
+  "generated": "2026-10-10T13:00:27.990Z",
   "schema": 2,
   "plugins": [
     {
@@ -24,7 +24,7 @@
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-buildmon/main/plugin.js",
-          "sha256": "6d8d36e2f47865957b80f43025301bc7688b7cc50748358b6c4dea865972707e",
+          "sha256": "ee93469a65c9704f15489f7ec5ad017abb965058742d551beae97e4b87261ea6",
           "bytes": 16816
         }
       }
@@ -51,7 +51,7 @@
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-calendar/main/plugin.js",
-          "sha256": "1e5683a1913966e3e5a11713371e438fec9137a79407fae9499b31aa1597e402",
+          "sha256": "4d7681765d91dcc36414512e8b26b985dea891073595b30dabff51a8098383dd",
           "bytes": 20619
         }
       }
@@ -78,7 +78,7 @@
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-clock/main/plugin.js",
-          "sha256": "350cc0f2455d77a3da9a25295f0dbb75c536e2f549544ee124a0fb6d3cbc64d8",
+          "sha256": "72c7ecc5a742c91a8be8991579fd25c082dad352d824c7fe11d176dc084af431",
           "bytes": 5145
         }
       }
@@ -191,7 +191,7 @@
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-jira/main/plugin.js",
-          "sha256": "ccbea93bfc1ba4e2d7d877dd686cfe00bdfc75451861292138595a999fd21f4b",
+          "sha256": "8e2509596d3c628ccd6aad762da33b605f35004e4625aa36e13438ec0b1e8ba9",
           "bytes": 11132
         }
       }
@@ -218,7 +218,7 @@
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-music/main/plugin.js",
-          "sha256": "f33976d22f25da4e5af9e85a8adb797681a07d410677413cda03e6cbc1a703ef",
+          "sha256": "67d7092223fb49aee016a7f873ef5847f38fdda3bea6a734388ff3f020da7eed",
           "bytes": 52934
         },
         "mcp.js": {
@@ -314,7 +314,7 @@
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-script-runner/main/plugin.js",
-          "sha256": "3c9c91d9a6be7db3ce4597564a3c5b9912de1c67fd1d79be831f08856b1fcfd3",
+          "sha256": "af3d6c7bb7cf443ff9ff914978e77fa77db941d10b43b29dca967a536890812f",
           "bytes": 17692
         },
         "mcp.js": {
@@ -346,7 +346,7 @@
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-sorter/main/plugin.js",
-          "sha256": "d94eb85ffd1ad1fee0490c67878ef08a9c3d24a1a7d01061690748d7aa75b262",
+          "sha256": "be6e1b99848f9dff84985037fd7664888d614df1df517b8d387e422412866bb0",
           "bytes": 9905
         },
         "mcp.js": {
@@ -405,7 +405,7 @@
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vps/main/plugin.js",
-          "sha256": "8a391a0825dd651f2ba8b1c063c6744d281e5a19007a9e92150784f50dd91ca9",
+          "sha256": "7b7d8b144e39412f2970e815e58806f48dca19d201fd5faaa084ac59c46aa8a3",
           "bytes": 17284
         }
       }
@@ -444,7 +444,7 @@
     {
       "kind": "language",
       "id": "javascript",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -463,8 +463,8 @@
       "files": {
         "language.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-javascript/main/language.json",
-          "sha256": "03799af98d1ebb1c34a072594b97fae3ce2eef3e7a9fbdea2ef709e419167627",
-          "bytes": 1639
+          "sha256": "cba018bd199b2cc9cb155fb381b8dfc73fe49a8725dd42624d3e36b8e6f08d17",
+          "bytes": 2084
         }
       }
     },
@@ -551,7 +551,7 @@
     {
       "kind": "language",
       "id": "typescript",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -570,8 +570,8 @@
       "files": {
         "language.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-typescript/main/language.json",
-          "sha256": "e5bce477c7c7ad570d776009bfb1dedd8b06d16134d75b7372275f0a3f66d652",
-          "bytes": 1640
+          "sha256": "08a4c6e16a76c5686fd48a991f41af4c60d17a1644d5daadacd4d5217e7ac563",
+          "bytes": 2085
         }
       }
     }
