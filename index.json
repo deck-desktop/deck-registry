@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-10T13:00:27.990Z",
+  "generated": "2026-10-10T13:01:22.219Z",
   "schema": 2,
   "plugins": [
     {
@@ -139,6 +139,33 @@
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-flutter/main/mcp.js",
           "sha256": "c6e5465882b64e07144cdb4269ebfd1d3dce62f338bc6fed73c4068ccfc6ae53",
           "bytes": 8617
+        }
+      }
+    },
+    {
+      "kind": "plugin",
+      "id": "gallery",
+      "version": "1.0.0",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-gallery/main/README.md",
+      "name": "Gallery",
+      "description": "Every photo and video on this PC's drives, newest first and grouped by date, with Windows' own thumbnails. A full-size viewer and slideshow, favourites, move, copy and delete to the Recycle Bin.",
+      "icon": "Images",
+      "minDeck": "0.21.0",
+      "files": {
+        "plugin.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-gallery/main/plugin.json",
+          "sha256": "ae5737334d7efe145a87499ae23d8879cad11bd801601112d0aa7da94fa690e2",
+          "bytes": 323
+        },
+        "plugin.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-gallery/main/plugin.js",
+          "sha256": "9d9423a0a020fab0d4b5614ef3af384da19097ebce5483350f248608e180679a",
+          "bytes": 35877
         }
       }
     },
