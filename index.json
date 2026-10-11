@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-10T19:54:12.889Z",
+  "generated": "2026-10-11T19:58:56.515Z",
   "schema": 2,
   "plugins": [
     {
@@ -226,7 +226,7 @@
     {
       "kind": "plugin",
       "id": "music",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -240,13 +240,13 @@
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-music/main/plugin.json",
-          "sha256": "758eecedf9a77f08bcdd7cc9b474ee061c6f8eda8555dfd1adbd8093454e650b",
+          "sha256": "7cd05cb9554b201f71a23b37063138e47f7dbb196273bb3449d36c84e20c24e6",
           "bytes": 206
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-music/main/plugin.js",
-          "sha256": "4fc713eeed753778645c928844608fff4105213c8c50190111e277cadaf82482",
-          "bytes": 52146
+          "sha256": "f1d1766e963c897c56b50aa5e3914b32892b61269d288d6fb1fe023a2b25496d",
+          "bytes": 52847
         },
         "mcp.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-music/main/mcp.js",
@@ -385,8 +385,35 @@
     },
     {
       "kind": "plugin",
+      "id": "toolbox",
+      "version": "1.0.0",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-toolbox/main/README.md",
+      "name": "Toolbox",
+      "description": "Developer conversions in one place: JSON (YAML, CSV, TypeScript and Dart models), JWT, Base64, URL, timestamps and timezones, UUID and ULID, hashes, regex, cron, case, diff, color, Unicode, passwords, number bases and HTTP status. Paste anything and the right tool opens.",
+      "icon": "Wrench",
+      "minDeck": "0.22.0",
+      "files": {
+        "plugin.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-toolbox/main/plugin.json",
+          "sha256": "34e93deef4ea4fd7d9b4dc228f24704ce135996f4fb51d4df81ebc18718218d6",
+          "bytes": 400
+        },
+        "plugin.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-toolbox/main/plugin.js",
+          "sha256": "37c82bf7b33fb00ade57796b57a1a9fa5f49cc2cc3b445e0992fe589970289ef",
+          "bytes": 69468
+        }
+      }
+    },
+    {
+      "kind": "plugin",
       "id": "vault",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -400,13 +427,13 @@
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vault/main/plugin.json",
-          "sha256": "fc4388673eeb0f3dea3cbc8a5b4a79ee2a27908043581fd23eca0c6074006bd7",
+          "sha256": "3f3629436ace20a7ba6c2a11c928d097f6fa871331a494590abcaec3ae738415",
           "bytes": 242
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vault/main/plugin.js",
-          "sha256": "236489bd8798248951e4c402ca587dda18faa059484e6b3dbf330e8a63db30d6",
-          "bytes": 24340
+          "sha256": "bf96c5abf8e09f0937869d0338da8486fd0ffa9ca1ddccad600c979aa5ff840e",
+          "bytes": 25179
         }
       }
     },
