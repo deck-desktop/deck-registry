@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-11T19:58:56.515Z",
+  "generated": "2026-10-12T15:09:29.042Z",
   "schema": 2,
   "plugins": [
     {
@@ -32,7 +32,7 @@
     {
       "kind": "plugin",
       "id": "calendar",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -46,13 +46,40 @@
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-calendar/main/plugin.json",
-          "sha256": "52576560f83bbe8ef3a056f5b91926062f9746f6d389c76d4994131014753824",
+          "sha256": "06ab3b904ba7ddfcd899ec9931bf1196f11c9a56d43e1cbe1bca51a60b01d086",
           "bytes": 206
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-calendar/main/plugin.js",
-          "sha256": "4d7681765d91dcc36414512e8b26b985dea891073595b30dabff51a8098383dd",
+          "sha256": "4c3515e254155de6c91485c4897bc748af2320ca6aec9bbbe6afdfdc839091b3",
           "bytes": 20619
+        }
+      }
+    },
+    {
+      "kind": "plugin",
+      "id": "canvas",
+      "version": "1.0.0",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-canvas/main/README.md",
+      "name": "Canvas",
+      "description": "Excalidraw boards for each project, as tabs in a pane: sketch, diagram, paste screenshots and links. Formerly Deck's Pinboard; existing boards carry over.",
+      "icon": "Pin",
+      "minDeck": "1.1.0",
+      "files": {
+        "plugin.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-canvas/main/plugin.json",
+          "sha256": "cd34ba4ebe41297359142ef23abd632b1f2f0d9a648581cf5dd835f29e8bdfcc",
+          "bytes": 277
+        },
+        "plugin.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-canvas/main/plugin.js",
+          "sha256": "31834a1c19b3d384b4d6aaa9ac536f2af6c886cf90b15daff0222b1699d43709",
+          "bytes": 7489383
         }
       }
     },
@@ -86,7 +113,7 @@
     {
       "kind": "plugin",
       "id": "db",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -100,7 +127,7 @@
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-db/main/plugin.json",
-          "sha256": "bcf14ffbd37bc30cc291837a9de1afc9b15c348321a189bc97e42387f56b8339",
+          "sha256": "229f23c52dbed29e9ab1b199b8bf21e699628ccbc40ae60387d142a48e6e0c14",
           "bytes": 197
         },
         "plugin.js": {
@@ -198,6 +225,33 @@
     },
     {
       "kind": "plugin",
+      "id": "git",
+      "version": "1.0.0",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-git/main/README.md",
+      "name": "Git",
+      "description": "A commit graph for each workspace: stage and commit, branches, tags and stashes, file history, diffs, and GitHub/GitLab pull requests with review comments. Formerly Deck's built-in Git Graph.",
+      "icon": "GitBranch",
+      "minDeck": "1.1.0",
+      "files": {
+        "plugin.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-git/main/plugin.json",
+          "sha256": "579a4cc601666628ab2fef9c4d1ef25488d8e21e19db1719e6051946f2df2b06",
+          "bytes": 314
+        },
+        "plugin.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-git/main/plugin.js",
+          "sha256": "9fff117904f71291e2511e747518545632dcf7be7f6cbc8ba101c1dcf2e5ee91",
+          "bytes": 259150
+        }
+      }
+    },
+    {
+      "kind": "plugin",
       "id": "jira",
       "version": "1.0.0",
       "publisher": {
@@ -257,6 +311,33 @@
     },
     {
       "kind": "plugin",
+      "id": "notes",
+      "version": "1.0.0",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-notes/main/README.md",
+      "name": "Notes",
+      "description": "Markdown notes for each project, in a pane beside your terminals. One file per note, autosaved, with live preview, a formatting bar and drag to reorder.",
+      "icon": "NotebookPen",
+      "minDeck": "1.1.0",
+      "files": {
+        "plugin.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-notes/main/plugin.json",
+          "sha256": "2b9816b9f7fb63e0532c6b1e6972157652258c4e979c43c88c894a3ff220f5ea",
+          "bytes": 281
+        },
+        "plugin.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-notes/main/plugin.js",
+          "sha256": "0ea1b87c2ca6e02472e01d76d7e3cd15b5e5f207b04fa3353594214c74e74d89",
+          "bytes": 6269
+        }
+      }
+    },
+    {
+      "kind": "plugin",
       "id": "npm",
       "version": "1.0.0",
       "publisher": {
@@ -284,6 +365,38 @@
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-npm/main/mcp.js",
           "sha256": "e0b678d54a879f072e50ea435e47b01008375db6de6713932fa30275e25c240c",
           "bytes": 11538
+        }
+      }
+    },
+    {
+      "kind": "plugin",
+      "id": "requests",
+      "version": "1.0.0",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-requests/main/README.md",
+      "name": "Requests",
+      "description": "Build, send and save HTTP requests in a pane: collections, environments and {{variables}}, pre- and post-request scripts, cURL import and export, history. Formerly Deck's HTTP tab; saved collections carry over.",
+      "icon": "Send",
+      "minDeck": "1.1.0",
+      "files": {
+        "plugin.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-requests/main/plugin.json",
+          "sha256": "f48fb6be8a7fc8cbd8185c6e11dc65171ed4d6ccf65126a9d83c5cde06ae89f7",
+          "bytes": 338
+        },
+        "plugin.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-requests/main/plugin.js",
+          "sha256": "a11cc085cbc1c8ac53bb2792a87dd38a9e707f01209e0b422986d849d62193ea",
+          "bytes": 97428
+        },
+        "mcp.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-requests/main/mcp.js",
+          "sha256": "977454fbdb9654f4c4a969b6bd6a3539b94e91893d81c9632e0da98100023026",
+          "bytes": 20962
         }
       }
     },
@@ -440,7 +553,7 @@
     {
       "kind": "plugin",
       "id": "vps",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -454,12 +567,12 @@
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vps/main/plugin.json",
-          "sha256": "7b6481b5e7dead6032a90085a7f7728a66def0620ab5dcf3aa14f94c5616de7c",
+          "sha256": "bc9981e919cb9b1b821f30b255e7136cd97249476a2b41147efffd158b1ba1c0",
           "bytes": 216
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vps/main/plugin.js",
-          "sha256": "7b7d8b144e39412f2970e815e58806f48dca19d201fd5faaa084ac59c46aa8a3",
+          "sha256": "14893b8d2bf8d83d6b8619764f7939e435085c3a37bcefc9cbbaf07440f2df4f",
           "bytes": 17284
         }
       }
