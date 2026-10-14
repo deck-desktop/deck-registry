@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-12T15:09:29.042Z",
+  "generated": "2026-10-14T12:56:22.255Z",
   "schema": 2,
   "plugins": [
     {
@@ -59,7 +59,7 @@
     {
       "kind": "plugin",
       "id": "canvas",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -67,19 +67,19 @@
       "signature": null,
       "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-canvas/main/README.md",
       "name": "Canvas",
-      "description": "Excalidraw boards for each project, as tabs in a pane: sketch, diagram, paste screenshots and links. Formerly Deck's Pinboard; existing boards carry over.",
+      "description": "Excalidraw boards for each project, as tabs in a pane: sketch, diagram, paste screenshots and links, and share a board live with other Decks. Formerly Deck's Pinboard; existing boards carry over.",
       "icon": "Pin",
       "minDeck": "1.1.0",
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-canvas/main/plugin.json",
-          "sha256": "cd34ba4ebe41297359142ef23abd632b1f2f0d9a648581cf5dd835f29e8bdfcc",
-          "bytes": 277
+          "sha256": "1919c3734f1f2243f3daf793ab76cdb79344fe80a53980a7c9b00bab927007fd",
+          "bytes": 318
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-canvas/main/plugin.js",
-          "sha256": "31834a1c19b3d384b4d6aaa9ac536f2af6c886cf90b15daff0222b1699d43709",
-          "bytes": 7489383
+          "sha256": "cfd5f1063578504fabcf426d158a969a19e9ef6318548c55b325f3c00b497de7",
+          "bytes": 7591119
         }
       }
     },
