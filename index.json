@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-15T18:26:27.582Z",
+  "generated": "2026-10-16T16:33:20.984Z",
   "schema": 2,
   "plugins": [
     {
       "kind": "plugin",
       "id": "app-timer",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -16,22 +16,22 @@
       "description": "Close an app after a delay or at a time, once or on chosen days.",
       "icon": "AlarmClock",
       "color": "#c084fc",
-      "minDeck": "0.8.0",
+      "minDeck": "1.5.0",
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-app-timer/main/plugin.json",
-          "sha256": "694a2683c5cf977b75c6687c975e804580269de888640fa6f27b6ff5828c92e5",
+          "sha256": "cbe0859b9e7d3bd0ac5f8af0104e4897e18602c46d28e3a31009f95c26ca0145",
           "bytes": 222
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-app-timer/main/plugin.js",
-          "sha256": "d9cc2516a0c4ad291775c86a81acc04f7e4f9083df2dea2def8f37d9c9ef9c3b",
-          "bytes": 16760
+          "sha256": "84792e55aab431ee84b6002df343fa5d9280df6d658fa6cbe259094b4a2da2dd",
+          "bytes": 17234
         },
         "mcp.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-app-timer/main/mcp.js",
-          "sha256": "5d945747f6e8e5d3bdb7b1bb12b0f1ddcd00368ef13f1ca9ecad0e934bc4430a",
-          "bytes": 2281
+          "sha256": "fc3343ce6779df2c67880f5c76a1210353bbefe9337150cde63d65ab4af0e51e",
+          "bytes": 2263
         }
       },
       "iconNode": [
@@ -78,7 +78,7 @@
     {
       "kind": "plugin",
       "id": "buildmon",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -89,17 +89,17 @@
       "description": "Watches backend build ids and tells you when one redeploys.",
       "icon": "Radar",
       "color": "#fbbf24",
-      "minDeck": "0.8.0",
+      "minDeck": "1.5.0",
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-buildmon/main/plugin.json",
-          "sha256": "a3ef39306fa7cc7b4bbd1af0a7b6b357ee6897a887f7e565f8d41e27faf05b9e",
+          "sha256": "57ddd9bcfa4107b7eee15b9396087938473729a1541f6c072b6f8bfd60924808",
           "bytes": 208
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-buildmon/main/plugin.js",
-          "sha256": "de2c07c2f1c1705543ca77732fba832523306ad9ce09cbd2743d5d7db5ddf28a",
-          "bytes": 16820
+          "sha256": "033bf5907dcb264f45df6349fd4b3df11a14af35798d591cd732d30a73af01ed",
+          "bytes": 16890
         }
       },
       "iconNode": [
@@ -158,7 +158,7 @@
     {
       "kind": "plugin",
       "id": "calendar",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -169,17 +169,17 @@
       "description": "Your Google Calendar in a modal, with a reminder before each meeting.",
       "icon": "CalendarDays",
       "color": "#f87171",
-      "minDeck": "0.12.0",
+      "minDeck": "1.5.0",
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-calendar/main/plugin.json",
-          "sha256": "52b1277ef78e6ad763356aca9104db782b7dfa454f36167fd9e3f5378fc61ebb",
-          "bytes": 228
+          "sha256": "52cd9def788ef2a5177218137cba66a51002caab4db9abf675639338e568996a",
+          "bytes": 227
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-calendar/main/plugin.js",
-          "sha256": "4c3515e254155de6c91485c4897bc748af2320ca6aec9bbbe6afdfdc839091b3",
-          "bytes": 20619
+          "sha256": "61b1bf61e7514c907180545b2bd19b5ec8994c219e9437ca744f8e7ce2cae28c",
+          "bytes": 20942
         }
       },
       "iconNode": [
@@ -252,7 +252,7 @@
     {
       "kind": "plugin",
       "id": "canvas",
-      "version": "1.3.0",
+      "version": "1.3.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -263,17 +263,17 @@
       "description": "Excalidraw boards for each project, as tabs in a pane: sketch, diagram, paste screenshots and links, and share a board live with other Decks. Formerly Deck's Pinboard; existing boards carry over.",
       "icon": "Pin",
       "color": "#f472b6",
-      "minDeck": "1.2.0",
+      "minDeck": "1.5.0",
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-canvas/main/plugin.json",
-          "sha256": "62c79bbc300777859ef49bf640f365da5630968910c9d972ce80012d70100b7d",
+          "sha256": "f2b4f84ad198a76c49d0a232ed0972f684c5522ec78430c5e4ab1eaef66ab0d3",
           "bytes": 340
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-canvas/main/plugin.js",
-          "sha256": "8ce354b096c3ad8867d325994ea83f0662d8bf462078e5d3fa3358948d4199f2",
-          "bytes": 7513269
+          "sha256": "65f668cc247d272ab61d3b2a920c7fd7fcad9b6d1482cdaf70e6e57f02374332",
+          "bytes": 7519090
         }
       },
       "iconNode": [
@@ -294,7 +294,7 @@
     {
       "kind": "plugin",
       "id": "clock",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -305,17 +305,17 @@
       "description": "The time in the footer, in any timezone you pick.",
       "icon": "Clock",
       "color": "#a5b4fc",
-      "minDeck": "0.8.0",
+      "minDeck": "1.5.0",
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-clock/main/plugin.json",
-          "sha256": "306a59a7c8248d3b0c37f33049d7eb407bff615eb0d2e5e4ee8be30c0c76bef6",
+          "sha256": "e6e7930554328635d4f6db73c2867a8ca4bfb3aefc310bc2fb9bdb5169add752",
           "bytes": 194
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-clock/main/plugin.js",
-          "sha256": "2789a28c2b6067f6af41bef56dcafeeba5fad76694e852a4d529ada71372ce3e",
-          "bytes": 5145
+          "sha256": "64b6bd56b2ea0f1edeadf05149e50453eeb895a8a81f2f062e5fcfa9a6ad567d",
+          "bytes": 5162
         }
       },
       "iconNode": [
@@ -338,7 +338,7 @@
     {
       "kind": "plugin",
       "id": "db",
-      "version": "2.0.2",
+      "version": "2.0.3",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -349,17 +349,17 @@
       "description": "Browse SQLite files, Postgres and MySQL, and run queries against them.",
       "icon": "Database",
       "color": "#818cf8",
-      "minDeck": "0.9.0",
+      "minDeck": "1.5.0",
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-db/main/plugin.json",
-          "sha256": "bc29782ca6a80b7a5746fc4b240731969b50cb6b9c8657ada96ce25d5975357d",
+          "sha256": "13cdb78a147a5c834b1288dda5aaccdf648f2f0bdf9044d8b6a3f7b6815d9932",
           "bytes": 219
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-db/main/plugin.js",
-          "sha256": "0df4020fa211294f1bccc42ee0ee01e0414294f2d6749918240d7426c170a027",
-          "bytes": 955368
+          "sha256": "1c2757ca42f5fcdfbbff7a8cf648aa40be0b5fa07fb86458f2b15be5c41cf5e0",
+          "bytes": 990799
         }
       },
       "iconNode": [
@@ -389,7 +389,7 @@
     {
       "kind": "plugin",
       "id": "flutter",
-      "version": "1.2.1",
+      "version": "1.2.2",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -400,22 +400,22 @@
       "description": "Launch a Flutter app on a device, then hot reload it from the footer.",
       "icon": "Zap",
       "color": "#38bdf8",
-      "minDeck": "0.11.0",
+      "minDeck": "1.5.0",
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-flutter/main/plugin.json",
-          "sha256": "4ac6b8081737bc62de4e7c4bb500e1804fadf4e284f00348d66728c99f0698eb",
-          "bytes": 217
+          "sha256": "e4b8a790392495a0e837cc23e0e706c7cdfdc3015527a7bad33aa9225d88d65b",
+          "bytes": 216
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-flutter/main/plugin.js",
-          "sha256": "21de729a9223c1cc01500fa892b2f3d160ad6397ded67a37526f8beea6913247",
-          "bytes": 38023
+          "sha256": "252f11cb32005a5a58c37c3ce5764144c76e1a229f5f4d50879cb5cc1dc5e133",
+          "bytes": 38468
         },
         "mcp.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-flutter/main/mcp.js",
-          "sha256": "c6e5465882b64e07144cdb4269ebfd1d3dce62f338bc6fed73c4068ccfc6ae53",
-          "bytes": 8617
+          "sha256": "8459da48c950b47e23c8b2649b26dffb12426d1a6294f68d5c7e93315f5abf2b",
+          "bytes": 8591
         }
       },
       "iconNode": [
@@ -430,7 +430,7 @@
     {
       "kind": "plugin",
       "id": "gallery",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -441,17 +441,17 @@
       "description": "Every photo and video on this PC's drives, newest first and grouped by date, with Windows' own thumbnails. A full-size viewer and slideshow, favourites, move, copy and delete to the Recycle Bin.",
       "icon": "Images",
       "color": "#e879f9",
-      "minDeck": "0.21.0",
+      "minDeck": "1.5.0",
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-gallery/main/plugin.json",
-          "sha256": "ad484cf71587395c04c025e9815b0e8636890aa54a85e5b782cfb4c70be61996",
-          "bytes": 345
+          "sha256": "389af4515d576b649e70ebd0de3bed2f42137079edd3b1bc7d13814f6d6e8a2d",
+          "bytes": 344
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-gallery/main/plugin.js",
-          "sha256": "9d9423a0a020fab0d4b5614ef3af384da19097ebce5483350f248608e180679a",
-          "bytes": 35877
+          "sha256": "eafa5f024a13134581b0297460511e8f1a3c937b7c6630388459212eda23e201",
+          "bytes": 35912
         }
       },
       "iconNode": [
@@ -491,7 +491,7 @@
     {
       "kind": "plugin",
       "id": "games",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -502,17 +502,17 @@
       "description": "Mini games in a pane: 2048, Minesweeper, Snake, Sudoku, Tetris, Words, Solitaire and Sokoban. Each is saved as you play and comes back after a restart.",
       "icon": "Gamepad2",
       "color": "#a3e635",
-      "minDeck": "0.19.0",
+      "minDeck": "1.5.0",
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-games/main/plugin.json",
-          "sha256": "ccee6cbd3ed806d7ede12e7f2c893e803c2a46d2b015b919a6042c5bf03da354",
-          "bytes": 300
+          "sha256": "b861ae570caa98d16e3e9d9307298976f473613088806b2a1e1632e692f69809",
+          "bytes": 299
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-games/main/plugin.js",
-          "sha256": "87165b408406bf5ad13339cb85db85f2ebad7e78c16968ad3ca1b3156de5b3ba",
-          "bytes": 64020
+          "sha256": "1a89c9892f05fad58227e28f132502a56e5b0c8a3708b0cc32f3588ba7eb263a",
+          "bytes": 64035
         }
       },
       "iconNode": [
@@ -563,7 +563,7 @@
     {
       "kind": "plugin",
       "id": "git",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -574,17 +574,17 @@
       "description": "A commit graph for each workspace: stage and commit, branches, tags and stashes, file history, diffs, and GitHub/GitLab pull requests with review comments. Formerly Deck's built-in Git Graph.",
       "icon": "GitBranch",
       "color": "#f97316",
-      "minDeck": "1.1.0",
+      "minDeck": "1.5.0",
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-git/main/plugin.json",
-          "sha256": "e573c119cfdf4ea3803ffa35c7f9a7aed3544bfe70db0039b238cef2be6dfd48",
+          "sha256": "8a21be1826af8256d5ab55c731c2b630384b11cf9ba2be9876e0f82ca44263d4",
           "bytes": 336
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-git/main/plugin.js",
-          "sha256": "9fff117904f71291e2511e747518545632dcf7be7f6cbc8ba101c1dcf2e5ee91",
-          "bytes": 259150
+          "sha256": "a029faa56cf56de8e6819c9c0fc4ef5b8ccb1b19f407e0659d6069289739bf30",
+          "bytes": 264754
         }
       },
       "iconNode": [
@@ -615,7 +615,7 @@
     {
       "kind": "plugin",
       "id": "jira",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -626,17 +626,17 @@
       "description": "The tickets assigned to you, read straight from your Jira with an API token.",
       "icon": "SquareKanban",
       "color": "#3b82f6",
-      "minDeck": "0.15.0",
+      "minDeck": "1.5.0",
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-jira/main/plugin.json",
-          "sha256": "9d7299b1d244d9e16d5285ca08974918f45be2f4260d6996bd65888de5e31f74",
-          "bytes": 227
+          "sha256": "1baf46b12752b99ec30d547cd3b9bc8f6b5bb6edd36e082a73856e1b4f0c24ba",
+          "bytes": 226
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-jira/main/plugin.js",
-          "sha256": "5859b651a3db367c21cca7509b4a8d532d476b144f40cde458c341cce01f2ec4",
-          "bytes": 11421
+          "sha256": "8208d0f389d8adf4a140b30b5295a38bebdf0add19890738b65f663b8470cab2",
+          "bytes": 11441
         }
       },
       "iconNode": [
@@ -673,7 +673,7 @@
     {
       "kind": "plugin",
       "id": "music",
-      "version": "1.1.2",
+      "version": "1.1.3",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -684,22 +684,22 @@
       "description": "A local music player for your own folders, with YouTube downloads and suggestions.",
       "icon": "Music",
       "color": "#fb7185",
-      "minDeck": "0.22.0",
+      "minDeck": "1.5.0",
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-music/main/plugin.json",
-          "sha256": "3a6587a2e921a86375e39f6e5dece94ff2db31161f6bfa4f988fea9463ab13c4",
-          "bytes": 228
+          "sha256": "6d787e58963db0c20245a04e3ea153a75624a768f78cfa640a29f7a13a00f825",
+          "bytes": 227
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-music/main/plugin.js",
-          "sha256": "2e23fd47c59f1878992ffea33e5142eeecd043da331efc866a6e49866432c96a",
-          "bytes": 52847
+          "sha256": "a3a16e7b3899551fec174a4a18ee5d846cf29fa0e40e4a503211b35b5cb24b7c",
+          "bytes": 54213
         },
         "mcp.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-music/main/mcp.js",
-          "sha256": "7d19c575824e3c4f2b96f4e6aad7b716645a4949fe57f572f93e19f9b10ef2ad",
-          "bytes": 3056
+          "sha256": "f4c573d1f79ee140401bd03cfa695e5a2bd66498bbbf6a1bf1d7998a6f17bde4",
+          "bytes": 3014
         }
       },
       "iconNode": [
@@ -730,7 +730,7 @@
     {
       "kind": "plugin",
       "id": "notes",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -741,17 +741,17 @@
       "description": "Markdown notes for each project, in a pane beside your terminals. One file per note, autosaved, with live preview, a formatting bar and drag to reorder.",
       "icon": "NotebookPen",
       "color": "#facc15",
-      "minDeck": "1.1.0",
+      "minDeck": "1.5.0",
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-notes/main/plugin.json",
-          "sha256": "8235676f0aaca6f21aa48de8cf094d1e71c1a5009af7d3538c21b4382c81811a",
+          "sha256": "af40c91899311c6d754ba13d3de7bb955e4d7e651af1efd3dbc42e8b528718cb",
           "bytes": 303
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-notes/main/plugin.js",
-          "sha256": "0ea1b87c2ca6e02472e01d76d7e3cd15b5e5f207b04fa3353594214c74e74d89",
-          "bytes": 6269
+          "sha256": "a8c1f586f90c6c2a7ff858e78ba4b3a497dab3e353944df19526d97263be36d0",
+          "bytes": 8338
         }
       },
       "iconNode": [
@@ -796,7 +796,7 @@
     {
       "kind": "plugin",
       "id": "npm",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -807,22 +807,22 @@
       "description": "Run a package.json script, watch its output, and stop or restart it from the footer.",
       "icon": "Package",
       "color": "#ef4444",
-      "minDeck": "0.11.0",
+      "minDeck": "1.5.0",
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-npm/main/plugin.json",
-          "sha256": "2d1e39cf9a3b64bcf1d1484499968b344721fc40a8798c5cdf20973b79ed9771",
-          "bytes": 232
+          "sha256": "cbb8bb3145afff6959bc2165c014110a4352e36cd2e5354933d4e179446e9d5f",
+          "bytes": 231
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-npm/main/plugin.js",
-          "sha256": "72ab1617c695536f41462799e1aca02f306498be3476c0753bbad40755ac644e",
-          "bytes": 18886
+          "sha256": "ea41ac30f712835999b8647e6339c6e5f26c9bcfa5f7c8089732775a4b7f7afc",
+          "bytes": 19251
         },
         "mcp.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-npm/main/mcp.js",
-          "sha256": "e0b678d54a879f072e50ea435e47b01008375db6de6713932fa30275e25c240c",
-          "bytes": 11538
+          "sha256": "86393ea9142dfa36f0a5c990f5ee97da628b00102f83e17f353e62628f1c8139",
+          "bytes": 11508
         }
       },
       "iconNode": [
@@ -854,8 +854,68 @@
     },
     {
       "kind": "plugin",
+      "id": "pdf",
+      "version": "0.1.0",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "signature": null,
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-pdf/main/README.md",
+      "name": "PDF",
+      "description": "View PDFs, highlight, draw and add text and images on them, fill their forms, and retype their text in its own font.",
+      "icon": "FileText",
+      "color": "#f87171",
+      "minDeck": "1.5.0",
+      "files": {
+        "plugin.json": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-pdf/main/plugin.json",
+          "sha256": "e3d9389925059bef48d0f9ef646e62d2774d2a74724896feeb10e490c7409af7",
+          "bytes": 260
+        },
+        "plugin.js": {
+          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-pdf/main/plugin.js",
+          "sha256": "2e85a717d7fe47d94067ef48d2174900b280a00ec35902f368e6794abb885ccc",
+          "bytes": 5295420
+        }
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M14 2v5a1 1 0 0 0 1 1h5"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M10 9H8"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M16 13H8"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M16 17H8"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "plugin",
       "id": "power-timer",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -866,22 +926,22 @@
       "description": "Shut down, restart, sleep, hibernate or lock the PC after a delay or at a time.",
       "icon": "Power",
       "color": "#f43f5e",
-      "minDeck": "0.8.0",
+      "minDeck": "1.5.0",
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-power-timer/main/plugin.json",
-          "sha256": "d5ec848c7d51a3816d7a9a445283537070a95ee3254bf3b4e82ab466ed15e5c8",
+          "sha256": "274b52fab937decc482f1033a6e178009d2949f809475f56607b8bc80afdb2a4",
           "bytes": 236
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-power-timer/main/plugin.js",
-          "sha256": "ad5c7e105b9c65dc086161af64081062924e24e4706fde5838a3afd584472e24",
-          "bytes": 14790
+          "sha256": "ca60b49253cd64da4e139cc0a273ccf4be657de3662df51d60f76f0b4a417b97",
+          "bytes": 15173
         },
         "mcp.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-power-timer/main/mcp.js",
-          "sha256": "30d31a88fa3de39bf0dd348b7392f858853547bd98674d944d3ac74c4b1f0f0f",
-          "bytes": 2341
+          "sha256": "45a93a5afcb37b3d6bc224a9c910e00ed27fe1777485788defe5f6805dc0f935",
+          "bytes": 2321
         }
       },
       "iconNode": [
@@ -902,7 +962,7 @@
     {
       "kind": "plugin",
       "id": "requests",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -913,22 +973,22 @@
       "description": "Build, send and save HTTP requests in a pane: collections, environments and {{variables}}, pre- and post-request scripts, cURL import and export, history. Formerly Deck's HTTP tab; saved collections carry over.",
       "icon": "Send",
       "color": "#22d3ee",
-      "minDeck": "1.4.0",
+      "minDeck": "1.5.0",
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-requests/main/plugin.json",
-          "sha256": "96f8b5ff48673871ad5b7aea119b01c5a4384bd5d3d4abe8665ea8551a20f7c6",
+          "sha256": "e3a4c06ab5c18ab10defe434840ddc835a23771a70ee9a2ca8ee19863f27a83e",
           "bytes": 360
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-requests/main/plugin.js",
-          "sha256": "b8d86d9413931a24d76db353cbee5be6a666bc4b37f663a6839eb9ca939dbecc",
-          "bytes": 97430
+          "sha256": "834c244cf7703d3a0996b032236b54adcbdfa208d0b14072a01e3defb79a32eb",
+          "bytes": 98342
         },
         "mcp.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-requests/main/mcp.js",
-          "sha256": "977454fbdb9654f4c4a969b6bd6a3539b94e91893d81c9632e0da98100023026",
-          "bytes": 20962
+          "sha256": "727aa6174886b3d81a1399a8452e83e905c6a4424354370079d72ef65f232518",
+          "bytes": 20928
         }
       },
       "iconNode": [
@@ -949,7 +1009,7 @@
     {
       "kind": "plugin",
       "id": "script-runner",
-      "version": "1.1.2",
+      "version": "1.1.3",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -960,22 +1020,22 @@
       "description": "Runs scripts on a schedule, here or on the VPS.",
       "icon": "Terminal",
       "color": "#2dd4bf",
-      "minDeck": "1.4.0",
+      "minDeck": "1.5.0",
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-script-runner/main/plugin.json",
-          "sha256": "9211d18dee6133b385c499ef4db200450069f03cfe222713eac79c61e18ae5b0",
+          "sha256": "d08dbaf0edf05bb931c2db4bdf8558d59c8f1564c75018471d122ea14f1c3d8f",
           "bytes": 211
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-script-runner/main/plugin.js",
-          "sha256": "695d1b189f7abb8423f47bcd706ece8dcef8a77458a42f00760a004b6da13ab9",
-          "bytes": 18334
+          "sha256": "e91a7c9187565b83709dab37f7a190bc9e3690fb6af121440d2ae5d63c441fa4",
+          "bytes": 18518
         },
         "mcp.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-script-runner/main/mcp.js",
-          "sha256": "ce75701fea08998fb33352f69a8afb458cef1e475a15e6dfa313b9838f795fe7",
-          "bytes": 2524
+          "sha256": "0b89948471410b917063de0c4f914932441ea1f49c85381e1c763fc193e54d2c",
+          "bytes": 2502
         }
       },
       "iconNode": [
@@ -996,7 +1056,7 @@
     {
       "kind": "plugin",
       "id": "sorter",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -1007,22 +1067,22 @@
       "description": "Files new downloads into folders by type.",
       "icon": "FolderInput",
       "color": "#fdba74",
-      "minDeck": "0.7.0",
+      "minDeck": "1.5.0",
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-sorter/main/plugin.json",
-          "sha256": "09639a5d8cabbb94bf8961eb97fad932c8df44802a803632f50292422c7e2208",
+          "sha256": "6dbed4a8c15984f8aaa868937d2dc53e9f504265cee824e1adf6d522f686f3b4",
           "bytes": 194
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-sorter/main/plugin.js",
-          "sha256": "99508a9e82a513f59276145262f9b2d5d5e9b9d5a98e67b5986aff7dd377415e",
-          "bytes": 9905
+          "sha256": "6077c007789c11cc75ecfaa663212b30746c51f0328788143b1fa9724d36e6f8",
+          "bytes": 10050
         },
         "mcp.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-sorter/main/mcp.js",
-          "sha256": "523c70f1a5c49ae032d5975fd06ed8423420a9759f4b9ee00ae923e03150d3a1",
-          "bytes": 4494
+          "sha256": "1b9b5e447250fcd27b1d4252335f4e9117ebabde283f38ce0ce89b75d41b7ae9",
+          "bytes": 4449
         }
       },
       "iconNode": [
@@ -1049,7 +1109,7 @@
     {
       "kind": "plugin",
       "id": "startup",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -1060,22 +1120,22 @@
       "description": "Programs to launch when you log in, each within its own days and time window.",
       "icon": "Rocket",
       "color": "#34d399",
-      "minDeck": "1.4.0",
+      "minDeck": "1.5.0",
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-startup/main/plugin.json",
-          "sha256": "3d53d4fed05f26d8f7cca3eff164991b0465b7e39c6031677e2e65c1a61abeb1",
+          "sha256": "dd82b0571ead59ed94976b8a8d70916176fc74529ce399de33a4cd500347da85",
           "bytes": 227
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-startup/main/plugin.js",
-          "sha256": "075812c7d2e528ac61a8e63f8ed7dcc6494f9433d0ae91c3e6de81f68d7f0331",
-          "bytes": 10564
+          "sha256": "da04303ae732a506a54dc7052332695e1b58d85b53889eda11e55a7d60c8c37b",
+          "bytes": 10813
         },
         "mcp.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-startup/main/mcp.js",
-          "sha256": "f65139ef3894a34e2977205962442c3a0e6941ee333459d1f5e49fd59b632716",
-          "bytes": 2106
+          "sha256": "442682baeefb96bd3f4093a54425432ffb2e79e2c72451985f03fad596b0d7ce",
+          "bytes": 2090
         }
       },
       "iconNode": [
@@ -1108,7 +1168,7 @@
     {
       "kind": "plugin",
       "id": "toolbox",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -1119,16 +1179,16 @@
       "description": "Developer conversions in one place: JSON (YAML, CSV, TypeScript and Dart models), JWT, Base64, URL, timestamps and timezones, UUID and ULID, hashes, regex, cron, case, diff, color, Unicode, passwords, number bases and HTTP status. Paste anything and the right tool opens.",
       "icon": "Wrench",
       "color": "#d4d4d8",
-      "minDeck": "0.22.0",
+      "minDeck": "1.5.0",
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-toolbox/main/plugin.json",
-          "sha256": "9a6770e8f1079c4e862f239b52aa28d2f0828a778897ee51c71452eea0b9a1b3",
-          "bytes": 422
+          "sha256": "f7a389e39f32a06e5cd7806acf712ce23544543be862e7a5451f972a72e4b802",
+          "bytes": 421
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-toolbox/main/plugin.js",
-          "sha256": "37c82bf7b33fb00ade57796b57a1a9fa5f49cc2cc3b445e0992fe589970289ef",
+          "sha256": "2e7adcc2a820f09598aede2243536f39c729897bec7ad777c466f15065a10c86",
           "bytes": 69468
         }
       },
@@ -1144,7 +1204,7 @@
     {
       "kind": "plugin",
       "id": "vault",
-      "version": "1.1.2",
+      "version": "1.1.3",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -1155,17 +1215,17 @@
       "description": "Browse and edit the Obsidian vault as live-preview markdown, with wikilinks and backlinks.",
       "icon": "NotebookText",
       "color": "#a78bfa",
-      "minDeck": "0.10.0",
+      "minDeck": "1.5.0",
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vault/main/plugin.json",
-          "sha256": "1e0b4d3fa51da80ffdb708b89fb8a295a6348fdafcdf40023d318566e55dea95",
-          "bytes": 264
+          "sha256": "2dcc49b9a899c3084460bff6b23d365583d803d0b534216db191eceb2ed8ac54",
+          "bytes": 263
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vault/main/plugin.js",
-          "sha256": "bf96c5abf8e09f0937869d0338da8486fd0ffa9ca1ddccad600c979aa5ff840e",
-          "bytes": 25179
+          "sha256": "177b0748ccb046b3ece2a408e628318d4e15287f854a984108f9d825b76f079c",
+          "bytes": 25808
         }
       },
       "iconNode": [
@@ -1226,7 +1286,7 @@
     {
       "kind": "plugin",
       "id": "vps",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -1237,17 +1297,17 @@
       "description": "Host stats and container control for your own server, through a small service you deploy to it.",
       "icon": "Server",
       "color": "#94a3b8",
-      "minDeck": "0.15.0",
+      "minDeck": "1.5.0",
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vps/main/plugin.json",
-          "sha256": "7e78d07b600940d82e5879063c2c1d9d2b06b8511d526bceeac09029a3b4ae24",
-          "bytes": 238
+          "sha256": "9068bc45cd6aa4733b5b203ebc4ad1d08b2e774cad871fe4a58b7e52227542fc",
+          "bytes": 237
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vps/main/plugin.js",
-          "sha256": "14893b8d2bf8d83d6b8619764f7939e435085c3a37bcefc9cbbaf07440f2df4f",
-          "bytes": 17284
+          "sha256": "2b7b5de35efa7d69050337d1e2644d6d0ef2008c0a618793a6810aa0c035c0b0",
+          "bytes": 17305
         }
       },
       "iconNode": [
