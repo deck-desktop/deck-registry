@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-16T16:33:20.984Z",
+  "generated": "2026-10-17T07:55:58.058Z",
   "schema": 2,
   "plugins": [
     {
@@ -730,7 +730,7 @@
     {
       "kind": "plugin",
       "id": "notes",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -745,13 +745,13 @@
       "files": {
         "plugin.json": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-notes/main/plugin.json",
-          "sha256": "af40c91899311c6d754ba13d3de7bb955e4d7e651af1efd3dbc42e8b528718cb",
+          "sha256": "a976327dee1f3fa4f40473c9d9239f1a22dcf4e0ec58500c000ce90f47f808fc",
           "bytes": 303
         },
         "plugin.js": {
           "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-notes/main/plugin.js",
-          "sha256": "a8c1f586f90c6c2a7ff858e78ba4b3a497dab3e353944df19526d97263be36d0",
-          "bytes": 8338
+          "sha256": "7a9a124afb157ad9c15ad63d46d5b32be4b1dc262559cbdf6b83998a6155c290",
+          "bytes": 8365
         }
       },
       "iconNode": [
