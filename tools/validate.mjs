@@ -19,41 +19,35 @@
 //   registry.npmjs.org with an integrity hash. Then `npm ci --ignore-scripts` installs published
 //   packages without running any, and the build executes only these, from npm: deck-plugin-sdk
 //   (the build itself), esbuild and its binary, and what the build require()s to check imports
-//   (react, lucide-react, framer-motion). Those names are in BUILD_RUNS below; a build-plugin.mjs
-//   change that executes anything else must add it there.
+//   (react, lucide-react, framer-motion). Those names are BUILD_RUNS, in the SDK's validate.mjs; a
+//   build-plugin.mjs change that executes anything else must add it there.
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
+// What needs only a package's files is deck-plugin-sdk's (validate.mjs): the same checks
+// `deck-plugin publish` runs on the author's machine before anything is public, so the two can
+// never disagree. This file adds what needs GitHub: who owns it, the release, the rebuild.
+import {
+  assetName, BUILD_RUNS, checkAssets as checkFiles, checkId, checkLockfile, checkPermissions, compareVersions, MAX_FILE, MAX_TOTAL, RESERVED, SEMVER,
+} from "./node_modules/deck-plugin-sdk/validate.mjs";
+export { assetName, BUILD_RUNS, checkLockfile, checkPermissions, compareVersions, MAX_FILE, MAX_TOTAL, RESERVED };
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const REGISTRY = process.env.GITHUB_REPOSITORY || "deck-desktop/deck-registry";
 
-/** Deck's own modules and the view prefixes: a plugin with one of these ids could never load. */
-export const RESERVED = new Set(["terminals", "editor", "docs", "settings", "deck", "module", "plugin", "browser"]);
-/** Packages the rebuild executes. Each must be the real one from npm (see SECURITY above). */
-export const BUILD_RUNS = ["deck-plugin-sdk", "esbuild", "react", "lucide-react", "framer-motion"];
-export const MAX_FILE = 10 * 1024 * 1024, MAX_TOTAL = 15 * 1024 * 1024;
+/** A release's assets: the SDK's rules, and GitHub's sha256 on every one (the SDK checks a digest only
+ *  where there is one, since an author's own files have none). */
+export const checkAssets = (kind, assets) => checkFiles(kind, assets.map((a) => ({ digest: null, ...a })));
+
 /** New packages one owner may add in a day: auto-merge without review needs a brake on spam. */
 export const NEW_PER_DAY = 5;
-const ID = /^[a-z0-9][a-z0-9-]{0,39}$/;
-const SEMVER = /^(\d+)\.(\d+)\.(\d+)(?:-([0-9A-Za-z.-]+))?$/;
-
-export const assetName = (name) => name.replace(/\//g, "--");
-export function compareVersions(a, b) {
-  const x = SEMVER.exec(a), y = SEMVER.exec(b);
-  for (let i = 1; i <= 3; i++) if (Number(x[i]) !== Number(y[i])) return Number(x[i]) - Number(y[i]);
-  if (x[4] === y[4]) return 0;
-  return x[4] === undefined ? 1 : y[4] === undefined ? -1 : x[4] < y[4] ? -1 : 1;
-}
 
 /** The submission file's shape, exactly: anything else is refused rather than ignored. */
 export function checkSubmission(id, s) {
-  const errors = [];
-  if (!ID.test(id)) errors.push(`the file name \`${id}\` must be the package id: lowercase letters, digits and dashes, 40 at most`);
-  if (RESERVED.has(id)) errors.push(`\`${id}\` is one of Deck's own names and cannot be a package id`);
+  const errors = checkId(id).map((e) => e.replace("the id", "the file name, which is the package id,"));
   if (typeof s !== "object" || s === null || Array.isArray(s)) return [...errors, "the submission must be a JSON object"];
   const extra = Object.keys(s).filter((k) => !["kind", "repo", "tag"].includes(k));
   if (extra.length) errors.push(`unexpected field${extra.length > 1 ? "s" : ""}: ${extra.join(", ")}`);
@@ -63,79 +57,14 @@ export function checkSubmission(id, s) {
   return errors;
 }
 
-/** The release's files: the allowed names, the required ones, and the size limits. */
-export function checkAssets(kind, assets) {
-  const errors = [];
-  const ok = (n) => kind === "plugin" ? ["plugin.json", "plugin.js", "mcp.js"].includes(n) : n === "language.json" || /^snippets--[\w.-]+\.json$/.test(n);
-  for (const a of assets) if (!ok(a.name)) errors.push(`the release has \`${a.name}\`, which a ${kind} cannot contain`);
-  for (const need of kind === "plugin" ? ["plugin.json", "plugin.js"] : ["language.json"]) {
-    if (!assets.some((a) => a.name === need)) errors.push(`the release has no \`${need}\``);
-  }
-  for (const a of assets) if (a.size > MAX_FILE) errors.push(`\`${a.name}\` is ${(a.size / 1048576).toFixed(1)} MB; a file may be 10 MB at most`);
-  const total = assets.reduce((n, a) => n + a.size, 0);
-  if (total > MAX_TOTAL) errors.push(`the release is ${(total / 1048576).toFixed(1)} MB; a package may be 15 MB at most`);
-  for (const a of assets) if (!/^sha256:[0-9a-f]{64}$/.test(a.digest ?? "")) errors.push(`GitHub gives no sha256 for \`${a.name}\`; upload it again`);
-  return errors;
-}
-
-/** Whether a lockfile lets `npm ci` install only published npm packages (see SECURITY). */
-export function checkLockfile(lock) {
-  const errors = [];
-  if (!lock || lock.lockfileVersion < 2 || typeof lock.packages !== "object") return ["package-lock.json must be npm 7 or newer (lockfileVersion 2 or 3)"];
-  for (const [path, p] of Object.entries(lock.packages)) {
-    if (path === "") continue;
-    if (p.link) { errors.push(`\`${path}\` is a link to a folder; publish it to npm or bundle it`); continue; }
-    if (!p.resolved?.startsWith("https://registry.npmjs.org/") || !/^sha(512|384|256)-/.test(p.integrity ?? "")) {
-      errors.push(`\`${path}\` does not come from registry.npmjs.org with an integrity hash`);
-    }
-    const name = path.replace(/^.*node_modules\//, "");
-    const runs = BUILD_RUNS.includes(name) || name.startsWith("@esbuild/");
-    if (runs && p.name && p.name !== name) errors.push(`\`${name}\` is an alias of \`${p.name}\`; the build runs it, so it must be the real package`);
-  }
-  if (!lock.packages["node_modules/deck-plugin-sdk"]) errors.push("the lockfile has no deck-plugin-sdk; a plugin is built with it");
-  return errors;
-}
-
 /**
- * Deck's permission table, from the deck-plugin-sdk this registry installs (permissions.json, SDK
- * 1.8 and later), or DECK_PERMISSIONS naming a copy. Null with an older SDK: the permission
- * checks are skipped and the report says so.
+ * Deck's permission table, from the deck-plugin-sdk this registry installs (permissions.json), or
+ * DECK_PERMISSIONS naming a copy. Null when neither is there: the permission checks are skipped
+ * and the report says so.
  */
 export function loadPermissions() {
   const at = process.env.DECK_PERMISSIONS ?? join(root, "tools", "node_modules", "deck-plugin-sdk", "permissions.json");
   return existsSync(at) ? JSON.parse(readFileSync(at, "utf8")) : null;
-}
-
-/**
- * What a plugin's permissions must be, from its manifest and its bundle: the declared list must
- * hold only known names, and cover every bridge call the bundle makes. Calls survive minifying:
- * the shim reaches the bridge as `b().fsWrite(`, a property of a call. Reaching Deck's internals
- * directly (around the bridge) is refused outright.
- */
-export function checkPermissions(declared, bundle, table) {
-  const errors = [], notes = [];
-  if (!Array.isArray(declared)) {
-    return { errors: ['plugin.json must say what it uses: "permissions": [...], or [] when it needs nothing beyond its own data and settings'], notes };
-  }
-  const unknown = declared.filter((p) => !(p in table.permissions));
-  if (unknown.length) errors.push(`unknown permission${unknown.length > 1 ? "s" : ""}: ${unknown.join(", ")} (known: ${Object.keys(table.permissions).join(", ")})`);
-  if (/__TAURI_INTERNALS__|__TAURI_IPC__|window\.__TAURI__\b/.test(bundle)) {
-    errors.push("its bundle reaches Deck's internals directly, around the bridge its permissions apply to");
-  }
-  const needs = new Map();
-  for (const [fn, p] of Object.entries(table.bridge)) {
-    // `().fn(`: the shim calls the bridge as b().fn(...), so a method of the same name on
-    // something else (a RegExp's .exec, a stream's .write) does not count.
-    if (new RegExp(`\\(\\)\\.${fn}\\(`).test(bundle)) needs.set(p, [...(needs.get(p) ?? []), fn]);
-  }
-  for (const [mod, p] of Object.entries(table.modules)) {
-    if (new RegExp(`__deck\\?\\.${mod}\\b`).test(bundle)) needs.set(p, [...(needs.get(p) ?? []), mod]);
-  }
-  for (const [p, fns] of needs) {
-    if (!declared.includes(p)) errors.push(`it uses ${fns.slice(0, 4).join(", ")}${fns.length > 4 ? ` and ${fns.length - 4} more` : ""}, which ${fns.length > 1 ? "need" : "needs"} the "${p}" permission; add it to "permissions"`);
-  }
-  if (/\beval\(|new Function\(/.test(bundle)) notes.push("Its bundle uses eval or new Function, which runs code made at run time; a library may do this legitimately.");
-  return { errors, notes };
 }
 
 const sha256 = (buf) => createHash("sha256").update(buf).digest("hex");
