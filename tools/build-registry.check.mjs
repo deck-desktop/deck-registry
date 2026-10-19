@@ -51,6 +51,8 @@ try {
   assert.equal(thing.detail, "details/plugin/thing/1.10.0.json");
   assert.equal(thing.repo, "someone/deck-plugin-thing");
   assert.equal(thing.files, undefined, "no files in the catalogue");
+  assert.equal(thing.published, "2026-10-19T00:00:00Z", "when the listed version was published");
+  assert.equal(thing.buildVerified, undefined, "only an unverified build says so");
 
   for (const ver of ["1.0.0", "1.10.0", "1.2.0", "2.0.0"]) read(`details/plugin/thing/${ver}.json`);
   read("details/plugin/gone/1.0.0.json");   // an install made from an older catalogue still has its files

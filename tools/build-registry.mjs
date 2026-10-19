@@ -80,7 +80,14 @@ for (const p of packages) {
   };
   if (live[0]) {
     const { files, readme, signature, ...listed } = whole(live[0]);
-    catalog.push({ ...listed, repo: p.repo, detail: detailPath(p, live[0]), ...(p.discontinued ? { discontinued: true } : {}) });
+    catalog.push({
+      ...listed, repo: p.repo, detail: detailPath(p, live[0]),
+      // When this version was published, for "recently updated".
+      ...(live[0].publishedAt ? { published: live[0].publishedAt } : {}),
+      // A submission that could not be rebuilt from its source (validate.mjs) says so.
+      ...(live[0].buildVerified === false ? { buildVerified: false } : {}),
+      ...(p.discontinued ? { discontinued: true } : {}),
+    });
   }
   // index.json is read only by Decks from before catalogues, so it offers the newest version one
   // of those can run: a plugin whose latest needs a newer Deck stays installable there at the

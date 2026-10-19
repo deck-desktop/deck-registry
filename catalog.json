@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-19T17:41:39.390Z",
+  "generated": "2026-10-19T18:10:05.742Z",
   "schema": 3,
   "plugins": [
     {
@@ -56,7 +56,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-app-timer",
-      "detail": "details/plugin/app-timer/1.1.0.json"
+      "detail": "details/plugin/app-timer/1.1.0.json",
+      "published": "2026-10-19T16:35:11Z"
     },
     {
       "kind": "plugin",
@@ -138,7 +139,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-calendar",
-      "detail": "details/plugin/calendar/1.1.0.json"
+      "detail": "details/plugin/calendar/1.1.0.json",
+      "published": "2026-10-19T16:35:19Z"
     },
     {
       "kind": "plugin",
@@ -168,7 +170,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-canvas",
-      "detail": "details/plugin/canvas/1.4.0.json"
+      "detail": "details/plugin/canvas/1.4.0.json",
+      "published": "2026-10-19T16:36:31Z"
     },
     {
       "kind": "plugin",
@@ -200,7 +203,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-clock",
-      "detail": "details/plugin/clock/1.1.0.json"
+      "detail": "details/plugin/clock/1.1.0.json",
+      "published": "2026-10-19T16:16:47Z"
     },
     {
       "kind": "plugin",
@@ -239,7 +243,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-db",
-      "detail": "details/plugin/db/2.1.1.json"
+      "detail": "details/plugin/db/2.1.1.json",
+      "published": "2026-10-19T16:46:21Z"
     },
     {
       "kind": "plugin",
@@ -263,7 +268,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-files",
-      "detail": "details/plugin/files/0.1.0.json"
+      "detail": "details/plugin/files/0.1.0.json",
+      "published": "2026-10-19T16:46:34Z"
     },
     {
       "kind": "plugin",
@@ -287,7 +293,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-flutter",
-      "detail": "details/plugin/flutter/1.3.0.json"
+      "detail": "details/plugin/flutter/1.3.0.json",
+      "published": "2026-10-19T16:36:38Z"
     },
     {
       "kind": "plugin",
@@ -336,7 +343,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-gallery",
-      "detail": "details/plugin/gallery/1.1.1.json"
+      "detail": "details/plugin/gallery/1.1.1.json",
+      "published": "2026-10-19T16:46:43Z"
     },
     {
       "kind": "plugin",
@@ -396,7 +404,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-games",
-      "detail": "details/plugin/games/1.1.0.json"
+      "detail": "details/plugin/games/1.1.0.json",
+      "published": "2026-10-19T16:36:48Z"
     },
     {
       "kind": "plugin",
@@ -436,7 +445,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-git",
-      "detail": "details/plugin/git/1.2.1.json"
+      "detail": "details/plugin/git/1.2.1.json",
+      "published": "2026-10-19T16:46:58Z"
     },
     {
       "kind": "plugin",
@@ -476,7 +486,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-music",
-      "detail": "details/plugin/music/1.2.0.json"
+      "detail": "details/plugin/music/1.2.0.json",
+      "published": "2026-10-19T16:37:46Z"
     },
     {
       "kind": "plugin",
@@ -530,7 +541,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-notes",
-      "detail": "details/plugin/notes/1.1.0.json"
+      "detail": "details/plugin/notes/1.1.0.json",
+      "published": "2026-10-19T16:37:55Z"
     },
     {
       "kind": "plugin",
@@ -572,7 +584,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-npm",
-      "detail": "details/plugin/npm/1.1.0.json"
+      "detail": "details/plugin/npm/1.1.0.json",
+      "published": "2026-10-19T16:38:07Z"
     },
     {
       "kind": "plugin",
@@ -620,7 +633,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-pdf",
-      "detail": "details/plugin/pdf/0.2.0.json"
+      "detail": "details/plugin/pdf/0.2.0.json",
+      "published": "2026-10-19T16:39:00Z"
     },
     {
       "kind": "plugin",
@@ -650,7 +664,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-power-timer",
-      "detail": "details/plugin/power-timer/1.1.0.json"
+      "detail": "details/plugin/power-timer/1.1.0.json",
+      "published": "2026-10-19T16:39:07Z"
     },
     {
       "kind": "plugin",
@@ -680,7 +695,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-requests",
-      "detail": "details/plugin/requests/1.1.1.json"
+      "detail": "details/plugin/requests/1.1.1.json",
+      "published": "2026-10-19T16:47:09Z"
     },
     {
       "kind": "plugin",
@@ -710,7 +726,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-script-runner",
-      "detail": "details/plugin/script-runner/1.2.0.json"
+      "detail": "details/plugin/script-runner/1.2.0.json",
+      "published": "2026-10-19T16:39:14Z"
     },
     {
       "kind": "plugin",
@@ -746,7 +763,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-sorter",
-      "detail": "details/plugin/sorter/1.1.0.json"
+      "detail": "details/plugin/sorter/1.1.0.json",
+      "published": "2026-10-19T16:39:24Z"
     },
     {
       "kind": "plugin",
@@ -788,7 +806,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-startup",
-      "detail": "details/plugin/startup/1.1.0.json"
+      "detail": "details/plugin/startup/1.1.0.json",
+      "published": "2026-10-19T16:39:36Z"
     },
     {
       "kind": "plugin",
@@ -812,7 +831,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-toolbox",
-      "detail": "details/plugin/toolbox/1.1.0.json"
+      "detail": "details/plugin/toolbox/1.1.0.json",
+      "published": "2026-10-19T16:39:46Z"
     },
     {
       "kind": "plugin",
@@ -882,7 +902,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-vault",
-      "detail": "details/plugin/vault/1.2.0.json"
+      "detail": "details/plugin/vault/1.2.0.json",
+      "published": "2026-10-19T16:39:55Z"
     },
     {
       "kind": "language",
@@ -928,7 +949,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-language-dart",
-      "detail": "details/language/dart/1.0.1.json"
+      "detail": "details/language/dart/1.0.1.json",
+      "published": "2026-10-19T16:36:56Z"
     },
     {
       "kind": "language",
@@ -963,7 +985,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-language-javascript",
-      "detail": "details/language/javascript/1.1.1.json"
+      "detail": "details/language/javascript/1.1.1.json",
+      "published": "2026-10-19T16:37:05Z"
     },
     {
       "kind": "language",
@@ -998,7 +1021,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-language-php",
-      "detail": "details/language/php/1.0.1.json"
+      "detail": "details/language/php/1.0.1.json",
+      "published": "2026-10-19T16:37:12Z"
     },
     {
       "kind": "language",
@@ -1039,7 +1063,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-language-python",
-      "detail": "details/language/python/1.0.1.json"
+      "detail": "details/language/python/1.0.1.json",
+      "published": "2026-10-19T16:37:20Z"
     },
     {
       "kind": "language",
@@ -1149,7 +1174,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-language-rust",
-      "detail": "details/language/rust/1.0.1.json"
+      "detail": "details/language/rust/1.0.1.json",
+      "published": "2026-10-19T16:37:30Z"
     },
     {
       "kind": "language",
@@ -1202,7 +1228,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-language-typescript",
-      "detail": "details/language/typescript/1.1.1.json"
+      "detail": "details/language/typescript/1.1.1.json",
+      "published": "2026-10-19T16:37:37Z"
     }
   ]
 }

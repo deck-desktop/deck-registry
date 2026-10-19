@@ -1,0 +1,36 @@
+# Once a day: each package's GitHub stars and downloads into stats.json (tools/stats.mjs).
+name: stats
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# The same group as submit.yml and build.yml: one writer to main at a time.
+concurrency:
+  group: registry-write
+  cancel-in-progress: false
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node tools/stats.mjs
+      - name: Commit if it changed
+        run: |
+          git add stats.json
+          if git diff --cached --quiet; then echo "nothing changed"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -q -m "stats: stars and downloads [skip ci]"
+          git pull -q --rebase origin main
+          git push -q origin main
