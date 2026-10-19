@@ -1,0 +1,47 @@
+{
+  "kind": "plugin",
+  "id": "files",
+  "repo": "deck-desktop/deck-plugin-files",
+  "owner": {
+    "id": 336637908,
+    "login": "deck-desktop",
+    "type": "Organization"
+  },
+  "publisher": {
+    "name": "Hasan Zarif",
+    "verified": true
+  },
+  "versions": [
+    {
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "publishedAt": "2026-10-19T16:46:34Z",
+      "readme": true,
+      "manifest": {
+        "name": "Files",
+        "description": "A file explorer: your drives, pinned folders and servers, with tabs, a preview pane, search by name and inside files, and copy, move, rename and the Recycle Bin.",
+        "icon": "FolderOpen",
+        "color": "#60a5fa",
+        "minDeck": "1.7.0"
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "088998dcc2bfc9b9315d04657dc88bbb53823fc817b01992935cd6dc43aab478",
+          "bytes": 311
+        },
+        "plugin.js": {
+          "sha256": "17f497aebd57d0129eb90133fe2dd8da4fc882beb03714b8e1991e513c21ff65",
+          "bytes": 44958
+        }
+      }
+    }
+  ]
+}

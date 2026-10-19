@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-19T16:44:13.478Z",
+  "generated": "2026-10-19T16:48:27.718Z",
   "schema": 3,
   "plugins": [
     {
@@ -205,7 +205,7 @@
     {
       "kind": "plugin",
       "id": "db",
-      "version": "2.1.0",
+      "version": "2.1.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -214,7 +214,7 @@
       "description": "Browse SQLite files, Postgres, MySQL, SQL Server, Redis and MongoDB, and run queries against them.",
       "icon": "Database",
       "color": "#818cf8",
-      "minDeck": "1.6.0",
+      "minDeck": "1.7.0",
       "iconNode": [
         [
           "ellipse",
@@ -239,7 +239,31 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-db",
-      "detail": "details/plugin/db/2.1.0.json"
+      "detail": "details/plugin/db/2.1.1.json"
+    },
+    {
+      "kind": "plugin",
+      "id": "files",
+      "version": "0.1.0",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "name": "Files",
+      "description": "A file explorer: your drives, pinned folders and servers, with tabs, a preview pane, search by name and inside files, and copy, move, rename and the Recycle Bin.",
+      "icon": "FolderOpen",
+      "color": "#60a5fa",
+      "minDeck": "1.7.0",
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2"
+          }
+        ]
+      ],
+      "repo": "deck-desktop/deck-plugin-files",
+      "detail": "details/plugin/files/0.1.0.json"
     },
     {
       "kind": "plugin",
@@ -268,7 +292,7 @@
     {
       "kind": "plugin",
       "id": "gallery",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -277,7 +301,7 @@
       "description": "Every photo and video on this PC's drives, newest first and grouped by date, with Windows' own thumbnails. A full-size viewer and slideshow, favourites, move, copy and delete to the Recycle Bin.",
       "icon": "Images",
       "color": "#e879f9",
-      "minDeck": "1.6.0",
+      "minDeck": "1.7.0",
       "iconNode": [
         [
           "path",
@@ -312,7 +336,7 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-gallery",
-      "detail": "details/plugin/gallery/1.1.0.json"
+      "detail": "details/plugin/gallery/1.1.1.json"
     },
     {
       "kind": "plugin",
@@ -377,7 +401,7 @@
     {
       "kind": "plugin",
       "id": "git",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -386,7 +410,7 @@
       "description": "A commit graph for each workspace: stage and commit, branches, tags and stashes, file history, diffs, and GitHub/GitLab pull requests with review comments. Formerly Deck's built-in Git Graph.",
       "icon": "GitBranch",
       "color": "#f97316",
-      "minDeck": "1.6.0",
+      "minDeck": "1.7.0",
       "iconNode": [
         [
           "path",
@@ -412,7 +436,7 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-git",
-      "detail": "details/plugin/git/1.2.0.json"
+      "detail": "details/plugin/git/1.2.1.json"
     },
     {
       "kind": "plugin",
@@ -631,7 +655,7 @@
     {
       "kind": "plugin",
       "id": "requests",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -640,7 +664,7 @@
       "description": "Build, send and save HTTP requests in a pane: collections, environments and {{variables}}, pre- and post-request scripts, cURL import and export, history. Formerly Deck's HTTP tab; saved collections carry over.",
       "icon": "Send",
       "color": "#22d3ee",
-      "minDeck": "1.6.0",
+      "minDeck": "1.7.0",
       "iconNode": [
         [
           "path",
@@ -656,7 +680,7 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-requests",
-      "detail": "details/plugin/requests/1.1.0.json"
+      "detail": "details/plugin/requests/1.1.1.json"
     },
     {
       "kind": "plugin",

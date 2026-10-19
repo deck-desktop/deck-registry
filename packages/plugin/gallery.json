@@ -67,6 +67,62 @@
           "bytes": 36904
         }
       }
+    },
+    {
+      "version": "1.1.1",
+      "tag": "v1.1.1",
+      "publishedAt": "2026-10-19T16:46:43Z",
+      "readme": true,
+      "manifest": {
+        "name": "Gallery",
+        "description": "Every photo and video on this PC's drives, newest first and grouped by date, with Windows' own thumbnails. A full-size viewer and slideshow, favourites, move, copy and delete to the Recycle Bin.",
+        "icon": "Images",
+        "color": "#e879f9",
+        "minDeck": "1.7.0"
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "m22 11-1.296-1.296a2.4 2.4 0 0 0-3.408 0L11 16"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M4 8a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2"
+          }
+        ],
+        [
+          "circle",
+          {
+            "cx": "13",
+            "cy": "7",
+            "r": "1",
+            "fill": "currentColor"
+          }
+        ],
+        [
+          "rect",
+          {
+            "x": "8",
+            "y": "2",
+            "width": "14",
+            "height": "14",
+            "rx": "2"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "1b55a146b478db0e8927fe965149c073625f95784ef6c92433696591d06bb025",
+          "bytes": 344
+        },
+        "plugin.js": {
+          "sha256": "8af37d46390a9e5b02f1a8c829cb5b79b92551367845e1fd47591730c57b9c5b",
+          "bytes": 37253
+        }
+      }
     }
   ]
 }

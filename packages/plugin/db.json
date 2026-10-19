@@ -57,6 +57,52 @@
           "bytes": 175044
         }
       }
+    },
+    {
+      "version": "2.1.1",
+      "tag": "v2.1.1",
+      "publishedAt": "2026-10-19T16:46:21Z",
+      "readme": true,
+      "manifest": {
+        "name": "Databases",
+        "description": "Browse SQLite files, Postgres, MySQL, SQL Server, Redis and MongoDB, and run queries against them.",
+        "icon": "Database",
+        "color": "#818cf8",
+        "minDeck": "1.7.0"
+      },
+      "iconNode": [
+        [
+          "ellipse",
+          {
+            "cx": "12",
+            "cy": "5",
+            "rx": "9",
+            "ry": "3"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M3 5V19A9 3 0 0 0 21 19V5"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M3 12A9 3 0 0 0 21 12"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "c331938e1b0c92b3043ef34027ca8fc4e6eb7b11090f75d7a833e40f086a0fff",
+          "bytes": 247
+        },
+        "plugin.js": {
+          "sha256": "433da0b7384f2f335d294db4c10619d401daee81fe01ecc91170e1736bc4fdd9",
+          "bytes": 175184
+        }
+      }
     }
   ]
 }
