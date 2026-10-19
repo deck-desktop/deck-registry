@@ -72,6 +72,7 @@ for (const p of packages) {
       readme: readmeUrl(p, v), name: m.name, description: m.description, icon: m.icon,
       ...(m.color ? { color: m.color } : {}),
       minDeck: m.minDeck ?? null,
+      ...(m.permissions ? { permissions: m.permissions } : {}),
       ...(p.kind === "language" ? { requires: m.requires ?? null, extensions: m.extensions ?? [] } : {}),
       files: mine.get(v.version).files,
       ...(v.iconNode ? { iconNode: v.iconNode } : {}),

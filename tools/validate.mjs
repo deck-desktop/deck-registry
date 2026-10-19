@@ -96,6 +96,48 @@ export function checkLockfile(lock) {
   return errors;
 }
 
+/**
+ * Deck's permission table, from the deck-plugin-sdk this registry installs (permissions.json, SDK
+ * 1.8 and later), or DECK_PERMISSIONS naming a copy. Null with an older SDK: the permission
+ * checks are skipped and the report says so.
+ */
+export function loadPermissions() {
+  const at = process.env.DECK_PERMISSIONS ?? join(root, "tools", "node_modules", "deck-plugin-sdk", "permissions.json");
+  return existsSync(at) ? JSON.parse(readFileSync(at, "utf8")) : null;
+}
+
+/**
+ * What a plugin's permissions must be, from its manifest and its bundle: the declared list must
+ * hold only known names, and cover every bridge call the bundle makes. Calls survive minifying:
+ * the shim reaches the bridge as `b().fsWrite(`, a property of a call. Reaching Deck's internals
+ * directly (around the bridge) is refused outright.
+ */
+export function checkPermissions(declared, bundle, table) {
+  const errors = [], notes = [];
+  if (!Array.isArray(declared)) {
+    return { errors: ['plugin.json must say what it uses: "permissions": [...], or [] when it needs nothing beyond its own data and settings'], notes };
+  }
+  const unknown = declared.filter((p) => !(p in table.permissions));
+  if (unknown.length) errors.push(`unknown permission${unknown.length > 1 ? "s" : ""}: ${unknown.join(", ")} (known: ${Object.keys(table.permissions).join(", ")})`);
+  if (/__TAURI_INTERNALS__|__TAURI_IPC__|window\.__TAURI__\b/.test(bundle)) {
+    errors.push("its bundle reaches Deck's internals directly, around the bridge its permissions apply to");
+  }
+  const needs = new Map();
+  for (const [fn, p] of Object.entries(table.bridge)) {
+    // `().fn(`: the shim calls the bridge as b().fn(...), so a method of the same name on
+    // something else (a RegExp's .exec, a stream's .write) does not count.
+    if (new RegExp(`\\(\\)\\.${fn}\\(`).test(bundle)) needs.set(p, [...(needs.get(p) ?? []), fn]);
+  }
+  for (const [mod, p] of Object.entries(table.modules)) {
+    if (new RegExp(`__deck\\?\\.${mod}\\b`).test(bundle)) needs.set(p, [...(needs.get(p) ?? []), mod]);
+  }
+  for (const [p, fns] of needs) {
+    if (!declared.includes(p)) errors.push(`it uses ${fns.slice(0, 4).join(", ")}${fns.length > 4 ? ` and ${fns.length - 4} more` : ""}, which ${fns.length > 1 ? "need" : "needs"} the "${p}" permission; add it to "permissions"`);
+  }
+  if (/\beval\(|new Function\(/.test(bundle)) notes.push("Its bundle uses eval or new Function, which runs code made at run time; a library may do this legitimately.");
+  return { errors, notes };
+}
+
 const sha256 = (buf) => createHash("sha256").update(buf).digest("hex");
 const gh = (path) => JSON.parse(execFileSync("gh", ["api", path], { stdio: ["ignore", "pipe", "pipe"], maxBuffer: 64 << 20 }).toString());
 const ghOk = (path) => { try { execFileSync("gh", ["api", path], { stdio: "ignore" }); return true; } catch { return false; } };
@@ -223,6 +265,20 @@ export async function validate(id, submission, author) {
         }
       }
     }
+    // What it may use: declared, and covering what its bundle calls (when Deck's table is here).
+    let permissions;
+    if (kind === "plugin") {
+      const table = loadPermissions();
+      if (!table) notes.push("Its permissions were not checked: this registry's deck-plugin-sdk predates them.");
+      else {
+        const bundle = has("plugin.js") && buildVerified ? readFileSync(join(dir, "plugin.js"), "utf8")
+          : Buffer.from(await (await fetch(assets.get("plugin.js").browser_download_url)).arrayBuffer()).toString("utf8");
+        const r = checkPermissions(m.permissions, bundle, table);
+        errors.push(...r.errors);
+        notes.push(...r.notes);
+        if (Array.isArray(m.permissions)) permissions = [...new Set(m.permissions)];
+      }
+    }
     if (errors.length) return { errors, notes };
 
     const record = {
@@ -231,13 +287,17 @@ export async function validate(id, submission, author) {
         name, description, icon,
         ...(m.color ? { color: m.color } : {}),
         minDeck: kind === "plugin" ? m.minDeck : null,
+        ...(permissions ? { permissions } : {}),
         ...(kind === "language" ? { requires: m.server?.command ?? m.server?.module ?? null, extensions: m.extensions ?? [] } : {}),
       },
       iconNode,
       files: Object.fromEntries([...assets.values()].map((a) => [a.name.replace(/^snippets--/, "snippets/"), { sha256: a.digest.slice(7), bytes: a.size }])),
       buildVerified,
     };
-    const pkg = existing ?? { kind, id, repo: info.full_name, owner, publisher: { name: owner.login, verified: false }, versions: [] };
+    // Shown as its publisher: the name on the account's GitHub profile, else the account itself.
+    let shown = owner.login;
+    try { shown = gh(`users/${owner.login}`).name?.trim() || owner.login; } catch { /* the account is enough */ }
+    const pkg = existing ?? { kind, id, repo: info.full_name, owner, publisher: { name: shown, verified: false }, versions: [] };
     return { errors, notes, pkg: { ...pkg, versions: [...pkg.versions, record] } };
   } finally {
     rmSync(dir, { recursive: true, force: true });

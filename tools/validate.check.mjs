@@ -3,7 +3,7 @@
 //
 //   node tools/validate.check.mjs
 import assert from "node:assert/strict";
-import { checkAssets, checkLockfile, checkSubmission, compareVersions, MAX_FILE, RESERVED } from "./validate.mjs";
+import { checkAssets, checkLockfile, checkPermissions, checkSubmission, compareVersions, MAX_FILE, RESERVED } from "./validate.mjs";
 
 // ---- the submission ------------------------------------------------------------------------
 const good = { kind: "plugin", repo: "someone/deck-plugin-thing", tag: "v1.2.0" };
@@ -44,6 +44,24 @@ assert.ok(checkLockfile(lock(pkg("@esbuild/linux-x64", { name: "evil" }))).some(
 assert.deepEqual(checkLockfile(lock(pkg("string-width-cjs", { name: "string-width" }))), [], "an alias of something the build never runs is fine");
 assert.ok(checkLockfile({ lockfileVersion: 1, dependencies: {} }).length, "npm 6's lockfile is refused");
 assert.ok(checkLockfile({ lockfileVersion: 3, packages: { "": {} } }).some((e) => /deck-plugin-sdk/.test(e)));
+
+// ---- permissions ------------------------------------------------------------------------------
+const table = {
+  permissions: { files: "Read and change files", network: "Connect to servers", terminals: "Use your terminals" },
+  bridge: { fsWrite: "files", fsRead: "files", httpSend: "network" },
+  modules: { terminals: "terminals", p2p: "network" },
+};
+const bundle = (s) => `var b=()=>window.__deck?.forPlugin?.(i)?.bridge??window.__deck?.bridge;${s}`;
+assert.deepEqual(checkPermissions(["files"], bundle("b().fsWrite(a,c)"), table).errors, []);
+assert.ok(checkPermissions(undefined, bundle(""), table).errors[0].includes('"permissions"'), "it has to say");
+assert.deepEqual(checkPermissions([], bundle("b().configRead(a)"), table).errors, [], "nothing beyond its own data needs nothing");
+assert.ok(checkPermissions([], bundle("b().fsWrite(a,c)"), table).errors.some((e) => /fsWrite.*"files"/.test(e)), "a call it did not declare");
+assert.ok(checkPermissions(["files"], bundle("b().httpSend(r)"), table).errors.some((e) => /"network"/.test(e)));
+assert.ok(checkPermissions(["files", "rockets"], bundle(""), table).errors.some((e) => /unknown permission: rockets/.test(e)));
+assert.ok(checkPermissions(["files"], bundle("window.__TAURI_INTERNALS__.invoke('exec')"), table).errors.some((e) => /around the bridge/.test(e)), "no reaching around it");
+assert.ok(checkPermissions([], "x=window.__deck?.forPlugin?.(i)?.terminals??window.__deck?.terminals", table).errors.some((e) => /"terminals"/.test(e)), "a whole module counts");
+assert.deepEqual(checkPermissions(["files"], bundle("b().fsReadBytes(a)"), table).errors, [], "a longer name is not a match for a shorter one");
+assert.equal(checkPermissions([], bundle("eval(s)"), table).notes.length, 1, "eval is noted, not refused");
 
 // ---- versions ----------------------------------------------------------------------------------
 assert.ok(compareVersions("1.10.0", "1.2.0") > 0);
