@@ -1,0 +1,69 @@
+{
+  "kind": "language",
+  "id": "dart",
+  "repo": "deck-desktop/deck-language-dart",
+  "owner": {
+    "id": 336637908,
+    "login": "deck-desktop",
+    "type": "Organization"
+  },
+  "publisher": {
+    "name": "Hasan Zarif",
+    "verified": true
+  },
+  "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "v1.0.1",
+      "publishedAt": "2026-10-19T16:36:56Z",
+      "readme": true,
+      "manifest": {
+        "name": "dart",
+        "description": ".dart — dart",
+        "icon": "Target",
+        "color": "#00b4ab",
+        "minDeck": null,
+        "requires": "dart",
+        "extensions": [
+          "dart"
+        ]
+      },
+      "iconNode": [
+        [
+          "circle",
+          {
+            "cx": "12",
+            "cy": "12",
+            "r": "10"
+          }
+        ],
+        [
+          "circle",
+          {
+            "cx": "12",
+            "cy": "12",
+            "r": "6"
+          }
+        ],
+        [
+          "circle",
+          {
+            "cx": "12",
+            "cy": "12",
+            "r": "2"
+          }
+        ]
+      ],
+      "files": {
+        "language.json": {
+          "sha256": "9611e03d9463342ee052c81aef6660706c9f3e6dc1754a875673141bd2f2dca9",
+          "bytes": 1422
+        },
+        "snippets/awesome-flutter.json": {
+          "sha256": "a5e09659379e4c8ba91c7c38f706759c2d86889d3802307bfa636685043ce937",
+          "bytes": 17616
+        }
+      }
+    }
+  ]
+}

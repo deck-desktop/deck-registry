@@ -1,0 +1,51 @@
+{
+  "kind": "plugin",
+  "id": "flutter",
+  "repo": "deck-desktop/deck-plugin-flutter",
+  "owner": {
+    "id": 336637908,
+    "login": "deck-desktop",
+    "type": "Organization"
+  },
+  "publisher": {
+    "name": "Hasan Zarif",
+    "verified": true
+  },
+  "versions": [
+    {
+      "version": "1.3.0",
+      "tag": "v1.3.0",
+      "publishedAt": "2026-10-19T16:36:38Z",
+      "readme": true,
+      "manifest": {
+        "name": "Flutter",
+        "description": "Launch a Flutter app on a device, then hot reload it from the footer.",
+        "icon": "Zap",
+        "color": "#38bdf8",
+        "minDeck": "1.6.0"
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "cbe7ee66b446dd60a9bb64b898850ec4ebcb23f40f000be9151496ec956d0448",
+          "bytes": 216
+        },
+        "plugin.js": {
+          "sha256": "7a46a43ccec74f7ad8193b357a1b7f8f04112e9d3c8ba3316ea6ae370fc330b1",
+          "bytes": 41356
+        },
+        "mcp.js": {
+          "sha256": "8459da48c950b47e23c8b2649b26dffb12426d1a6294f68d5c7e93315f5abf2b",
+          "bytes": 8591
+        }
+      }
+    }
+  ]
+}

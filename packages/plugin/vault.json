@@ -1,0 +1,93 @@
+{
+  "kind": "plugin",
+  "id": "vault",
+  "repo": "deck-desktop/deck-plugin-vault",
+  "owner": {
+    "id": 336637908,
+    "login": "deck-desktop",
+    "type": "Organization"
+  },
+  "publisher": {
+    "name": "Hasan Zarif",
+    "verified": true
+  },
+  "versions": [
+    {
+      "version": "1.2.0",
+      "tag": "v1.2.0",
+      "publishedAt": "2026-10-19T16:39:55Z",
+      "readme": true,
+      "manifest": {
+        "name": "Vault",
+        "description": "Browse and edit the Obsidian vault as live-preview markdown, with wikilinks and backlinks.",
+        "icon": "NotebookText",
+        "color": "#a78bfa",
+        "minDeck": "1.6.0"
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M2 6h4"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M2 10h4"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M2 14h4"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M2 18h4"
+          }
+        ],
+        [
+          "rect",
+          {
+            "width": "16",
+            "height": "20",
+            "x": "4",
+            "y": "2",
+            "rx": "2"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M9.5 8h5"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M9.5 12H16"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M9.5 16H14"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "69213d06ea3027e406fb86b8ae4901c5c111101f98c33ee0339bb9687fc5e158",
+          "bytes": 263
+        },
+        "plugin.js": {
+          "sha256": "029a6a3bf72d8434eb9ac4df4678dcdfd49ec7498dc9a540606789e9f73f9c62",
+          "bytes": 27490
+        }
+      }
+    }
+  ]
+}

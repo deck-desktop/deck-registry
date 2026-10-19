@@ -1,0 +1,15 @@
+{
+  "schema": 3,
+  "kind": "language",
+  "id": "rust",
+  "version": "1.0.1",
+  "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-rust/v1.0.1/README.md",
+  "signature": null,
+  "files": {
+    "language.json": {
+      "url": "https://github.com/deck-desktop/deck-language-rust/releases/download/v1.0.1/language.json",
+      "sha256": "3f05c91867de62e9fa416a844045b4c75fd4eaa645b90b2001a675d9a54ee02e",
+      "bytes": 3593
+    }
+  }
+}

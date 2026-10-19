@@ -1,0 +1,54 @@
+{
+  "kind": "language",
+  "id": "php",
+  "repo": "deck-desktop/deck-language-php",
+  "owner": {
+    "id": 336637908,
+    "login": "deck-desktop",
+    "type": "Organization"
+  },
+  "publisher": {
+    "name": "Hasan Zarif",
+    "verified": true
+  },
+  "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "v1.0.1",
+      "publishedAt": "2026-10-19T16:37:12Z",
+      "readme": true,
+      "manifest": {
+        "name": "php",
+        "description": ".php, .phtml — intelephense",
+        "icon": "Code",
+        "color": "#8892bf",
+        "minDeck": null,
+        "requires": "intelephense",
+        "extensions": [
+          "php",
+          "phtml"
+        ]
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "m16 18 6-6-6-6"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "m8 6-6 6 6 6"
+          }
+        ]
+      ],
+      "files": {
+        "language.json": {
+          "sha256": "dfad99aaf6936a3cf57b9b01a4022b169758101bcf88cca9fe26744afb8dbbe5",
+          "bytes": 1855
+        }
+      }
+    }
+  ]
+}

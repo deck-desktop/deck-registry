@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-18T10:23:44.872Z",
+  "generated": "2026-10-19T16:44:13.478Z",
   "schema": 2,
   "plugins": [
     {
@@ -11,7 +11,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-app-timer/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-app-timer/v1.1.0/README.md",
       "name": "App Timer",
       "description": "Close an app after a delay or at a time, once or on chosen days.",
       "icon": "AlarmClock",
@@ -19,17 +19,17 @@
       "minDeck": "1.6.0",
       "files": {
         "plugin.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-app-timer/main/plugin.json",
+          "url": "https://github.com/deck-desktop/deck-plugin-app-timer/releases/download/v1.1.0/plugin.json",
           "sha256": "88119455d6526612d1b338c26728b664b687d140f9c132fab82d49917f17e836",
           "bytes": 222
         },
         "plugin.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-app-timer/main/plugin.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-app-timer/releases/download/v1.1.0/plugin.js",
           "sha256": "1d7a0fc3c3e5ae8d5e0ac717d08dd7ad45940b46014d4c4d68709b3d537412d1",
           "bytes": 19436
         },
         "mcp.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-app-timer/main/mcp.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-app-timer/releases/download/v1.1.0/mcp.js",
           "sha256": "fc3343ce6779df2c67880f5c76a1210353bbefe9337150cde63d65ab4af0e51e",
           "bytes": 2263
         }
@@ -77,86 +77,6 @@
     },
     {
       "kind": "plugin",
-      "id": "buildmon",
-      "version": "1.1.0",
-      "publisher": {
-        "name": "Hasan Zarif",
-        "verified": true
-      },
-      "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-buildmon/main/README.md",
-      "name": "Builds",
-      "description": "Watches backend build ids and tells you when one redeploys.",
-      "icon": "Radar",
-      "color": "#fbbf24",
-      "minDeck": "1.6.0",
-      "files": {
-        "plugin.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-buildmon/main/plugin.json",
-          "sha256": "1ac4b9b4a1ae4cb7d1bc381d6c1a723c647349dd264825f6bf7dd8d2dd5399bc",
-          "bytes": 208
-        },
-        "plugin.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-buildmon/main/plugin.js",
-          "sha256": "7fca8c25f95a5dccc36bc608c87234e77cd045e67c0e9cd5520c5335409fb6ab",
-          "bytes": 18851
-        }
-      },
-      "iconNode": [
-        [
-          "path",
-          {
-            "d": "M19.07 4.93A10 10 0 0 0 6.99 3.34"
-          }
-        ],
-        [
-          "path",
-          {
-            "d": "M4 6h.01"
-          }
-        ],
-        [
-          "path",
-          {
-            "d": "M2.29 9.62A10 10 0 1 0 21.31 8.35"
-          }
-        ],
-        [
-          "path",
-          {
-            "d": "M16.24 7.76A6 6 0 1 0 8.23 16.67"
-          }
-        ],
-        [
-          "path",
-          {
-            "d": "M12 18h.01"
-          }
-        ],
-        [
-          "path",
-          {
-            "d": "M17.99 11.66A6 6 0 0 1 15.77 16.67"
-          }
-        ],
-        [
-          "circle",
-          {
-            "cx": "12",
-            "cy": "12",
-            "r": "2"
-          }
-        ],
-        [
-          "path",
-          {
-            "d": "m13.41 10.59 5.66-5.66"
-          }
-        ]
-      ]
-    },
-    {
-      "kind": "plugin",
       "id": "calendar",
       "version": "1.1.0",
       "publisher": {
@@ -164,7 +84,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-calendar/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-calendar/v1.1.0/README.md",
       "name": "Calendar",
       "description": "Your Google Calendar in a modal, with a reminder before each meeting.",
       "icon": "CalendarDays",
@@ -172,12 +92,12 @@
       "minDeck": "1.6.0",
       "files": {
         "plugin.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-calendar/main/plugin.json",
+          "url": "https://github.com/deck-desktop/deck-plugin-calendar/releases/download/v1.1.0/plugin.json",
           "sha256": "894cd536497056a4b9ef86d0958624d59e74c246d2bcaa03fa93e52d8446e1ba",
           "bytes": 227
         },
         "plugin.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-calendar/main/plugin.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-calendar/releases/download/v1.1.0/plugin.js",
           "sha256": "e3cd4d7e9416363411c462553388cc43f963f85e698814a0a6c125b4fbf7547a",
           "bytes": 21301
         }
@@ -258,7 +178,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-canvas/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-canvas/v1.4.0/README.md",
       "name": "Canvas",
       "description": "Excalidraw boards for each project, as tabs in a pane: sketch, diagram, paste screenshots and links, and share a board live with other Decks. Formerly Deck's Pinboard; existing boards carry over.",
       "icon": "Pin",
@@ -266,12 +186,12 @@
       "minDeck": "1.6.0",
       "files": {
         "plugin.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-canvas/main/plugin.json",
+          "url": "https://github.com/deck-desktop/deck-plugin-canvas/releases/download/v1.4.0/plugin.json",
           "sha256": "a806badfff1856420284687a038c47e2d1f12afbfdcc21d32c5f4babb4b3f3b2",
           "bytes": 340
         },
         "plugin.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-canvas/main/plugin.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-canvas/releases/download/v1.4.0/plugin.js",
           "sha256": "d737f436662f07d4445fb0e60e1cfef0efa4c43b1551d3faecae01fcfa0ad505",
           "bytes": 7519145
         }
@@ -300,7 +220,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-clock/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-clock/v1.1.0/README.md",
       "name": "Clock",
       "description": "The time in the footer, in any timezone you pick.",
       "icon": "Clock",
@@ -308,12 +228,12 @@
       "minDeck": "1.6.0",
       "files": {
         "plugin.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-clock/main/plugin.json",
+          "url": "https://github.com/deck-desktop/deck-plugin-clock/releases/download/v1.1.0/plugin.json",
           "sha256": "e86ca1a18909a5f2da5a35e8d8cdb64791eb4bfb03f5d26bedc91160c8ffc841",
           "bytes": 194
         },
         "plugin.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-clock/main/plugin.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-clock/releases/download/v1.1.0/plugin.js",
           "sha256": "63985c36b9f440fcd682c7519e5ee24a481c6afb721dd3741f3b25e8bf03a4b4",
           "bytes": 5090
         }
@@ -344,7 +264,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-db/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-db/v2.1.0/README.md",
       "name": "Databases",
       "description": "Browse SQLite files, Postgres, MySQL, SQL Server, Redis and MongoDB, and run queries against them.",
       "icon": "Database",
@@ -352,12 +272,12 @@
       "minDeck": "1.6.0",
       "files": {
         "plugin.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-db/main/plugin.json",
+          "url": "https://github.com/deck-desktop/deck-plugin-db/releases/download/v2.1.0/plugin.json",
           "sha256": "29ce3f7acb452bc424657f0b5707e32b260becd491984130b38cb3e46870b94b",
           "bytes": 247
         },
         "plugin.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-db/main/plugin.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-db/releases/download/v2.1.0/plugin.js",
           "sha256": "e0662e9e875a35e3e6347adf8f9756b460cb438f9b69725f32e8d2d76ef47216",
           "bytes": 175044
         }
@@ -395,7 +315,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-flutter/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-flutter/v1.3.0/README.md",
       "name": "Flutter",
       "description": "Launch a Flutter app on a device, then hot reload it from the footer.",
       "icon": "Zap",
@@ -403,17 +323,17 @@
       "minDeck": "1.6.0",
       "files": {
         "plugin.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-flutter/main/plugin.json",
+          "url": "https://github.com/deck-desktop/deck-plugin-flutter/releases/download/v1.3.0/plugin.json",
           "sha256": "cbe7ee66b446dd60a9bb64b898850ec4ebcb23f40f000be9151496ec956d0448",
           "bytes": 216
         },
         "plugin.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-flutter/main/plugin.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-flutter/releases/download/v1.3.0/plugin.js",
           "sha256": "7a46a43ccec74f7ad8193b357a1b7f8f04112e9d3c8ba3316ea6ae370fc330b1",
           "bytes": 41356
         },
         "mcp.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-flutter/main/mcp.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-flutter/releases/download/v1.3.0/mcp.js",
           "sha256": "8459da48c950b47e23c8b2649b26dffb12426d1a6294f68d5c7e93315f5abf2b",
           "bytes": 8591
         }
@@ -436,7 +356,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-gallery/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-gallery/v1.1.0/README.md",
       "name": "Gallery",
       "description": "Every photo and video on this PC's drives, newest first and grouped by date, with Windows' own thumbnails. A full-size viewer and slideshow, favourites, move, copy and delete to the Recycle Bin.",
       "icon": "Images",
@@ -444,12 +364,12 @@
       "minDeck": "1.6.0",
       "files": {
         "plugin.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-gallery/main/plugin.json",
+          "url": "https://github.com/deck-desktop/deck-plugin-gallery/releases/download/v1.1.0/plugin.json",
           "sha256": "45c2ad39cd44e2b76d41842c1d8be936d4de1a334a174006682d590a774e3549",
           "bytes": 344
         },
         "plugin.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-gallery/main/plugin.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-gallery/releases/download/v1.1.0/plugin.js",
           "sha256": "c6db6d1a1b27451c1fba0a94ad08fd4aa3f97ebac8748fcc69c45da8a3f2bc59",
           "bytes": 36904
         }
@@ -497,7 +417,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-games/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-games/v1.1.0/README.md",
       "name": "Games",
       "description": "Mini games in a pane: 2048, Minesweeper, Snake, Sudoku, Tetris, Words, Solitaire and Sokoban. Each is saved as you play and comes back after a restart.",
       "icon": "Gamepad2",
@@ -505,12 +425,12 @@
       "minDeck": "1.6.0",
       "files": {
         "plugin.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-games/main/plugin.json",
+          "url": "https://github.com/deck-desktop/deck-plugin-games/releases/download/v1.1.0/plugin.json",
           "sha256": "abc9414a0ef60d51a231d65f52335b88aacab457b219c4d1d39590fc9f77cc0b",
           "bytes": 299
         },
         "plugin.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-games/main/plugin.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-games/releases/download/v1.1.0/plugin.js",
           "sha256": "a6b6091842f7cde0ed2a71062eb3b03c80261b3f984953b0b9ad2245b66cb8fb",
           "bytes": 64671
         }
@@ -569,7 +489,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-git/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-git/v1.2.0/README.md",
       "name": "Git",
       "description": "A commit graph for each workspace: stage and commit, branches, tags and stashes, file history, diffs, and GitHub/GitLab pull requests with review comments. Formerly Deck's built-in Git Graph.",
       "icon": "GitBranch",
@@ -577,12 +497,12 @@
       "minDeck": "1.6.0",
       "files": {
         "plugin.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-git/main/plugin.json",
+          "url": "https://github.com/deck-desktop/deck-plugin-git/releases/download/v1.2.0/plugin.json",
           "sha256": "0fcf15acaa794daff3338503c38661e63c6b06841491ef9ed7776446e1252a1f",
           "bytes": 336
         },
         "plugin.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-git/main/plugin.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-git/releases/download/v1.2.0/plugin.js",
           "sha256": "f8462c5ed43922798273ffbd243e9a0fbe84fab3fe2f98f79237c6c01b277577",
           "bytes": 270695
         }
@@ -614,64 +534,6 @@
     },
     {
       "kind": "plugin",
-      "id": "jira",
-      "version": "1.1.0",
-      "publisher": {
-        "name": "Hasan Zarif",
-        "verified": true
-      },
-      "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-jira/main/README.md",
-      "name": "Jira",
-      "description": "The tickets assigned to you, read straight from your Jira with an API token.",
-      "icon": "SquareKanban",
-      "color": "#3b82f6",
-      "minDeck": "1.6.0",
-      "files": {
-        "plugin.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-jira/main/plugin.json",
-          "sha256": "786cc23b6a8ba1be9a0fcc7dfb8953eab7e0c2b59ee25894612393385ce8d9a4",
-          "bytes": 226
-        },
-        "plugin.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-jira/main/plugin.js",
-          "sha256": "7deea60b062ac3f528796efa8f9c66936883dd3ee38970abb0aeb0d2c7627c3d",
-          "bytes": 11871
-        }
-      },
-      "iconNode": [
-        [
-          "rect",
-          {
-            "width": "18",
-            "height": "18",
-            "x": "3",
-            "y": "3",
-            "rx": "2"
-          }
-        ],
-        [
-          "path",
-          {
-            "d": "M8 7v7"
-          }
-        ],
-        [
-          "path",
-          {
-            "d": "M12 7v4"
-          }
-        ],
-        [
-          "path",
-          {
-            "d": "M16 7v9"
-          }
-        ]
-      ]
-    },
-    {
-      "kind": "plugin",
       "id": "music",
       "version": "1.2.0",
       "publisher": {
@@ -679,7 +541,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-music/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-music/v1.2.0/README.md",
       "name": "Music",
       "description": "A local music player for your own folders, with YouTube downloads and suggestions.",
       "icon": "Music",
@@ -687,17 +549,17 @@
       "minDeck": "1.6.0",
       "files": {
         "plugin.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-music/main/plugin.json",
+          "url": "https://github.com/deck-desktop/deck-plugin-music/releases/download/v1.2.0/plugin.json",
           "sha256": "b8cfa11bd2664bb949a5d94aa18d941d2affd5061472ad1c8817ca6d6b7f6061",
           "bytes": 227
         },
         "plugin.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-music/main/plugin.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-music/releases/download/v1.2.0/plugin.js",
           "sha256": "3fda2e89d3dbe61e31cec7c976d92408fda29cf7b2a9eb3b512654990bb78780",
           "bytes": 51878
         },
         "mcp.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-music/main/mcp.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-music/releases/download/v1.2.0/mcp.js",
           "sha256": "f4c573d1f79ee140401bd03cfa695e5a2bd66498bbbf6a1bf1d7998a6f17bde4",
           "bytes": 3014
         }
@@ -736,7 +598,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-notes/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-notes/v1.1.0/README.md",
       "name": "Notes",
       "description": "Markdown notes for each project, in a pane beside your terminals. One file per note, autosaved, with live preview, a formatting bar and drag to reorder.",
       "icon": "NotebookPen",
@@ -744,12 +606,12 @@
       "minDeck": "1.6.0",
       "files": {
         "plugin.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-notes/main/plugin.json",
+          "url": "https://github.com/deck-desktop/deck-plugin-notes/releases/download/v1.1.0/plugin.json",
           "sha256": "412114b22bbecb2ec9146195c6bdfcc46d669642b33382cd318a07c0aef073a5",
           "bytes": 303
         },
         "plugin.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-notes/main/plugin.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-notes/releases/download/v1.1.0/plugin.js",
           "sha256": "94623e246c5f0f3851e08914c3ba1b5c2ab28e345fc54b072024d1da7f74682d",
           "bytes": 8831
         }
@@ -802,7 +664,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-npm/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-npm/v1.1.0/README.md",
       "name": "Scripts",
       "description": "Run a package.json script, watch its output, and stop or restart it from the footer.",
       "icon": "Package",
@@ -810,17 +672,17 @@
       "minDeck": "1.6.0",
       "files": {
         "plugin.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-npm/main/plugin.json",
+          "url": "https://github.com/deck-desktop/deck-plugin-npm/releases/download/v1.1.0/plugin.json",
           "sha256": "a69104cc8bfa0409884d149c2a082ca21c3173b35685387737bc93af411e9464",
           "bytes": 231
         },
         "plugin.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-npm/main/plugin.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-npm/releases/download/v1.1.0/plugin.js",
           "sha256": "0205de208841aaf5cd0a1d13e9d127460c3ecd22f2f4b567a7c9cfd49f1844fc",
           "bytes": 20590
         },
         "mcp.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-npm/main/mcp.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-npm/releases/download/v1.1.0/mcp.js",
           "sha256": "86393ea9142dfa36f0a5c990f5ee97da628b00102f83e17f353e62628f1c8139",
           "bytes": 11508
         }
@@ -861,7 +723,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-pdf/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-pdf/v0.2.0/README.md",
       "name": "PDF",
       "description": "View PDFs, highlight, draw and add text and images on them, fill their forms, and retype their text in its own font.",
       "icon": "FileText",
@@ -869,12 +731,12 @@
       "minDeck": "1.6.0",
       "files": {
         "plugin.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-pdf/main/plugin.json",
+          "url": "https://github.com/deck-desktop/deck-plugin-pdf/releases/download/v0.2.0/plugin.json",
           "sha256": "7b8279371e449d3cab27eb7a8298518913292d688e5e05a9165dcbe57899ad78",
           "bytes": 260
         },
         "plugin.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-pdf/main/plugin.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-pdf/releases/download/v0.2.0/plugin.js",
           "sha256": "7b2912affb31a13f18491dd30efb597d3944754433719b775afb1071d3e7289c",
           "bytes": 5297005
         }
@@ -921,7 +783,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-power-timer/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-power-timer/v1.1.0/README.md",
       "name": "Power Timer",
       "description": "Shut down, restart, sleep, hibernate or lock the PC after a delay or at a time.",
       "icon": "Power",
@@ -929,17 +791,17 @@
       "minDeck": "1.6.0",
       "files": {
         "plugin.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-power-timer/main/plugin.json",
+          "url": "https://github.com/deck-desktop/deck-plugin-power-timer/releases/download/v1.1.0/plugin.json",
           "sha256": "5c08594b3f00dcf309cf50844b1f0670aaa249dda5c098f6b6b6bad129880320",
           "bytes": 236
         },
         "plugin.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-power-timer/main/plugin.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-power-timer/releases/download/v1.1.0/plugin.js",
           "sha256": "a3f2d920ba21fac035a909680b09f2bbcbae8b6882535dd574b2449d4e3928fe",
           "bytes": 16983
         },
         "mcp.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-power-timer/main/mcp.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-power-timer/releases/download/v1.1.0/mcp.js",
           "sha256": "45a93a5afcb37b3d6bc224a9c910e00ed27fe1777485788defe5f6805dc0f935",
           "bytes": 2321
         }
@@ -968,7 +830,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-requests/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-requests/v1.1.0/README.md",
       "name": "Requests",
       "description": "Build, send and save HTTP requests in a pane: collections, environments and {{variables}}, pre- and post-request scripts, cURL import and export, history. Formerly Deck's HTTP tab; saved collections carry over.",
       "icon": "Send",
@@ -976,17 +838,17 @@
       "minDeck": "1.6.0",
       "files": {
         "plugin.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-requests/main/plugin.json",
+          "url": "https://github.com/deck-desktop/deck-plugin-requests/releases/download/v1.1.0/plugin.json",
           "sha256": "d91675e9adf6aab4a6334cc1f1e7dcdf30ada66b877813ac2d53bfe698872560",
           "bytes": 360
         },
         "plugin.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-requests/main/plugin.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-requests/releases/download/v1.1.0/plugin.js",
           "sha256": "3638eee98d9de7255e4eab3ffacdf7516eb5e066b03118c208716d68cd4f3c63",
           "bytes": 102873
         },
         "mcp.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-requests/main/mcp.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-requests/releases/download/v1.1.0/mcp.js",
           "sha256": "727aa6174886b3d81a1399a8452e83e905c6a4424354370079d72ef65f232518",
           "bytes": 20928
         }
@@ -1015,7 +877,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-script-runner/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-script-runner/v1.2.0/README.md",
       "name": "Script Runner",
       "description": "Runs scripts on a schedule, here or on the VPS.",
       "icon": "Terminal",
@@ -1023,17 +885,17 @@
       "minDeck": "1.6.0",
       "files": {
         "plugin.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-script-runner/main/plugin.json",
+          "url": "https://github.com/deck-desktop/deck-plugin-script-runner/releases/download/v1.2.0/plugin.json",
           "sha256": "a41381f0572964e17e2f7055ee0a41e18cc5bcfdc7fb9235088c270a14444b55",
           "bytes": 211
         },
         "plugin.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-script-runner/main/plugin.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-script-runner/releases/download/v1.2.0/plugin.js",
           "sha256": "133aa4f88c6d2132eecb027c16c02057f96b2b1179712a5021f2a77436d60d68",
           "bytes": 19749
         },
         "mcp.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-script-runner/main/mcp.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-script-runner/releases/download/v1.2.0/mcp.js",
           "sha256": "0b89948471410b917063de0c4f914932441ea1f49c85381e1c763fc193e54d2c",
           "bytes": 2502
         }
@@ -1062,7 +924,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-sorter/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-sorter/v1.1.0/README.md",
       "name": "Sorter",
       "description": "Files new downloads into folders by type.",
       "icon": "FolderInput",
@@ -1070,17 +932,17 @@
       "minDeck": "1.6.0",
       "files": {
         "plugin.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-sorter/main/plugin.json",
+          "url": "https://github.com/deck-desktop/deck-plugin-sorter/releases/download/v1.1.0/plugin.json",
           "sha256": "dc1211aace79b60a433121a04f6bddc0966402567a1cd2cecb4068a6b012b953",
           "bytes": 194
         },
         "plugin.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-sorter/main/plugin.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-sorter/releases/download/v1.1.0/plugin.js",
           "sha256": "7572c38a5902d4c11bb51024547beb836bc1fc35a8cdf0d77ef936acb3812610",
           "bytes": 11359
         },
         "mcp.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-sorter/main/mcp.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-sorter/releases/download/v1.1.0/mcp.js",
           "sha256": "1b9b5e447250fcd27b1d4252335f4e9117ebabde283f38ce0ce89b75d41b7ae9",
           "bytes": 4449
         }
@@ -1115,7 +977,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-startup/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-startup/v1.1.0/README.md",
       "name": "Startup",
       "description": "Programs to launch when you log in, each within its own days and time window.",
       "icon": "Rocket",
@@ -1123,17 +985,17 @@
       "minDeck": "1.6.0",
       "files": {
         "plugin.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-startup/main/plugin.json",
+          "url": "https://github.com/deck-desktop/deck-plugin-startup/releases/download/v1.1.0/plugin.json",
           "sha256": "e6f0e7948c6213e7a8044014975c4ffc60e2769d0f8c50accb720fecc795ca73",
           "bytes": 227
         },
         "plugin.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-startup/main/plugin.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-startup/releases/download/v1.1.0/plugin.js",
           "sha256": "38a2f0f83aaa3c97f448e9d9facddffa5c9540007e8f7176938e93322cc05e64",
           "bytes": 12763
         },
         "mcp.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-startup/main/mcp.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-startup/releases/download/v1.1.0/mcp.js",
           "sha256": "442682baeefb96bd3f4093a54425432ffb2e79e2c72451985f03fad596b0d7ce",
           "bytes": 2090
         }
@@ -1174,7 +1036,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-toolbox/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-toolbox/v1.1.0/README.md",
       "name": "Toolbox",
       "description": "Developer conversions in one place: JSON (YAML, CSV, TypeScript and Dart models), JWT, Base64, URL, timestamps and timezones, UUID and ULID, hashes, regex, cron, case, diff, color, Unicode, passwords, number bases and HTTP status. Paste anything and the right tool opens.",
       "icon": "Wrench",
@@ -1182,12 +1044,12 @@
       "minDeck": "1.6.0",
       "files": {
         "plugin.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-toolbox/main/plugin.json",
+          "url": "https://github.com/deck-desktop/deck-plugin-toolbox/releases/download/v1.1.0/plugin.json",
           "sha256": "900dd88ed609e86346cc1e7dacc89504c10267811407734694cf77715f8a4b22",
           "bytes": 421
         },
         "plugin.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-toolbox/main/plugin.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-toolbox/releases/download/v1.1.0/plugin.js",
           "sha256": "7f422e52cb3a7089ace0617cfde8649637ebb41933ee313880da54e490a86910",
           "bytes": 69983
         }
@@ -1210,7 +1072,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vault/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vault/v1.2.0/README.md",
       "name": "Vault",
       "description": "Browse and edit the Obsidian vault as live-preview markdown, with wikilinks and backlinks.",
       "icon": "NotebookText",
@@ -1218,12 +1080,12 @@
       "minDeck": "1.6.0",
       "files": {
         "plugin.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vault/main/plugin.json",
+          "url": "https://github.com/deck-desktop/deck-plugin-vault/releases/download/v1.2.0/plugin.json",
           "sha256": "69213d06ea3027e406fb86b8ae4901c5c111101f98c33ee0339bb9687fc5e158",
           "bytes": 263
         },
         "plugin.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vault/main/plugin.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-vault/releases/download/v1.2.0/plugin.js",
           "sha256": "029a6a3bf72d8434eb9ac4df4678dcdfd49ec7498dc9a540606789e9f73f9c62",
           "bytes": 27490
         }
@@ -1284,76 +1146,6 @@
       ]
     },
     {
-      "kind": "plugin",
-      "id": "vps",
-      "version": "1.1.0",
-      "publisher": {
-        "name": "Hasan Zarif",
-        "verified": true
-      },
-      "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vps/main/README.md",
-      "name": "VPS",
-      "description": "Host stats and container control for your own server, through a small service you deploy to it.",
-      "icon": "Server",
-      "color": "#94a3b8",
-      "minDeck": "1.6.0",
-      "files": {
-        "plugin.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vps/main/plugin.json",
-          "sha256": "3c342af378d98f63f0bcde6fb555beac2f066311a828bf5fba77696967e5325c",
-          "bytes": 237
-        },
-        "plugin.js": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vps/main/plugin.js",
-          "sha256": "38d5605e9cb98a7970ac0c34aa1b5d49ed958684613334558b2c36e5c40b92cf",
-          "bytes": 18303
-        }
-      },
-      "iconNode": [
-        [
-          "rect",
-          {
-            "width": "20",
-            "height": "8",
-            "x": "2",
-            "y": "2",
-            "rx": "2",
-            "ry": "2"
-          }
-        ],
-        [
-          "rect",
-          {
-            "width": "20",
-            "height": "8",
-            "x": "2",
-            "y": "14",
-            "rx": "2",
-            "ry": "2"
-          }
-        ],
-        [
-          "line",
-          {
-            "x1": "6",
-            "x2": "6.01",
-            "y1": "6",
-            "y2": "6"
-          }
-        ],
-        [
-          "line",
-          {
-            "x1": "6",
-            "x2": "6.01",
-            "y1": "18",
-            "y2": "18"
-          }
-        ]
-      ]
-    },
-    {
       "kind": "language",
       "id": "dart",
       "version": "1.0.1",
@@ -1362,7 +1154,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-dart/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-dart/v1.0.1/README.md",
       "name": "dart",
       "description": ".dart — dart",
       "icon": "Target",
@@ -1374,12 +1166,12 @@
       ],
       "files": {
         "language.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-dart/main/language.json",
+          "url": "https://github.com/deck-desktop/deck-language-dart/releases/download/v1.0.1/language.json",
           "sha256": "9611e03d9463342ee052c81aef6660706c9f3e6dc1754a875673141bd2f2dca9",
           "bytes": 1422
         },
         "snippets/awesome-flutter.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-dart/main/snippets/awesome-flutter.json",
+          "url": "https://github.com/deck-desktop/deck-language-dart/releases/download/v1.0.1/snippets--awesome-flutter.json",
           "sha256": "a5e09659379e4c8ba91c7c38f706759c2d86889d3802307bfa636685043ce937",
           "bytes": 17616
         }
@@ -1420,7 +1212,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-javascript/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-javascript/v1.1.1/README.md",
       "name": "javascript",
       "description": ".js, .jsx — typescript-language-server",
       "icon": "Braces",
@@ -1433,7 +1225,7 @@
       ],
       "files": {
         "language.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-javascript/main/language.json",
+          "url": "https://github.com/deck-desktop/deck-language-javascript/releases/download/v1.1.1/language.json",
           "sha256": "6a9ee3badd1d419f2ed72fd1c4b882fcc8b578caf7388b93b957154aebac78a3",
           "bytes": 2126
         }
@@ -1462,7 +1254,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-php/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-php/v1.0.1/README.md",
       "name": "php",
       "description": ".php, .phtml — intelephense",
       "icon": "Code",
@@ -1475,7 +1267,7 @@
       ],
       "files": {
         "language.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-php/main/language.json",
+          "url": "https://github.com/deck-desktop/deck-language-php/releases/download/v1.0.1/language.json",
           "sha256": "dfad99aaf6936a3cf57b9b01a4022b169758101bcf88cca9fe26744afb8dbbe5",
           "bytes": 1855
         }
@@ -1504,7 +1296,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-python/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-python/v1.0.1/README.md",
       "name": "python",
       "description": ".py, .pyi — basedpyright-langserver",
       "icon": "Worm",
@@ -1517,7 +1309,7 @@
       ],
       "files": {
         "language.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-python/main/language.json",
+          "url": "https://github.com/deck-desktop/deck-language-python/releases/download/v1.0.1/language.json",
           "sha256": "0e57932f7f542fa1a160da33b3535d9b238f7a70afa967a4144ba5116c052e2e",
           "bytes": 1352
         }
@@ -1552,7 +1344,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-rust/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-rust/v1.0.1/README.md",
       "name": "rust",
       "description": ".rs — rust-analyzer",
       "icon": "Cog",
@@ -1564,7 +1356,7 @@
       ],
       "files": {
         "language.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-rust/main/language.json",
+          "url": "https://github.com/deck-desktop/deck-language-rust/releases/download/v1.0.1/language.json",
           "sha256": "3f05c91867de62e9fa416a844045b4c75fd4eaa645b90b2001a675d9a54ee02e",
           "bytes": 3593
         }
@@ -1669,7 +1461,7 @@
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-typescript/main/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-typescript/v1.1.1/README.md",
       "name": "typescript",
       "description": ".ts, .tsx — typescript-language-server",
       "icon": "FileType",
@@ -1682,7 +1474,7 @@
       ],
       "files": {
         "language.json": {
-          "url": "https://raw.githubusercontent.com/deck-desktop/deck-language-typescript/main/language.json",
+          "url": "https://github.com/deck-desktop/deck-language-typescript/releases/download/v1.1.1/language.json",
           "sha256": "729b20407d2973ff9c17050e64fd7c3cbbba0b97740d11376449a2adf9786ab6",
           "bytes": 2129
         }

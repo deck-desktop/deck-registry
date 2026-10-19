@@ -1,0 +1,67 @@
+{
+  "kind": "plugin",
+  "id": "music",
+  "repo": "deck-desktop/deck-plugin-music",
+  "owner": {
+    "id": 336637908,
+    "login": "deck-desktop",
+    "type": "Organization"
+  },
+  "publisher": {
+    "name": "Hasan Zarif",
+    "verified": true
+  },
+  "versions": [
+    {
+      "version": "1.2.0",
+      "tag": "v1.2.0",
+      "publishedAt": "2026-10-19T16:37:46Z",
+      "readme": true,
+      "manifest": {
+        "name": "Music",
+        "description": "A local music player for your own folders, with YouTube downloads and suggestions.",
+        "icon": "Music",
+        "color": "#fb7185",
+        "minDeck": "1.6.0"
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M9 18V5l12-2v13"
+          }
+        ],
+        [
+          "circle",
+          {
+            "cx": "6",
+            "cy": "18",
+            "r": "3"
+          }
+        ],
+        [
+          "circle",
+          {
+            "cx": "18",
+            "cy": "16",
+            "r": "3"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "b8cfa11bd2664bb949a5d94aa18d941d2affd5061472ad1c8817ca6d6b7f6061",
+          "bytes": 227
+        },
+        "plugin.js": {
+          "sha256": "3fda2e89d3dbe61e31cec7c976d92408fda29cf7b2a9eb3b512654990bb78780",
+          "bytes": 51878
+        },
+        "mcp.js": {
+          "sha256": "f4c573d1f79ee140401bd03cfa695e5a2bd66498bbbf6a1bf1d7998a6f17bde4",
+          "bytes": 3014
+        }
+      }
+    }
+  ]
+}

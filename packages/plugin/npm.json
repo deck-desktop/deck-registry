@@ -1,0 +1,69 @@
+{
+  "kind": "plugin",
+  "id": "npm",
+  "repo": "deck-desktop/deck-plugin-npm",
+  "owner": {
+    "id": 336637908,
+    "login": "deck-desktop",
+    "type": "Organization"
+  },
+  "publisher": {
+    "name": "Hasan Zarif",
+    "verified": true
+  },
+  "versions": [
+    {
+      "version": "1.1.0",
+      "tag": "v1.1.0",
+      "publishedAt": "2026-10-19T16:38:07Z",
+      "readme": true,
+      "manifest": {
+        "name": "Scripts",
+        "description": "Run a package.json script, watch its output, and stop or restart it from the footer.",
+        "icon": "Package",
+        "color": "#ef4444",
+        "minDeck": "1.6.0"
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M12 22V12"
+          }
+        ],
+        [
+          "polyline",
+          {
+            "points": "3.29 7 12 12 20.71 7"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "m7.5 4.27 9 5.15"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "a69104cc8bfa0409884d149c2a082ca21c3173b35685387737bc93af411e9464",
+          "bytes": 231
+        },
+        "plugin.js": {
+          "sha256": "0205de208841aaf5cd0a1d13e9d127460c3ecd22f2f4b567a7c9cfd49f1844fc",
+          "bytes": 20590
+        },
+        "mcp.js": {
+          "sha256": "86393ea9142dfa36f0a5c990f5ee97da628b00102f83e17f353e62628f1c8139",
+          "bytes": 11508
+        }
+      }
+    }
+  ]
+}

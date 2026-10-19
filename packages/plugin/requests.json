@@ -1,0 +1,57 @@
+{
+  "kind": "plugin",
+  "id": "requests",
+  "repo": "deck-desktop/deck-plugin-requests",
+  "owner": {
+    "id": 336637908,
+    "login": "deck-desktop",
+    "type": "Organization"
+  },
+  "publisher": {
+    "name": "Hasan Zarif",
+    "verified": true
+  },
+  "versions": [
+    {
+      "version": "1.1.0",
+      "tag": "v1.1.0",
+      "publishedAt": "2026-10-19T16:40:43Z",
+      "readme": true,
+      "manifest": {
+        "name": "Requests",
+        "description": "Build, send and save HTTP requests in a pane: collections, environments and {{variables}}, pre- and post-request scripts, cURL import and export, history. Formerly Deck's HTTP tab; saved collections carry over.",
+        "icon": "Send",
+        "color": "#22d3ee",
+        "minDeck": "1.6.0"
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "m21.854 2.147-10.94 10.939"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "d91675e9adf6aab4a6334cc1f1e7dcdf30ada66b877813ac2d53bfe698872560",
+          "bytes": 360
+        },
+        "plugin.js": {
+          "sha256": "3638eee98d9de7255e4eab3ffacdf7516eb5e066b03118c208716d68cd4f3c63",
+          "bytes": 102873
+        },
+        "mcp.js": {
+          "sha256": "727aa6174886b3d81a1399a8452e83e905c6a4424354370079d72ef65f232518",
+          "bytes": 20928
+        }
+      }
+    }
+  ]
+}

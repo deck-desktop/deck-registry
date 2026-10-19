@@ -1,0 +1,63 @@
+{
+  "kind": "plugin",
+  "id": "git",
+  "repo": "deck-desktop/deck-plugin-git",
+  "owner": {
+    "id": 336637908,
+    "login": "deck-desktop",
+    "type": "Organization"
+  },
+  "publisher": {
+    "name": "Hasan Zarif",
+    "verified": true
+  },
+  "versions": [
+    {
+      "version": "1.2.0",
+      "tag": "v1.2.0",
+      "publishedAt": "2026-10-19T16:40:38Z",
+      "readme": true,
+      "manifest": {
+        "name": "Git",
+        "description": "A commit graph for each workspace: stage and commit, branches, tags and stashes, file history, diffs, and GitHub/GitLab pull requests with review comments. Formerly Deck's built-in Git Graph.",
+        "icon": "GitBranch",
+        "color": "#f97316",
+        "minDeck": "1.6.0"
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M15 6a9 9 0 0 0-9 9V3"
+          }
+        ],
+        [
+          "circle",
+          {
+            "cx": "18",
+            "cy": "6",
+            "r": "3"
+          }
+        ],
+        [
+          "circle",
+          {
+            "cx": "6",
+            "cy": "18",
+            "r": "3"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "0fcf15acaa794daff3338503c38661e63c6b06841491ef9ed7776446e1252a1f",
+          "bytes": 336
+        },
+        "plugin.js": {
+          "sha256": "f8462c5ed43922798273ffbd243e9a0fbe84fab3fe2f98f79237c6c01b277577",
+          "bytes": 270695
+        }
+      }
+    }
+  ]
+}

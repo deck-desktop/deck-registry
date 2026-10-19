@@ -1,0 +1,43 @@
+# Rebuild catalog.json, details/ and index.json from packages/ whenever packages/ changes on main.
+# packages/ is the only thing edited (by a merged submission, or by hand to transfer or remove a
+# package); everything this writes is generated from it, so nothing else is ever edited by hand.
+name: build
+
+on:
+  push:
+    branches: [main]
+    paths: ["packages/**", "tools/build-registry.mjs"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# One build at a time: two pushes close together would race to commit the same files.
+concurrency:
+  group: build
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node tools/build-registry.check.mjs
+      - run: node tools/build-registry.mjs
+      # Only a real change is committed: `generated` alone differs on every run, so it is ignored.
+      - name: Commit what changed
+        run: |
+          git add -A catalog.json index.json details
+          if git diff --cached --quiet -- details; then
+            for f in catalog.json index.json; do
+              if [ "$(git show HEAD:$f 2>/dev/null | jq -S 'del(.generated)')" = "$(jq -S 'del(.generated)' $f)" ]; then git restore --staged --worktree $f; fi
+            done
+          fi
+          if git diff --cached --quiet; then echo "nothing changed"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "registry: rebuilt from packages/ [skip ci]"
+          git push

@@ -1,0 +1,20 @@
+{
+  "schema": 3,
+  "kind": "language",
+  "id": "dart",
+  "version": "1.0.1",
+  "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-dart/v1.0.1/README.md",
+  "signature": null,
+  "files": {
+    "language.json": {
+      "url": "https://github.com/deck-desktop/deck-language-dart/releases/download/v1.0.1/language.json",
+      "sha256": "9611e03d9463342ee052c81aef6660706c9f3e6dc1754a875673141bd2f2dca9",
+      "bytes": 1422
+    },
+    "snippets/awesome-flutter.json": {
+      "url": "https://github.com/deck-desktop/deck-language-dart/releases/download/v1.0.1/snippets--awesome-flutter.json",
+      "sha256": "a5e09659379e4c8ba91c7c38f706759c2d86889d3802307bfa636685043ce937",
+      "bytes": 17616
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema": 3,
+  "kind": "plugin",
+  "id": "calendar",
+  "version": "1.1.0",
+  "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-calendar/v1.1.0/README.md",
+  "signature": null,
+  "files": {
+    "plugin.json": {
+      "url": "https://github.com/deck-desktop/deck-plugin-calendar/releases/download/v1.1.0/plugin.json",
+      "sha256": "894cd536497056a4b9ef86d0958624d59e74c246d2bcaa03fa93e52d8446e1ba",
+      "bytes": 227
+    },
+    "plugin.js": {
+      "url": "https://github.com/deck-desktop/deck-plugin-calendar/releases/download/v1.1.0/plugin.js",
+      "sha256": "e3cd4d7e9416363411c462553388cc43f963f85e698814a0a6c125b4fbf7547a",
+      "bytes": 21301
+    }
+  }
+}

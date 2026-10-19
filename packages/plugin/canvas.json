@@ -1,0 +1,53 @@
+{
+  "kind": "plugin",
+  "id": "canvas",
+  "repo": "deck-desktop/deck-plugin-canvas",
+  "owner": {
+    "id": 336637908,
+    "login": "deck-desktop",
+    "type": "Organization"
+  },
+  "publisher": {
+    "name": "Hasan Zarif",
+    "verified": true
+  },
+  "versions": [
+    {
+      "version": "1.4.0",
+      "tag": "v1.4.0",
+      "publishedAt": "2026-10-19T16:36:31Z",
+      "readme": true,
+      "manifest": {
+        "name": "Canvas",
+        "description": "Excalidraw boards for each project, as tabs in a pane: sketch, diagram, paste screenshots and links, and share a board live with other Decks. Formerly Deck's Pinboard; existing boards carry over.",
+        "icon": "Pin",
+        "color": "#f472b6",
+        "minDeck": "1.6.0"
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M12 17v5"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "a806badfff1856420284687a038c47e2d1f12afbfdcc21d32c5f4babb4b3f3b2",
+          "bytes": 340
+        },
+        "plugin.js": {
+          "sha256": "d737f436662f07d4445fb0e60e1cfef0efa4c43b1551d3faecae01fcfa0ad505",
+          "bytes": 7519145
+        }
+      }
+    }
+  ]
+}

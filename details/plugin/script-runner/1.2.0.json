@@ -1,0 +1,25 @@
+{
+  "schema": 3,
+  "kind": "plugin",
+  "id": "script-runner",
+  "version": "1.2.0",
+  "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-script-runner/v1.2.0/README.md",
+  "signature": null,
+  "files": {
+    "plugin.json": {
+      "url": "https://github.com/deck-desktop/deck-plugin-script-runner/releases/download/v1.2.0/plugin.json",
+      "sha256": "a41381f0572964e17e2f7055ee0a41e18cc5bcfdc7fb9235088c270a14444b55",
+      "bytes": 211
+    },
+    "plugin.js": {
+      "url": "https://github.com/deck-desktop/deck-plugin-script-runner/releases/download/v1.2.0/plugin.js",
+      "sha256": "133aa4f88c6d2132eecb027c16c02057f96b2b1179712a5021f2a77436d60d68",
+      "bytes": 19749
+    },
+    "mcp.js": {
+      "url": "https://github.com/deck-desktop/deck-plugin-script-runner/releases/download/v1.2.0/mcp.js",
+      "sha256": "0b89948471410b917063de0c4f914932441ea1f49c85381e1c763fc193e54d2c",
+      "bytes": 2502
+    }
+  }
+}

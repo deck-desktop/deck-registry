@@ -1,0 +1,55 @@
+{
+  "kind": "plugin",
+  "id": "clock",
+  "repo": "deck-desktop/deck-plugin-clock",
+  "owner": {
+    "id": 336637908,
+    "login": "deck-desktop",
+    "type": "Organization"
+  },
+  "publisher": {
+    "name": "Hasan Zarif",
+    "verified": true
+  },
+  "versions": [
+    {
+      "version": "1.1.0",
+      "tag": "v1.1.0",
+      "publishedAt": "2026-10-19T16:16:47Z",
+      "readme": true,
+      "manifest": {
+        "name": "Clock",
+        "description": "The time in the footer, in any timezone you pick.",
+        "icon": "Clock",
+        "color": "#a5b4fc",
+        "minDeck": "1.6.0"
+      },
+      "iconNode": [
+        [
+          "circle",
+          {
+            "cx": "12",
+            "cy": "12",
+            "r": "10"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M12 6v6l4 2"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "e86ca1a18909a5f2da5a35e8d8cdb64791eb4bfb03f5d26bedc91160c8ffc841",
+          "bytes": 194
+        },
+        "plugin.js": {
+          "sha256": "63985c36b9f440fcd682c7519e5ee24a481c6afb721dd3741f3b25e8bf03a4b4",
+          "bytes": 5090
+        }
+      }
+    }
+  ]
+}

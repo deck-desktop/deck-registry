@@ -1,0 +1,15 @@
+{
+  "schema": 3,
+  "kind": "language",
+  "id": "python",
+  "version": "1.0.1",
+  "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-python/v1.0.1/README.md",
+  "signature": null,
+  "files": {
+    "language.json": {
+      "url": "https://github.com/deck-desktop/deck-language-python/releases/download/v1.0.1/language.json",
+      "sha256": "0e57932f7f542fa1a160da33b3535d9b238f7a70afa967a4144ba5116c052e2e",
+      "bytes": 1352
+    }
+  }
+}

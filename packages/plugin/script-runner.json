@@ -1,0 +1,57 @@
+{
+  "kind": "plugin",
+  "id": "script-runner",
+  "repo": "deck-desktop/deck-plugin-script-runner",
+  "owner": {
+    "id": 336637908,
+    "login": "deck-desktop",
+    "type": "Organization"
+  },
+  "publisher": {
+    "name": "Hasan Zarif",
+    "verified": true
+  },
+  "versions": [
+    {
+      "version": "1.2.0",
+      "tag": "v1.2.0",
+      "publishedAt": "2026-10-19T16:39:14Z",
+      "readme": true,
+      "manifest": {
+        "name": "Script Runner",
+        "description": "Runs scripts on a schedule, here or on the VPS.",
+        "icon": "Terminal",
+        "color": "#2dd4bf",
+        "minDeck": "1.6.0"
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M12 19h8"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "m4 17 6-6-6-6"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "a41381f0572964e17e2f7055ee0a41e18cc5bcfdc7fb9235088c270a14444b55",
+          "bytes": 211
+        },
+        "plugin.js": {
+          "sha256": "133aa4f88c6d2132eecb027c16c02057f96b2b1179712a5021f2a77436d60d68",
+          "bytes": 19749
+        },
+        "mcp.js": {
+          "sha256": "0b89948471410b917063de0c4f914932441ea1f49c85381e1c763fc193e54d2c",
+          "bytes": 2502
+        }
+      }
+    }
+  ]
+}

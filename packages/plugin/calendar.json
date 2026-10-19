@@ -1,0 +1,105 @@
+{
+  "kind": "plugin",
+  "id": "calendar",
+  "repo": "deck-desktop/deck-plugin-calendar",
+  "owner": {
+    "id": 336637908,
+    "login": "deck-desktop",
+    "type": "Organization"
+  },
+  "publisher": {
+    "name": "Hasan Zarif",
+    "verified": true
+  },
+  "versions": [
+    {
+      "version": "1.1.0",
+      "tag": "v1.1.0",
+      "publishedAt": "2026-10-19T16:35:19Z",
+      "readme": true,
+      "manifest": {
+        "name": "Calendar",
+        "description": "Your Google Calendar in a modal, with a reminder before each meeting.",
+        "icon": "CalendarDays",
+        "color": "#f87171",
+        "minDeck": "1.6.0"
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M8 2v3"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M16 2v3"
+          }
+        ],
+        [
+          "rect",
+          {
+            "x": "3",
+            "y": "3",
+            "width": "18",
+            "height": "18",
+            "rx": "2"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M3 9h18"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M8 13h.01"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M12 13h.01"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M16 13h.01"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M8 17h.01"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M12 17h.01"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M16 17h.01"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "894cd536497056a4b9ef86d0958624d59e74c246d2bcaa03fa93e52d8446e1ba",
+          "bytes": 227
+        },
+        "plugin.js": {
+          "sha256": "e3cd4d7e9416363411c462553388cc43f963f85e698814a0a6c125b4fbf7547a",
+          "bytes": 21301
+        }
+      }
+    }
+  ]
+}

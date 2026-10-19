@@ -1,0 +1,63 @@
+{
+  "kind": "plugin",
+  "id": "sorter",
+  "repo": "deck-desktop/deck-plugin-sorter",
+  "owner": {
+    "id": 336637908,
+    "login": "deck-desktop",
+    "type": "Organization"
+  },
+  "publisher": {
+    "name": "Hasan Zarif",
+    "verified": true
+  },
+  "versions": [
+    {
+      "version": "1.1.0",
+      "tag": "v1.1.0",
+      "publishedAt": "2026-10-19T16:39:24Z",
+      "readme": true,
+      "manifest": {
+        "name": "Sorter",
+        "description": "Files new downloads into folders by type.",
+        "icon": "FolderInput",
+        "color": "#fdba74",
+        "minDeck": "1.6.0"
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M2 9V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-1"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M2 13h10"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "m9 16 3-3-3-3"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "dc1211aace79b60a433121a04f6bddc0966402567a1cd2cecb4068a6b012b953",
+          "bytes": 194
+        },
+        "plugin.js": {
+          "sha256": "7572c38a5902d4c11bb51024547beb836bc1fc35a8cdf0d77ef936acb3812610",
+          "bytes": 11359
+        },
+        "mcp.js": {
+          "sha256": "1b9b5e447250fcd27b1d4252335f4e9117ebabde283f38ce0ce89b75d41b7ae9",
+          "bytes": 4449
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "kind": "plugin",
+  "id": "pdf",
+  "repo": "deck-desktop/deck-plugin-pdf",
+  "owner": {
+    "id": 336637908,
+    "login": "deck-desktop",
+    "type": "Organization"
+  },
+  "publisher": {
+    "name": "Hasan Zarif",
+    "verified": true
+  },
+  "versions": [
+    {
+      "version": "0.2.0",
+      "tag": "v0.2.0",
+      "publishedAt": "2026-10-19T16:39:00Z",
+      "readme": true,
+      "manifest": {
+        "name": "PDF",
+        "description": "View PDFs, highlight, draw and add text and images on them, fill their forms, and retype their text in its own font.",
+        "icon": "FileText",
+        "color": "#f87171",
+        "minDeck": "1.6.0"
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M14 2v5a1 1 0 0 0 1 1h5"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M10 9H8"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M16 13H8"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M16 17H8"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "7b8279371e449d3cab27eb7a8298518913292d688e5e05a9165dcbe57899ad78",
+          "bytes": 260
+        },
+        "plugin.js": {
+          "sha256": "7b2912affb31a13f18491dd30efb597d3944754433719b775afb1071d3e7289c",
+          "bytes": 5297005
+        }
+      }
+    }
+  ]
+}

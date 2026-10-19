@@ -1,0 +1,57 @@
+{
+  "kind": "plugin",
+  "id": "power-timer",
+  "repo": "deck-desktop/deck-plugin-power-timer",
+  "owner": {
+    "id": 336637908,
+    "login": "deck-desktop",
+    "type": "Organization"
+  },
+  "publisher": {
+    "name": "Hasan Zarif",
+    "verified": true
+  },
+  "versions": [
+    {
+      "version": "1.1.0",
+      "tag": "v1.1.0",
+      "publishedAt": "2026-10-19T16:39:07Z",
+      "readme": true,
+      "manifest": {
+        "name": "Power Timer",
+        "description": "Shut down, restart, sleep, hibernate or lock the PC after a delay or at a time.",
+        "icon": "Power",
+        "color": "#f43f5e",
+        "minDeck": "1.6.0"
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M12 2v10"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M18.4 6.6a9 9 0 1 1-12.77.04"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "5c08594b3f00dcf309cf50844b1f0670aaa249dda5c098f6b6b6bad129880320",
+          "bytes": 236
+        },
+        "plugin.js": {
+          "sha256": "a3f2d920ba21fac035a909680b09f2bbcbae8b6882535dd574b2449d4e3928fe",
+          "bytes": 16983
+        },
+        "mcp.js": {
+          "sha256": "45a93a5afcb37b3d6bc224a9c910e00ed27fe1777485788defe5f6805dc0f935",
+          "bytes": 2321
+        }
+      }
+    }
+  ]
+}

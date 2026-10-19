@@ -1,0 +1,54 @@
+{
+  "kind": "language",
+  "id": "javascript",
+  "repo": "deck-desktop/deck-language-javascript",
+  "owner": {
+    "id": 336637908,
+    "login": "deck-desktop",
+    "type": "Organization"
+  },
+  "publisher": {
+    "name": "Hasan Zarif",
+    "verified": true
+  },
+  "versions": [
+    {
+      "version": "1.1.1",
+      "tag": "v1.1.1",
+      "publishedAt": "2026-10-19T16:37:05Z",
+      "readme": true,
+      "manifest": {
+        "name": "javascript",
+        "description": ".js, .jsx — typescript-language-server",
+        "icon": "Braces",
+        "color": "#f1e05a",
+        "minDeck": null,
+        "requires": "typescript-language-server",
+        "extensions": [
+          "js",
+          "jsx"
+        ]
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5c0 1.1.9 2 2 2h1"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1"
+          }
+        ]
+      ],
+      "files": {
+        "language.json": {
+          "sha256": "6a9ee3badd1d419f2ed72fd1c4b882fcc8b578caf7388b93b957154aebac78a3",
+          "bytes": 2126
+        }
+      }
+    }
+  ]
+}

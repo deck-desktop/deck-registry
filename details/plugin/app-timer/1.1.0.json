@@ -1,0 +1,25 @@
+{
+  "schema": 3,
+  "kind": "plugin",
+  "id": "app-timer",
+  "version": "1.1.0",
+  "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-app-timer/v1.1.0/README.md",
+  "signature": null,
+  "files": {
+    "plugin.json": {
+      "url": "https://github.com/deck-desktop/deck-plugin-app-timer/releases/download/v1.1.0/plugin.json",
+      "sha256": "88119455d6526612d1b338c26728b664b687d140f9c132fab82d49917f17e836",
+      "bytes": 222
+    },
+    "plugin.js": {
+      "url": "https://github.com/deck-desktop/deck-plugin-app-timer/releases/download/v1.1.0/plugin.js",
+      "sha256": "1d7a0fc3c3e5ae8d5e0ac717d08dd7ad45940b46014d4c4d68709b3d537412d1",
+      "bytes": 19436
+    },
+    "mcp.js": {
+      "url": "https://github.com/deck-desktop/deck-plugin-app-timer/releases/download/v1.1.0/mcp.js",
+      "sha256": "fc3343ce6779df2c67880f5c76a1210353bbefe9337150cde63d65ab4af0e51e",
+      "bytes": 2263
+    }
+  }
+}

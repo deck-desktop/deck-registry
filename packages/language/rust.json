@@ -1,0 +1,129 @@
+{
+  "kind": "language",
+  "id": "rust",
+  "repo": "deck-desktop/deck-language-rust",
+  "owner": {
+    "id": 336637908,
+    "login": "deck-desktop",
+    "type": "Organization"
+  },
+  "publisher": {
+    "name": "Hasan Zarif",
+    "verified": true
+  },
+  "versions": [
+    {
+      "version": "1.0.1",
+      "tag": "v1.0.1",
+      "publishedAt": "2026-10-19T16:37:30Z",
+      "readme": true,
+      "manifest": {
+        "name": "rust",
+        "description": ".rs — rust-analyzer",
+        "icon": "Cog",
+        "color": "#dea584",
+        "minDeck": null,
+        "requires": "rust-analyzer",
+        "extensions": [
+          "rs"
+        ]
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M11 10.27 7 3.34"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "m11 13.73-4 6.93"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M12 22v-2"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M12 2v2"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M14 12h8"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "m17 20.66-1-1.73"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "m17 3.34-1 1.73"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M2 12h2"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "m20.66 17-1.73-1"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "m20.66 7-1.73 1"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "m3.34 17 1.73-1"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "m3.34 7 1.73 1"
+          }
+        ],
+        [
+          "circle",
+          {
+            "cx": "12",
+            "cy": "12",
+            "r": "2"
+          }
+        ],
+        [
+          "circle",
+          {
+            "cx": "12",
+            "cy": "12",
+            "r": "8"
+          }
+        ]
+      ],
+      "files": {
+        "language.json": {
+          "sha256": "3f05c91867de62e9fa416a844045b4c75fd4eaa645b90b2001a675d9a54ee02e",
+          "bytes": 3593
+        }
+      }
+    }
+  ]
+}

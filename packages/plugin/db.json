@@ -1,0 +1,62 @@
+{
+  "kind": "plugin",
+  "id": "db",
+  "repo": "deck-desktop/deck-plugin-db",
+  "owner": {
+    "id": 336637908,
+    "login": "deck-desktop",
+    "type": "Organization"
+  },
+  "publisher": {
+    "name": "Hasan Zarif",
+    "verified": true
+  },
+  "versions": [
+    {
+      "version": "2.1.0",
+      "tag": "v2.1.0",
+      "publishedAt": "2026-10-19T16:40:17Z",
+      "readme": true,
+      "manifest": {
+        "name": "Databases",
+        "description": "Browse SQLite files, Postgres, MySQL, SQL Server, Redis and MongoDB, and run queries against them.",
+        "icon": "Database",
+        "color": "#818cf8",
+        "minDeck": "1.6.0"
+      },
+      "iconNode": [
+        [
+          "ellipse",
+          {
+            "cx": "12",
+            "cy": "5",
+            "rx": "9",
+            "ry": "3"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M3 5V19A9 3 0 0 0 21 19V5"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M3 12A9 3 0 0 0 21 12"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "29ce3f7acb452bc424657f0b5707e32b260becd491984130b38cb3e46870b94b",
+          "bytes": 247
+        },
+        "plugin.js": {
+          "sha256": "e0662e9e875a35e3e6347adf8f9756b460cb438f9b69725f32e8d2d76ef47216",
+          "bytes": 175044
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema": 3,
+  "kind": "language",
+  "id": "javascript",
+  "version": "1.1.1",
+  "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-javascript/v1.1.1/README.md",
+  "signature": null,
+  "files": {
+    "language.json": {
+      "url": "https://github.com/deck-desktop/deck-language-javascript/releases/download/v1.1.1/language.json",
+      "sha256": "6a9ee3badd1d419f2ed72fd1c4b882fcc8b578caf7388b93b957154aebac78a3",
+      "bytes": 2126
+    }
+  }
+}

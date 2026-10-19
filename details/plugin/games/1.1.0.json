@@ -1,0 +1,20 @@
+{
+  "schema": 3,
+  "kind": "plugin",
+  "id": "games",
+  "version": "1.1.0",
+  "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-games/v1.1.0/README.md",
+  "signature": null,
+  "files": {
+    "plugin.json": {
+      "url": "https://github.com/deck-desktop/deck-plugin-games/releases/download/v1.1.0/plugin.json",
+      "sha256": "abc9414a0ef60d51a231d65f52335b88aacab457b219c4d1d39590fc9f77cc0b",
+      "bytes": 299
+    },
+    "plugin.js": {
+      "url": "https://github.com/deck-desktop/deck-plugin-games/releases/download/v1.1.0/plugin.js",
+      "sha256": "a6b6091842f7cde0ed2a71062eb3b03c80261b3f984953b0b9ad2245b66cb8fb",
+      "bytes": 64671
+    }
+  }
+}

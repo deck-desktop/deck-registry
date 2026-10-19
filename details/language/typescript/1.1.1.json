@@ -1,0 +1,15 @@
+{
+  "schema": 3,
+  "kind": "language",
+  "id": "typescript",
+  "version": "1.1.1",
+  "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-typescript/v1.1.1/README.md",
+  "signature": null,
+  "files": {
+    "language.json": {
+      "url": "https://github.com/deck-desktop/deck-language-typescript/releases/download/v1.1.1/language.json",
+      "sha256": "729b20407d2973ff9c17050e64fd7c3cbbba0b97740d11376449a2adf9786ab6",
+      "bytes": 2129
+    }
+  }
+}
