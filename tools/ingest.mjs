@@ -20,11 +20,22 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const REGISTRY = process.env.GITHUB_REPOSITORY || "deck-desktop/deck-registry";
 const gh = (args) => execFileSync("gh", args, { stdio: ["ignore", "pipe", "pipe"] }).toString();
 
-/** Who submitted a file: the author of the PR whose merge added it. */
+/**
+ * Who submitted a file: the author of the PR whose merge added it. The squash merge's title ends
+ * with "(#<number>)", which is there the moment it is merged; GitHub's commit-to-PR lookup can
+ * still be empty for a few seconds after, so it is only the fallback.
+ */
 function authorOf(file) {
   const [commit] = JSON.parse(gh(["api", `repos/${REGISTRY}/commits?path=${file}&per_page=1`]));
-  const [pr] = commit ? JSON.parse(gh(["api", `repos/${REGISTRY}/commits/${commit.sha}/pulls`])) : [];
-  return pr ? { id: pr.user.id, login: pr.user.login, pr: pr.number } : null;
+  if (!commit) return null;
+  const number = /\(#(\d+)\)\s*$/.exec(commit.commit.message.split("\n")[0])?.[1];
+  const pr = number ? JSON.parse(gh(["api", `repos/${REGISTRY}/pulls/${number}`]))
+    : JSON.parse(gh(["api", `repos/${REGISTRY}/commits/${commit.sha}/pulls`]))[0];
+  // Only a merged PR that added exactly this file counts: a title can say anything.
+  if (!pr?.merged_at) return null;
+  const files = JSON.parse(gh(["api", `repos/${REGISTRY}/pulls/${pr.number}/files`]));
+  if (!files.some((f) => f.filename === file && f.status === "added")) return null;
+  return { id: pr.user.id, login: pr.user.login, pr: pr.number };
 }
 
 const dir = join(root, "submissions");
