@@ -1,0 +1,20 @@
+{
+  "schema": 3,
+  "kind": "plugin",
+  "id": "submit-test",
+  "version": "0.0.1",
+  "readme": "https://raw.githubusercontent.com/hassanzarif181/deck-plugin-submit-test/v0.0.1/README.md",
+  "signature": null,
+  "files": {
+    "plugin.js": {
+      "url": "https://github.com/hassanzarif181/deck-plugin-submit-test/releases/download/v0.0.1/plugin.js",
+      "sha256": "8b06ba4e1046dd98d7489861e84530cc7792bb463c288dd81e2faa76001c1945",
+      "bytes": 5090
+    },
+    "plugin.json": {
+      "url": "https://github.com/hassanzarif181/deck-plugin-submit-test/releases/download/v0.0.1/plugin.json",
+      "sha256": "2361356d570d990c5a29fa905d8ed77d3a6f9482952e44c37aacc6cbff2ef7aa",
+      "bytes": 217
+    }
+  }
+}
