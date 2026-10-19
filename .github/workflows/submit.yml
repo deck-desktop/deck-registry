@@ -1,0 +1,60 @@
+# A submission PR: validate it, say what was found, and when it is valid merge it and publish.
+#
+# pull_request_target, so this runs the workflow and tools on main, never the PR's copies (a PR
+# from a fork could otherwise rewrite the checks it is judged by). The PR is never checked out:
+# tools/validate.mjs reads its one file through the API, and never runs the submitter's code (see
+# the SECURITY note there). Nothing from the PR (its title, body or branch name) is put into a
+# shell command; only its number.
+name: submit
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+# The same group as build.yml: one writer to main at a time, queued rather than cancelled.
+concurrency:
+  group: registry-write
+  cancel-in-progress: false
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      PR: ${{ github.event.pull_request.number }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci --prefix tools --ignore-scripts --no-audit --no-fund
+      - name: Validate
+        id: validate
+        run: |
+          node tools/validate.mjs --pr "$PR" --out "$RUNNER_TEMP/v"
+          echo "ok=$(jq -r .ok "$RUNNER_TEMP/v/result.json")" >> "$GITHUB_OUTPUT"
+      - name: Report
+        run: gh pr comment "$PR" --body-file "$RUNNER_TEMP/v/report.md"
+      - name: Merge
+        if: steps.validate.outputs.ok == 'true'
+        run: gh pr merge "$PR" --squash
+      - name: Publish
+        if: steps.validate.outputs.ok == 'true'
+        run: |
+          git fetch -q origin main && git reset -q --hard origin/main
+          node tools/ingest.mjs
+          node tools/build-registry.mjs
+          git add -A packages submissions catalog.json index.json details
+          if git diff --cached --quiet; then echo "nothing to publish"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -q -m "registry: published the submission from #$PR [skip ci]"
+          git push -q origin main

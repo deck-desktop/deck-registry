@@ -1,0 +1,9 @@
+{
+  "name": "deck-registry-tools",
+  "private": true,
+  "type": "module",
+  "description": "Builds and validates the registry. lucide-react gives each package's icon its drawing data.",
+  "dependencies": {
+    "lucide-react": "1.31.0"
+  }
+}

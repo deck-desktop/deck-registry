@@ -1,37 +1,48 @@
 # Rebuild catalog.json, details/ and index.json from packages/ whenever packages/ changes on main.
 # packages/ is the only thing edited (by a merged submission, or by hand to transfer or remove a
 # package); everything this writes is generated from it, so nothing else is ever edited by hand.
+#
+# It also ingests any submission left on main: submit.yml publishes each one right after merging
+# it, and this picks up one whose run stopped in between.
 name: build
 
 on:
   push:
     branches: [main]
-    paths: ["packages/**", "tools/build-registry.mjs"]
+    paths: ["packages/**", "submissions/**", "tools/**"]
   workflow_dispatch:
 
 permissions:
   contents: write
+  issues: write
 
-# One build at a time: two pushes close together would race to commit the same files.
+# The same group as submit.yml: one writer to main at a time, queued rather than cancelled.
 concurrency:
-  group: build
+  group: registry-write
   cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - run: npm ci --prefix tools --ignore-scripts --no-audit --no-fund
       - run: node tools/build-registry.check.mjs
+      - run: node tools/validate.check.mjs
+      # Pulled first: a submit run queued ahead of this one may have pushed since this checkout.
+      - run: git pull -q --ff-only origin main
+      - run: node tools/ingest.mjs
       - run: node tools/build-registry.mjs
       # Only a real change is committed: `generated` alone differs on every run, so it is ignored.
       - name: Commit what changed
         run: |
-          git add -A catalog.json index.json details
-          if git diff --cached --quiet -- details; then
+          git add -A packages submissions catalog.json index.json details
+          if git diff --cached --quiet -- details packages submissions; then
             for f in catalog.json index.json; do
               if [ "$(git show HEAD:$f 2>/dev/null | jq -S 'del(.generated)')" = "$(jq -S 'del(.generated)' $f)" ]; then git restore --staged --worktree $f; fi
             done

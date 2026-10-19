@@ -12,7 +12,7 @@ const tools = dirname(fileURLToPath(import.meta.url));
 const dir = mkdtempSync(join(tmpdir(), "build-registry-check-"));
 try {
   // The builder reads packages/ beside tools/, so the check gets a registry of its own.
-  cpSync(tools, join(dir, "tools"), { recursive: true });
+  cpSync(tools, join(dir, "tools"), { recursive: true, filter: (src) => !src.includes("node_modules") });
   const pkg = (kind, id, versions, extra = {}) => {
     mkdirSync(join(dir, "packages", kind), { recursive: true });
     writeFileSync(join(dir, "packages", kind, `${id}.json`), JSON.stringify({
