@@ -93,6 +93,47 @@
           "bytes": 20928
         }
       }
+    },
+    {
+      "version": "1.1.2",
+      "tag": "v1.1.2",
+      "publishedAt": "2026-10-20T19:42:43Z",
+      "readme": true,
+      "manifest": {
+        "name": "Requests",
+        "description": "Build, send and save HTTP requests in a pane: collections, environments and {{variables}}, pre- and post-request scripts, cURL import and export, history. Formerly Deck's HTTP tab; saved collections carry over.",
+        "icon": "Send",
+        "color": "#22d3ee",
+        "minDeck": "1.9.0"
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "m21.854 2.147-10.94 10.939"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "b4f6325d9e51304b1ce4c652437dbf1c5f226b122e17fd527489e44735f1a8e1",
+          "bytes": 360
+        },
+        "plugin.js": {
+          "sha256": "adc8278af5813ed277f27d5ef30067bde55c3ee456cc493f5aa019212bac70c3",
+          "bytes": 103375
+        },
+        "mcp.js": {
+          "sha256": "727aa6174886b3d81a1399a8452e83e905c6a4424354370079d72ef65f232518",
+          "bytes": 20928
+        }
+      }
     }
   ]
 }

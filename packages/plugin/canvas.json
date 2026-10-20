@@ -48,6 +48,43 @@
           "bytes": 7519145
         }
       }
+    },
+    {
+      "version": "1.4.1",
+      "tag": "v1.4.1",
+      "publishedAt": "2026-10-20T19:42:03Z",
+      "readme": true,
+      "manifest": {
+        "name": "Canvas",
+        "description": "Excalidraw boards for each project, as tabs in a pane: sketch, diagram, paste screenshots and links, and share a board live with other Decks. Formerly Deck's Pinboard; existing boards carry over.",
+        "icon": "Pin",
+        "color": "#f472b6",
+        "minDeck": "1.9.0"
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M12 17v5"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "f7d1bae0d8777cfee9bda82e2fe13f8fcf5ec9cc88b97075087695e94ca0076f",
+          "bytes": 340
+        },
+        "plugin.js": {
+          "sha256": "9f087e9e4ea1e1314d64386bda07e256aa07ada4fa36154faba621b1932eeedc",
+          "bytes": 7519362
+        }
+      }
     }
   ]
 }
