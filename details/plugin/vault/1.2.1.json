@@ -1,0 +1,20 @@
+{
+  "schema": 3,
+  "kind": "plugin",
+  "id": "vault",
+  "version": "1.2.1",
+  "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-vault/v1.2.1/README.md",
+  "signature": null,
+  "files": {
+    "plugin.json": {
+      "url": "https://github.com/deck-desktop/deck-plugin-vault/releases/download/v1.2.1/plugin.json",
+      "sha256": "2d8fe7484ec461b031e98deaeb2b5c9262dd7413e666f4d0029ae7143f7b30dc",
+      "bytes": 263
+    },
+    "plugin.js": {
+      "url": "https://github.com/deck-desktop/deck-plugin-vault/releases/download/v1.2.1/plugin.js",
+      "sha256": "eee01e77bcca444ca50abbda4f498d4bf65b637adcd56cca8e94c115bfc4c5a2",
+      "bytes": 27540
+    }
+  }
+}
