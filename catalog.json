@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-20T19:48:02.075Z",
+  "generated": "2026-10-21T18:46:25.923Z",
   "schema": 3,
   "plugins": [
     {
@@ -812,7 +812,7 @@
     {
       "kind": "plugin",
       "id": "toolbox",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -821,7 +821,7 @@
       "description": "Developer conversions in one place: JSON (YAML, CSV, TypeScript and Dart models), JWT, Base64, URL, timestamps and timezones, UUID and ULID, hashes, regex, cron, case, diff, color, Unicode, passwords, number bases and HTTP status. Paste anything and the right tool opens.",
       "icon": "Wrench",
       "color": "#d4d4d8",
-      "minDeck": "1.6.0",
+      "minDeck": "1.10.0",
       "iconNode": [
         [
           "path",
@@ -831,8 +831,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-toolbox",
-      "detail": "details/plugin/toolbox/1.1.0.json",
-      "published": "2026-10-19T16:39:46Z"
+      "detail": "details/plugin/toolbox/1.2.0.json",
+      "published": "2026-10-21T18:40:46Z"
     },
     {
       "kind": "plugin",
