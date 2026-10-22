@@ -1,0 +1,109 @@
+{
+  "kind": "plugin",
+  "id": "kube",
+  "repo": "deck-desktop/deck-plugin-kube",
+  "owner": {
+    "id": 336637908,
+    "login": "deck-desktop",
+    "type": "Organization"
+  },
+  "publisher": {
+    "name": "Hasan Zarif",
+    "verified": true
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "v1.0.0",
+      "publishedAt": "2026-10-22T18:18:28Z",
+      "readme": true,
+      "manifest": {
+        "name": "Kubernetes",
+        "description": "Browse and manage Kubernetes clusters: workloads, logs, shells, port-forwards, YAML, metrics and Helm releases.",
+        "icon": "ShipWheel",
+        "color": "#326ce5",
+        "minDeck": "1.10.0"
+      },
+      "iconNode": [
+        [
+          "circle",
+          {
+            "cx": "12",
+            "cy": "12",
+            "r": "8"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M12 2v7.5"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "m19 5-5.23 5.23"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M22 12h-7.5"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "m19 19-5.23-5.23"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M12 14.5V22"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M10.23 13.77 5 19"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M9.5 12H2"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M10.23 10.23 5 5"
+          }
+        ],
+        [
+          "circle",
+          {
+            "cx": "12",
+            "cy": "12",
+            "r": "2.5"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "d79df4f11e15d5827c35a84df51f0b55e04ff9510ff7c1391c71aba1c68bea0b",
+          "bytes": 308
+        },
+        "plugin.js": {
+          "sha256": "42f6ec27ac0f26d38a2b1bdfe833c20df78fce4476fa4c9d6caac44ce8dffa3e",
+          "bytes": 81710
+        },
+        "mcp.js": {
+          "sha256": "36556b6542da71d4b521b8d730f1f3767c087a846b549af60e16176262fe8576",
+          "bytes": 11684
+        }
+      }
+    }
+  ]
+}
