@@ -1,0 +1,59 @@
+{
+  "kind": "plugin",
+  "id": "sound",
+  "repo": "deck-desktop/deck-plugin-sound",
+  "owner": {
+    "id": 336637908,
+    "login": "deck-desktop",
+    "type": "Organization"
+  },
+  "publisher": {
+    "name": "Hasan Zarif",
+    "verified": true
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "v1.0.0",
+      "publishedAt": "2026-10-23T14:21:35Z",
+      "readme": true,
+      "manifest": {
+        "name": "Sound",
+        "description": "Volume, speakers and microphone, and each app's level, from the footer; a microphone mute shortcut that works in every app.",
+        "icon": "Volume2",
+        "color": "#38bdf8",
+        "minDeck": "1.10.3"
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M16 9a5 5 0 0 1 0 6"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M19.364 18.364a9 9 0 0 0 0-12.728"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "57cd195f671773ff037c37ff01204a15b9d1994d406dd2014e45e9497f27ac3d",
+          "bytes": 308
+        },
+        "plugin.js": {
+          "sha256": "1245cd7fa33a69c8fd66e710984d9d27a514080d2056e35637770c44b13098aa",
+          "bytes": 21357
+        }
+      }
+    }
+  ]
+}
