@@ -1,0 +1,20 @@
+{
+  "schema": 3,
+  "kind": "plugin",
+  "id": "sound",
+  "version": "1.0.0",
+  "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-sound/v1.0.0/README.md",
+  "signature": null,
+  "files": {
+    "plugin.json": {
+      "url": "https://github.com/deck-desktop/deck-plugin-sound/releases/download/v1.0.0/plugin.json",
+      "sha256": "57cd195f671773ff037c37ff01204a15b9d1994d406dd2014e45e9497f27ac3d",
+      "bytes": 308
+    },
+    "plugin.js": {
+      "url": "https://github.com/deck-desktop/deck-plugin-sound/releases/download/v1.0.0/plugin.js",
+      "sha256": "1245cd7fa33a69c8fd66e710984d9d27a514080d2056e35637770c44b13098aa",
+      "bytes": 21357
+    }
+  }
+}
