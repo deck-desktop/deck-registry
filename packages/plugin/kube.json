@@ -104,6 +104,99 @@
           "bytes": 11684
         }
       }
+    },
+    {
+      "version": "1.1.0",
+      "tag": "v1.1.0",
+      "publishedAt": "2026-10-24T12:10:29Z",
+      "readme": true,
+      "manifest": {
+        "name": "Kubernetes",
+        "description": "Browse and manage Kubernetes clusters: workloads, logs, shells, port-forwards, YAML, metrics and Helm releases.",
+        "icon": "ShipWheel",
+        "color": "#326ce5",
+        "minDeck": "1.11.0"
+      },
+      "iconNode": [
+        [
+          "circle",
+          {
+            "cx": "12",
+            "cy": "12",
+            "r": "8"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M12 2v7.5"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "m19 5-5.23 5.23"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M22 12h-7.5"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "m19 19-5.23-5.23"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M12 14.5V22"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M10.23 13.77 5 19"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M9.5 12H2"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M10.23 10.23 5 5"
+          }
+        ],
+        [
+          "circle",
+          {
+            "cx": "12",
+            "cy": "12",
+            "r": "2.5"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "87a021263360eec03c1b6080e8ba10135861c0a396e4201656aaf98e75dfa3f6",
+          "bytes": 308
+        },
+        "plugin.js": {
+          "sha256": "50ea9ab230a680c4db7d213bf7d304eb370ec132be8d230c3b6134dd9b384727",
+          "bytes": 83087
+        },
+        "mcp.js": {
+          "sha256": "36556b6542da71d4b521b8d730f1f3767c087a846b549af60e16176262fe8576",
+          "bytes": 11684
+        }
+      }
     }
   ]
 }

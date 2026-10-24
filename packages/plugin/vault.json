@@ -165,6 +165,83 @@
           "bytes": 27540
         }
       }
+    },
+    {
+      "version": "1.2.2",
+      "tag": "v1.2.2",
+      "publishedAt": "2026-10-24T12:10:54Z",
+      "readme": true,
+      "manifest": {
+        "name": "Vault",
+        "description": "Browse and edit the Obsidian vault as live-preview markdown, with wikilinks and backlinks.",
+        "icon": "NotebookText",
+        "color": "#a78bfa",
+        "minDeck": "1.9.0"
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M2 6h4"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M2 10h4"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M2 14h4"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M2 18h4"
+          }
+        ],
+        [
+          "rect",
+          {
+            "width": "16",
+            "height": "20",
+            "x": "4",
+            "y": "2",
+            "rx": "2"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M9.5 8h5"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M9.5 12H16"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M9.5 16H14"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "4337cdd059f998529ad835b487f935a0f3831280bb88181b62d34323d60e53c0",
+          "bytes": 263
+        },
+        "plugin.js": {
+          "sha256": "aeb96dd617f480d621df70fcf2f6e81cb9585a4b60eadb970a25d44923acd366",
+          "bytes": 27580
+        }
+      }
     }
   ]
 }
