@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-23T14:27:13.867Z",
+  "generated": "2026-10-24T12:12:21.093Z",
   "schema": 3,
   "plugins": [
     {
@@ -209,7 +209,7 @@
     {
       "kind": "plugin",
       "id": "db",
-      "version": "2.1.1",
+      "version": "2.1.2",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -243,13 +243,13 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-db",
-      "detail": "details/plugin/db/2.1.1.json",
-      "published": "2026-10-19T16:46:21Z"
+      "detail": "details/plugin/db/2.1.2.json",
+      "published": "2026-10-24T12:09:43Z"
     },
     {
       "kind": "plugin",
       "id": "files",
-      "version": "0.1.1",
+      "version": "0.2.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -258,7 +258,7 @@
       "description": "A file explorer: your drives, pinned folders and servers, with tabs, a preview pane, search by name and inside files, and copy, move, rename and the Recycle Bin.",
       "icon": "FolderOpen",
       "color": "#60a5fa",
-      "minDeck": "1.9.0",
+      "minDeck": "1.11.0",
       "iconNode": [
         [
           "path",
@@ -268,8 +268,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-files",
-      "detail": "details/plugin/files/0.1.1.json",
-      "published": "2026-10-20T19:42:12Z"
+      "detail": "details/plugin/files/0.2.0.json",
+      "published": "2026-10-24T12:09:52Z"
     },
     {
       "kind": "plugin",
@@ -299,7 +299,7 @@
     {
       "kind": "plugin",
       "id": "gallery",
-      "version": "1.1.2",
+      "version": "1.2.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -343,8 +343,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-gallery",
-      "detail": "details/plugin/gallery/1.1.2.json",
-      "published": "2026-10-20T19:42:21Z"
+      "detail": "details/plugin/gallery/1.2.0.json",
+      "published": "2026-10-24T12:10:10Z"
     },
     {
       "kind": "plugin",
@@ -451,7 +451,7 @@
     {
       "kind": "plugin",
       "id": "kube",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -460,7 +460,7 @@
       "description": "Browse and manage Kubernetes clusters: workloads, logs, shells, port-forwards, YAML, metrics and Helm releases.",
       "icon": "ShipWheel",
       "color": "#326ce5",
-      "minDeck": "1.10.0",
+      "minDeck": "1.11.0",
       "iconNode": [
         [
           "circle",
@@ -528,8 +528,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-kube",
-      "detail": "details/plugin/kube/1.0.0.json",
-      "published": "2026-10-22T18:18:28Z"
+      "detail": "details/plugin/kube/1.1.0.json",
+      "published": "2026-10-24T12:10:29Z"
     },
     {
       "kind": "plugin",
@@ -753,7 +753,7 @@
     {
       "kind": "plugin",
       "id": "requests",
-      "version": "1.1.2",
+      "version": "1.1.3",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -778,8 +778,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-requests",
-      "detail": "details/plugin/requests/1.1.2.json",
-      "published": "2026-10-20T19:42:43Z"
+      "detail": "details/plugin/requests/1.1.3.json",
+      "published": "2026-10-24T12:10:37Z"
     },
     {
       "kind": "plugin",
@@ -932,7 +932,7 @@
     {
       "kind": "plugin",
       "id": "toolbox",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -951,13 +951,13 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-toolbox",
-      "detail": "details/plugin/toolbox/1.2.0.json",
-      "published": "2026-10-21T18:40:46Z"
+      "detail": "details/plugin/toolbox/1.2.1.json",
+      "published": "2026-10-24T12:10:45Z"
     },
     {
       "kind": "plugin",
       "id": "vault",
-      "version": "1.2.1",
+      "version": "1.2.2",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -1022,8 +1022,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-vault",
-      "detail": "details/plugin/vault/1.2.1.json",
-      "published": "2026-10-20T19:42:53Z"
+      "detail": "details/plugin/vault/1.2.2.json",
+      "published": "2026-10-24T12:10:54Z"
     },
     {
       "kind": "language",
