@@ -66,6 +66,61 @@
           "bytes": 5297005
         }
       }
+    },
+    {
+      "version": "0.2.1",
+      "tag": "v0.2.1",
+      "publishedAt": "2026-10-25T12:32:33Z",
+      "readme": true,
+      "manifest": {
+        "name": "PDF",
+        "description": "View PDFs, highlight, draw and add text and images on them, fill their forms, and retype their text in its own font.",
+        "icon": "FileText",
+        "color": "#f87171",
+        "minDeck": "1.6.0"
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M14 2v5a1 1 0 0 0 1 1h5"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M10 9H8"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M16 13H8"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M16 17H8"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "b0e35220a187feddddbb7fa848ecfd5296ef13730cc4185ae2d6720d2ed6c288",
+          "bytes": 260
+        },
+        "plugin.js": {
+          "sha256": "c8e71684897718826b02e869df6250312fbc2c01fa596462ce785242b0ef379f",
+          "bytes": 5304616
+        }
+      }
     }
   ]
 }
