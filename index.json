@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-24T12:12:21.093Z",
+  "generated": "2026-10-25T12:35:06.487Z",
   "schema": 2,
   "plugins": [
     {
@@ -309,13 +309,13 @@
     {
       "kind": "plugin",
       "id": "flutter",
-      "version": "1.3.0",
+      "version": "1.3.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-flutter/v1.3.0/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-flutter/v1.3.1/README.md",
       "name": "Flutter",
       "description": "Launch a Flutter app on a device, then hot reload it from the footer.",
       "icon": "Zap",
@@ -323,17 +323,17 @@
       "minDeck": "1.6.0",
       "files": {
         "plugin.json": {
-          "url": "https://github.com/deck-desktop/deck-plugin-flutter/releases/download/v1.3.0/plugin.json",
-          "sha256": "cbe7ee66b446dd60a9bb64b898850ec4ebcb23f40f000be9151496ec956d0448",
+          "url": "https://github.com/deck-desktop/deck-plugin-flutter/releases/download/v1.3.1/plugin.json",
+          "sha256": "0deffb75997513aa636e8a200e2a347334b5847020044b78759a70bcdce9baec",
           "bytes": 216
         },
         "plugin.js": {
-          "url": "https://github.com/deck-desktop/deck-plugin-flutter/releases/download/v1.3.0/plugin.js",
-          "sha256": "7a46a43ccec74f7ad8193b357a1b7f8f04112e9d3c8ba3316ea6ae370fc330b1",
-          "bytes": 41356
+          "url": "https://github.com/deck-desktop/deck-plugin-flutter/releases/download/v1.3.1/plugin.js",
+          "sha256": "a76f589449198a46d2f0988c5b1d4e0c3e5c39cd8d08b0be38ce909d0628d51b",
+          "bytes": 41454
         },
         "mcp.js": {
-          "url": "https://github.com/deck-desktop/deck-plugin-flutter/releases/download/v1.3.0/mcp.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-flutter/releases/download/v1.3.1/mcp.js",
           "sha256": "8459da48c950b47e23c8b2649b26dffb12426d1a6294f68d5c7e93315f5abf2b",
           "bytes": 8591
         }
@@ -658,13 +658,13 @@
     {
       "kind": "plugin",
       "id": "npm",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-npm/v1.1.0/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-npm/v1.1.1/README.md",
       "name": "Scripts",
       "description": "Run a package.json script, watch its output, and stop or restart it from the footer.",
       "icon": "Package",
@@ -672,17 +672,17 @@
       "minDeck": "1.6.0",
       "files": {
         "plugin.json": {
-          "url": "https://github.com/deck-desktop/deck-plugin-npm/releases/download/v1.1.0/plugin.json",
-          "sha256": "a69104cc8bfa0409884d149c2a082ca21c3173b35685387737bc93af411e9464",
+          "url": "https://github.com/deck-desktop/deck-plugin-npm/releases/download/v1.1.1/plugin.json",
+          "sha256": "fdc78a0d6e0827ee74c4344bb6e187390f38cda3346f6e74b7b4a693e34d0a72",
           "bytes": 231
         },
         "plugin.js": {
-          "url": "https://github.com/deck-desktop/deck-plugin-npm/releases/download/v1.1.0/plugin.js",
-          "sha256": "0205de208841aaf5cd0a1d13e9d127460c3ecd22f2f4b567a7c9cfd49f1844fc",
-          "bytes": 20590
+          "url": "https://github.com/deck-desktop/deck-plugin-npm/releases/download/v1.1.1/plugin.js",
+          "sha256": "0121c338742d1568aaf0eed1facf4b05adc1f2d999ac6315c5fd7e8cf41e7416",
+          "bytes": 20685
         },
         "mcp.js": {
-          "url": "https://github.com/deck-desktop/deck-plugin-npm/releases/download/v1.1.0/mcp.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-npm/releases/download/v1.1.1/mcp.js",
           "sha256": "86393ea9142dfa36f0a5c990f5ee97da628b00102f83e17f353e62628f1c8139",
           "bytes": 11508
         }
@@ -717,13 +717,13 @@
     {
       "kind": "plugin",
       "id": "pdf",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-pdf/v0.2.0/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-pdf/v0.2.1/README.md",
       "name": "PDF",
       "description": "View PDFs, highlight, draw and add text and images on them, fill their forms, and retype their text in its own font.",
       "icon": "FileText",
@@ -731,14 +731,14 @@
       "minDeck": "1.6.0",
       "files": {
         "plugin.json": {
-          "url": "https://github.com/deck-desktop/deck-plugin-pdf/releases/download/v0.2.0/plugin.json",
-          "sha256": "7b8279371e449d3cab27eb7a8298518913292d688e5e05a9165dcbe57899ad78",
+          "url": "https://github.com/deck-desktop/deck-plugin-pdf/releases/download/v0.2.1/plugin.json",
+          "sha256": "b0e35220a187feddddbb7fa848ecfd5296ef13730cc4185ae2d6720d2ed6c288",
           "bytes": 260
         },
         "plugin.js": {
-          "url": "https://github.com/deck-desktop/deck-plugin-pdf/releases/download/v0.2.0/plugin.js",
-          "sha256": "7b2912affb31a13f18491dd30efb597d3944754433719b775afb1071d3e7289c",
-          "bytes": 5297005
+          "url": "https://github.com/deck-desktop/deck-plugin-pdf/releases/download/v0.2.1/plugin.js",
+          "sha256": "c8e71684897718826b02e869df6250312fbc2c01fa596462ce785242b0ef379f",
+          "bytes": 5304616
         }
       },
       "iconNode": [

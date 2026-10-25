@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-24T12:12:21.093Z",
+  "generated": "2026-10-25T12:35:06.487Z",
   "schema": 3,
   "plugins": [
     {
@@ -249,7 +249,7 @@
     {
       "kind": "plugin",
       "id": "files",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -268,13 +268,13 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-files",
-      "detail": "details/plugin/files/0.2.0.json",
-      "published": "2026-10-24T12:09:52Z"
+      "detail": "details/plugin/files/0.2.1.json",
+      "published": "2026-10-25T12:32:00Z"
     },
     {
       "kind": "plugin",
       "id": "flutter",
-      "version": "1.3.0",
+      "version": "1.3.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -293,8 +293,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-flutter",
-      "detail": "details/plugin/flutter/1.3.0.json",
-      "published": "2026-10-19T16:36:38Z"
+      "detail": "details/plugin/flutter/1.3.1.json",
+      "published": "2026-10-25T12:32:08Z"
     },
     {
       "kind": "plugin",
@@ -451,7 +451,7 @@
     {
       "kind": "plugin",
       "id": "kube",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -528,8 +528,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-kube",
-      "detail": "details/plugin/kube/1.1.0.json",
-      "published": "2026-10-24T12:10:29Z"
+      "detail": "details/plugin/kube/1.1.1.json",
+      "published": "2026-10-25T12:32:16Z"
     },
     {
       "kind": "plugin",
@@ -630,7 +630,7 @@
     {
       "kind": "plugin",
       "id": "npm",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -667,13 +667,13 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-npm",
-      "detail": "details/plugin/npm/1.1.0.json",
-      "published": "2026-10-19T16:38:07Z"
+      "detail": "details/plugin/npm/1.1.1.json",
+      "published": "2026-10-25T12:32:24Z"
     },
     {
       "kind": "plugin",
       "id": "pdf",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -716,8 +716,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-pdf",
-      "detail": "details/plugin/pdf/0.2.0.json",
-      "published": "2026-10-19T16:39:00Z"
+      "detail": "details/plugin/pdf/0.2.1.json",
+      "published": "2026-10-25T12:32:33Z"
     },
     {
       "kind": "plugin",

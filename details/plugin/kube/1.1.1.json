@@ -1,0 +1,25 @@
+{
+  "schema": 3,
+  "kind": "plugin",
+  "id": "kube",
+  "version": "1.1.1",
+  "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-kube/v1.1.1/README.md",
+  "signature": null,
+  "files": {
+    "plugin.json": {
+      "url": "https://github.com/deck-desktop/deck-plugin-kube/releases/download/v1.1.1/plugin.json",
+      "sha256": "88fe279157418fac11ea11fb91a52decaeeb7f3687790974211b754c711d4498",
+      "bytes": 308
+    },
+    "plugin.js": {
+      "url": "https://github.com/deck-desktop/deck-plugin-kube/releases/download/v1.1.1/plugin.js",
+      "sha256": "10b6b6664a9ca41e38f5f3402dda1cbb7225cb95ca93fceca9e31d13004244fd",
+      "bytes": 83497
+    },
+    "mcp.js": {
+      "url": "https://github.com/deck-desktop/deck-plugin-kube/releases/download/v1.1.1/mcp.js",
+      "sha256": "36556b6542da71d4b521b8d730f1f3767c087a846b549af60e16176262fe8576",
+      "bytes": 11684
+    }
+  }
+}
