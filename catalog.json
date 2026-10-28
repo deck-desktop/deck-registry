@@ -1,7 +1,43 @@
 {
-  "generated": "2026-10-28T16:38:32.262Z",
+  "generated": "2026-10-28T16:47:12.459Z",
   "schema": 3,
   "plugins": [
+    {
+      "kind": "plugin",
+      "id": "android",
+      "version": "0.1.0",
+      "publisher": {
+        "name": "Hasan Zarif",
+        "verified": true
+      },
+      "name": "Android",
+      "description": "A connected phone: its screen live and clickable, its log, screenshots, screen recordings and app installs, over adb.",
+      "icon": "Smartphone",
+      "color": "#3ddc84",
+      "minDeck": "1.11.1",
+      "iconNode": [
+        [
+          "rect",
+          {
+            "width": "14",
+            "height": "20",
+            "x": "5",
+            "y": "2",
+            "rx": "2",
+            "ry": "2"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M12 18h.01"
+          }
+        ]
+      ],
+      "repo": "deck-desktop/deck-plugin-android",
+      "detail": "details/plugin/android/0.1.0.json",
+      "published": "2026-10-28T16:45:07Z"
+    },
     {
       "kind": "plugin",
       "id": "app-timer",

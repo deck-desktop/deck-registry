@@ -1,0 +1,20 @@
+{
+  "schema": 3,
+  "kind": "plugin",
+  "id": "android",
+  "version": "0.1.0",
+  "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-android/v0.1.0/README.md",
+  "signature": null,
+  "files": {
+    "plugin.json": {
+      "url": "https://github.com/deck-desktop/deck-plugin-android/releases/download/v0.1.0/plugin.json",
+      "sha256": "297ad40cdb760fb4d0658453f7803e69dd1bb5d98e8e9298dc698d46eea45bad",
+      "bytes": 361
+    },
+    "plugin.js": {
+      "url": "https://github.com/deck-desktop/deck-plugin-android/releases/download/v0.1.0/plugin.js",
+      "sha256": "60da0f35c53a9b5cd3a4cb63b5a95ab25a57b919c853e92977aa16de53ddbdca",
+      "bytes": 28710
+    }
+  }
+}
