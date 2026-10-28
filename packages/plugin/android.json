@@ -1,0 +1,58 @@
+{
+  "kind": "plugin",
+  "id": "android",
+  "repo": "deck-desktop/deck-plugin-android",
+  "owner": {
+    "id": 336637908,
+    "login": "deck-desktop",
+    "type": "Organization"
+  },
+  "publisher": {
+    "name": "Hasan Zarif",
+    "verified": true
+  },
+  "versions": [
+    {
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "publishedAt": "2026-10-28T16:45:07Z",
+      "readme": true,
+      "manifest": {
+        "name": "Android",
+        "description": "A connected phone: its screen live and clickable, its log, screenshots, screen recordings and app installs, over adb.",
+        "icon": "Smartphone",
+        "color": "#3ddc84",
+        "minDeck": "1.11.1"
+      },
+      "iconNode": [
+        [
+          "rect",
+          {
+            "width": "14",
+            "height": "20",
+            "x": "5",
+            "y": "2",
+            "rx": "2",
+            "ry": "2"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M12 18h.01"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "297ad40cdb760fb4d0658453f7803e69dd1bb5d98e8e9298dc698d46eea45bad",
+          "bytes": 361
+        },
+        "plugin.js": {
+          "sha256": "60da0f35c53a9b5cd3a4cb63b5a95ab25a57b919c853e92977aa16de53ddbdca",
+          "bytes": 28710
+        }
+      }
+    }
+  ]
+}
