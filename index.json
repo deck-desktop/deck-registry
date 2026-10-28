@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-25T12:35:06.487Z",
+  "generated": "2026-10-28T16:38:32.262Z",
   "schema": 2,
   "plugins": [
     {
@@ -309,13 +309,13 @@
     {
       "kind": "plugin",
       "id": "flutter",
-      "version": "1.3.1",
+      "version": "1.3.2",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-flutter/v1.3.1/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-flutter/v1.3.2/README.md",
       "name": "Flutter",
       "description": "Launch a Flutter app on a device, then hot reload it from the footer.",
       "icon": "Zap",
@@ -323,17 +323,17 @@
       "minDeck": "1.6.0",
       "files": {
         "plugin.json": {
-          "url": "https://github.com/deck-desktop/deck-plugin-flutter/releases/download/v1.3.1/plugin.json",
-          "sha256": "0deffb75997513aa636e8a200e2a347334b5847020044b78759a70bcdce9baec",
+          "url": "https://github.com/deck-desktop/deck-plugin-flutter/releases/download/v1.3.2/plugin.json",
+          "sha256": "cedf79f5708ff8913e5fd14702e568367064483d84dabbed7d97f7dd30973b30",
           "bytes": 216
         },
         "plugin.js": {
-          "url": "https://github.com/deck-desktop/deck-plugin-flutter/releases/download/v1.3.1/plugin.js",
-          "sha256": "a76f589449198a46d2f0988c5b1d4e0c3e5c39cd8d08b0be38ce909d0628d51b",
-          "bytes": 41454
+          "url": "https://github.com/deck-desktop/deck-plugin-flutter/releases/download/v1.3.2/plugin.js",
+          "sha256": "1e819baf5438f2f80b23d4865a6cf65e22653fd9fbe93358420b66b9f5d2f531",
+          "bytes": 41425
         },
         "mcp.js": {
-          "url": "https://github.com/deck-desktop/deck-plugin-flutter/releases/download/v1.3.1/mcp.js",
+          "url": "https://github.com/deck-desktop/deck-plugin-flutter/releases/download/v1.3.2/mcp.js",
           "sha256": "8459da48c950b47e23c8b2649b26dffb12426d1a6294f68d5c7e93315f5abf2b",
           "bytes": 8591
         }
