@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-28T16:47:12.459Z",
+  "generated": "2026-10-29T13:11:52.449Z",
   "schema": 3,
   "plugins": [
     {
@@ -446,7 +446,7 @@
     {
       "kind": "plugin",
       "id": "git",
-      "version": "1.4.0",
+      "version": "1.5.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -481,8 +481,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-git",
-      "detail": "details/plugin/git/1.4.0.json",
-      "published": "2026-10-28T16:34:41Z"
+      "detail": "details/plugin/git/1.5.0.json",
+      "published": "2026-10-29T13:10:16Z"
     },
     {
       "kind": "plugin",
