@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-28T09:38:12.863Z",
+  "generated": "2026-10-29T09:56:46.509Z",
   "packages": {
     "language:dart": {
       "stars": 0,
@@ -25,6 +25,10 @@
       "stars": 0,
       "downloads": 1
     },
+    "plugin:android": {
+      "stars": 0,
+      "downloads": 0
+    },
     "plugin:app-timer": {
       "stars": 1,
       "downloads": 2
@@ -35,7 +39,7 @@
     },
     "plugin:canvas": {
       "stars": 0,
-      "downloads": 5
+      "downloads": 6
     },
     "plugin:clock": {
       "stars": 0,
@@ -43,7 +47,7 @@
     },
     "plugin:db": {
       "stars": 0,
-      "downloads": 9
+      "downloads": 10
     },
     "plugin:files": {
       "stars": 0,
@@ -51,11 +55,11 @@
     },
     "plugin:flutter": {
       "stars": 0,
-      "downloads": 3
+      "downloads": 4
     },
     "plugin:gallery": {
       "stars": 0,
-      "downloads": 9
+      "downloads": 10
     },
     "plugin:games": {
       "stars": 0,
@@ -63,7 +67,7 @@
     },
     "plugin:git": {
       "stars": 0,
-      "downloads": 10
+      "downloads": 12
     },
     "plugin:kube": {
       "stars": 0,
@@ -83,7 +87,7 @@
     },
     "plugin:pdf": {
       "stars": 0,
-      "downloads": 1
+      "downloads": 2
     },
     "plugin:power-timer": {
       "stars": 0,
@@ -91,7 +95,7 @@
     },
     "plugin:requests": {
       "stars": 0,
-      "downloads": 9
+      "downloads": 10
     },
     "plugin:script-runner": {
       "stars": 0,
@@ -111,11 +115,11 @@
     },
     "plugin:toolbox": {
       "stars": 0,
-      "downloads": 7
+      "downloads": 8
     },
     "plugin:vault": {
       "stars": 0,
-      "downloads": 4
+      "downloads": 5
     }
   }
 }
