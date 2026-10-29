@@ -49,6 +49,44 @@
           "bytes": 1855
         }
       }
+    },
+    {
+      "version": "1.0.2",
+      "tag": "v1.0.2",
+      "publishedAt": "2026-10-29T19:16:55Z",
+      "readme": true,
+      "manifest": {
+        "name": "php",
+        "description": ".php, .phtml — intelephense",
+        "icon": "Code",
+        "color": "#8892bf",
+        "minDeck": null,
+        "requires": "intelephense",
+        "extensions": [
+          "php",
+          "phtml"
+        ]
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "m16 18 6-6-6-6"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "m8 6-6 6 6 6"
+          }
+        ]
+      ],
+      "files": {
+        "language.json": {
+          "sha256": "01d78e111d800d59fb43535a88ca2d43d81e436ba09053849ae3fb42490b513c",
+          "bytes": 1861
+        }
+      }
     }
   ]
 }

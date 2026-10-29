@@ -246,6 +246,53 @@
           "bytes": 283222
         }
       }
+    },
+    {
+      "version": "1.5.1",
+      "tag": "v1.5.1",
+      "publishedAt": "2026-10-29T19:16:47Z",
+      "readme": true,
+      "manifest": {
+        "name": "Git",
+        "description": "A commit graph for each workspace: stage and commit, branches, tags and stashes, file history, diffs, and GitHub/GitLab pull requests with review comments. Formerly Deck's built-in Git Graph.",
+        "icon": "GitBranch",
+        "color": "#f97316",
+        "minDeck": "1.12.0"
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M15 6a9 9 0 0 0-9 9V3"
+          }
+        ],
+        [
+          "circle",
+          {
+            "cx": "18",
+            "cy": "6",
+            "r": "3"
+          }
+        ],
+        [
+          "circle",
+          {
+            "cx": "6",
+            "cy": "18",
+            "r": "3"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "bb9b921ad5cd73121629f9c54042ba06afea11c95ce44a54f8197d07a2341a0f",
+          "bytes": 337
+        },
+        "plugin.js": {
+          "sha256": "e7369bdde7ef848d2140c203e0785b054908a3be6f5da1b9382dbaa1ad92f078",
+          "bytes": 283230
+        }
+      }
     }
   ]
 }
