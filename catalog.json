@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-29T13:11:52.449Z",
+  "generated": "2026-10-29T19:18:52.175Z",
   "schema": 3,
   "plugins": [
     {
@@ -446,7 +446,7 @@
     {
       "kind": "plugin",
       "id": "git",
-      "version": "1.5.0",
+      "version": "1.5.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -481,8 +481,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-git",
-      "detail": "details/plugin/git/1.5.0.json",
-      "published": "2026-10-29T13:10:16Z"
+      "detail": "details/plugin/git/1.5.1.json",
+      "published": "2026-10-29T19:16:47Z"
     },
     {
       "kind": "plugin",
@@ -611,7 +611,7 @@
     {
       "kind": "plugin",
       "id": "notes",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -620,7 +620,7 @@
       "description": "Markdown notes for each project, in a pane beside your terminals. One file per note, autosaved, with live preview, a formatting bar and drag to reorder.",
       "icon": "NotebookPen",
       "color": "#facc15",
-      "minDeck": "1.6.0",
+      "minDeck": "1.12.3",
       "iconNode": [
         [
           "path",
@@ -660,8 +660,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-notes",
-      "detail": "details/plugin/notes/1.1.0.json",
-      "published": "2026-10-19T16:37:55Z"
+      "detail": "details/plugin/notes/1.2.0.json",
+      "published": "2026-10-29T19:17:05Z"
     },
     {
       "kind": "plugin",
@@ -1147,7 +1147,7 @@
     {
       "kind": "language",
       "id": "php",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -1177,8 +1177,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-language-php",
-      "detail": "details/language/php/1.0.1.json",
-      "published": "2026-10-19T16:37:12Z"
+      "detail": "details/language/php/1.0.2.json",
+      "published": "2026-10-29T19:16:55Z"
     },
     {
       "kind": "language",

@@ -1,0 +1,15 @@
+{
+  "schema": 3,
+  "kind": "language",
+  "id": "php",
+  "version": "1.0.2",
+  "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-php/v1.0.2/README.md",
+  "signature": null,
+  "files": {
+    "language.json": {
+      "url": "https://github.com/deck-desktop/deck-language-php/releases/download/v1.0.2/language.json",
+      "sha256": "01d78e111d800d59fb43535a88ca2d43d81e436ba09053849ae3fb42490b513c",
+      "bytes": 1861
+    }
+  }
+}

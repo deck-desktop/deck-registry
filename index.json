@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-29T13:11:52.449Z",
+  "generated": "2026-10-29T19:18:52.175Z",
   "schema": 2,
   "plugins": [
     {
@@ -1248,13 +1248,13 @@
     {
       "kind": "language",
       "id": "php",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-php/v1.0.1/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-php/v1.0.2/README.md",
       "name": "php",
       "description": ".php, .phtml — intelephense",
       "icon": "Code",
@@ -1267,9 +1267,9 @@
       ],
       "files": {
         "language.json": {
-          "url": "https://github.com/deck-desktop/deck-language-php/releases/download/v1.0.1/language.json",
-          "sha256": "dfad99aaf6936a3cf57b9b01a4022b169758101bcf88cca9fe26744afb8dbbe5",
-          "bytes": 1855
+          "url": "https://github.com/deck-desktop/deck-language-php/releases/download/v1.0.2/language.json",
+          "sha256": "01d78e111d800d59fb43535a88ca2d43d81e436ba09053849ae3fb42490b513c",
+          "bytes": 1861
         }
       },
       "iconNode": [
