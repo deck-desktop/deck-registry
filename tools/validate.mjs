@@ -68,7 +68,7 @@ export function loadPermissions() {
 }
 
 /** The newest deck-plugin-sdk on npm, for the up-to-date check; null when npm cannot be reached. */
-async function newestSdk() {
+export async function newestSdk() {
   try { return (await (await fetch("https://registry.npmjs.org/deck-plugin-sdk/latest")).json()).version ?? null; } catch { return null; }
 }
 
@@ -82,6 +82,53 @@ async function iconNodeOf(icon) {
   if (typeof icon !== "string" || !/^[A-Z][A-Za-z0-9]*$/.test(icon) || !existsSync(file)) return null;
   const { __iconNode } = await import(pathToFileURL(file).href);
   return __iconNode.map(([tag, { key: _key, ...attrs }]) => [tag, attrs]);
+}
+
+/**
+ * Rebuild a plugin from its source at the tag, cloned in `dir`, and check the built files against
+ * the release's: `assets` has its asset names, `digest(name)` a released file's sha256. Then
+ * type-check it with the TypeScript its own lockfile installed. Shared with rescore.mjs, which
+ * scores the versions published before points existed.
+ */
+export function rebuildPlugin(dir, assets, digest) {
+  const errors = [], notes = [];
+  const has = (f) => existsSync(join(dir, f));
+  let buildVerified = false;
+  /** Whether `tsc --noEmit` passes: null when it could not be run (no rebuild, no tsconfig, no typescript). */
+  let typechecks = null;
+  if (has("deck-plugin.config.mjs")) {
+    notes.push("It has a deck-plugin.config.mjs, which the build runs, so its plugin.js could not be rebuilt here to check it matches the source. It is listed as **build not verified**.");
+  } else if (has(".npmrc")) {
+    errors.push("there is an .npmrc at the tag; the rebuild installs from registry.npmjs.org only, so remove it");
+  } else if (!has("package-lock.json")) {
+    errors.push("there is no package-lock.json at the tag; commit it, so the build can be repeated exactly");
+  } else {
+    const lockErrors = checkLockfile(JSON.parse(readFileSync(join(dir, "package-lock.json"), "utf8")));
+    errors.push(...lockErrors);
+    if (!lockErrors.length) {
+      try {
+        execFileSync("npm", ["ci", "--ignore-scripts", "--no-audit", "--no-fund", "--registry=https://registry.npmjs.org/"], { cwd: dir, stdio: "pipe", shell: process.platform === "win32" });
+        execFileSync(process.execPath, [join(dir, "node_modules", "deck-plugin-sdk", "bin", "deck-plugin.mjs"), "build"], { cwd: dir, stdio: "pipe" });
+        for (const f of ["plugin.js", "mcp.js"]) {
+          if (!assets.has(f) && !has(f)) continue;
+          if (!has(f)) errors.push(`the source builds no ${f}, but the release has one`);
+          else if (!assets.has(f)) errors.push(`the source builds ${f}, but the release has none`);
+          else if (sha256(readFileSync(join(dir, f))) !== digest(f)) {
+            errors.push(`the release's ${f} is not what the source builds to. Build it with \`npm ci && npm run build\` at the tag, then upload that file`);
+          }
+        }
+        buildVerified = !errors.length;
+        // Type-checked with the TypeScript its own lockfile installed: tsc reads the code, it never runs it.
+        const tsc = join(dir, "node_modules", "typescript", "bin", "tsc");
+        if (buildVerified && has("tsconfig.json") && existsSync(tsc)) {
+          try { execFileSync(process.execPath, [tsc, "--noEmit", "-p", "."], { cwd: dir, stdio: "pipe" }); typechecks = true; } catch { typechecks = false; }
+        }
+      } catch (e) {
+        errors.push(`the build failed: ${(e.stderr ?? e.message).toString().trim().split("\n").slice(-3).join(" ")}`);
+      }
+    }
+  }
+  return { errors, notes, buildVerified, typechecks };
 }
 
 /**
@@ -174,37 +221,11 @@ export async function validate(id, submission, author) {
       for (const a of assets.keys()) if (!want.has(a)) errors.push(`the release has \`${a}\`, which is not in the source`);
       for (const f of snippets) if (digest(f) !== sha256(readFileSync(join(dir, f)))) errors.push(`the release's ${f} is not the one at the tag`);
       buildVerified = true;
-    } else if (has("deck-plugin.config.mjs")) {
-      notes.push("It has a deck-plugin.config.mjs, which the build runs, so its plugin.js could not be rebuilt here to check it matches the source. It is listed as **build not verified**.");
-    } else if (has(".npmrc")) {
-      errors.push("there is an .npmrc at the tag; the rebuild installs from registry.npmjs.org only, so remove it");
-    } else if (!has("package-lock.json")) {
-      errors.push("there is no package-lock.json at the tag; commit it, so the build can be repeated exactly");
     } else {
-      const lockErrors = checkLockfile(JSON.parse(readFileSync(join(dir, "package-lock.json"), "utf8")));
-      errors.push(...lockErrors);
-      if (!lockErrors.length) {
-        try {
-          execFileSync("npm", ["ci", "--ignore-scripts", "--no-audit", "--no-fund", "--registry=https://registry.npmjs.org/"], { cwd: dir, stdio: "pipe", shell: process.platform === "win32" });
-          execFileSync(process.execPath, [join(dir, "node_modules", "deck-plugin-sdk", "bin", "deck-plugin.mjs"), "build"], { cwd: dir, stdio: "pipe" });
-          for (const f of ["plugin.js", "mcp.js"]) {
-            if (!assets.has(f) && !has(f)) continue;
-            if (!has(f)) errors.push(`the source builds no ${f}, but the release has one`);
-            else if (!assets.has(f)) errors.push(`the source builds ${f}, but the release has none`);
-            else if (sha256(readFileSync(join(dir, f))) !== digest(f)) {
-              errors.push(`the release's ${f} is not what the source builds to. Build it with \`npm ci && npm run build\` at the tag, then upload that file`);
-            }
-          }
-          buildVerified = !errors.length;
-          // Type-checked with the TypeScript its own lockfile installed: tsc reads the code, it never runs it.
-          const tsc = join(dir, "node_modules", "typescript", "bin", "tsc");
-          if (buildVerified && has("tsconfig.json") && existsSync(tsc)) {
-            try { execFileSync(process.execPath, [tsc, "--noEmit", "-p", "."], { cwd: dir, stdio: "pipe" }); typechecks = true; } catch { typechecks = false; }
-          }
-        } catch (e) {
-          errors.push(`the build failed: ${(e.stderr ?? e.message).toString().trim().split("\n").slice(-3).join(" ")}`);
-        }
-      }
+      const r = rebuildPlugin(dir, assets, digest);
+      errors.push(...r.errors);
+      notes.push(...r.notes);
+      ({ buildVerified, typechecks } = r);
     }
     // What it may use: declared, and covering what its bundle calls (when Deck's table is here).
     let permissions, used = [];
