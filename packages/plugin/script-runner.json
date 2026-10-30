@@ -52,6 +52,110 @@
           "bytes": 2502
         }
       }
+    },
+    {
+      "version": "1.2.1",
+      "tag": "v1.2.1",
+      "publishedAt": "2026-10-30T20:43:05Z",
+      "readme": true,
+      "manifest": {
+        "name": "Script Runner",
+        "description": "Runs scripts on a schedule, here or on the VPS.",
+        "icon": "Terminal",
+        "color": "#2dd4bf",
+        "minDeck": "1.6.0",
+        "permissions": [
+          "processes",
+          "network"
+        ]
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M12 19h8"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "m4 17 6-6-6-6"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "626cb56e264700fa241b654a4e86743f1d779789f9ea53050d5d69f3ea248030",
+          "bytes": 266
+        },
+        "plugin.js": {
+          "sha256": "3168bcd59d471a259d0c8a2cf18eaed8ad7c6f19c40551d977f9181dd7b02762",
+          "bytes": 19843
+        },
+        "mcp.js": {
+          "sha256": "0b89948471410b917063de0c4f914932441ea1f49c85381e1c763fc193e54d2c",
+          "bytes": 2502
+        }
+      },
+      "points": {
+        "total": 100,
+        "checks": [
+          {
+            "id": "readme-media",
+            "label": "The README shows it, with a screenshot or other image",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "changelog",
+            "label": "It has a changelog",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "license",
+            "label": "It has an open-source licence",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "lockfile",
+            "label": "Its lockfile installs only from npm, every package with a hash",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "build-verified",
+            "label": "The registry rebuilt it from its source and got the same files",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "permissions",
+            "label": "It says what it uses",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "least-privilege",
+            "label": "It asks for nothing it does not use",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "typechecks",
+            "label": "It type-checks",
+            "max": 20,
+            "got": 20
+          },
+          {
+            "id": "up-to-date",
+            "label": "It is built with a current SDK",
+            "max": 10,
+            "got": 10
+          }
+        ]
+      }
     }
   ]
 }

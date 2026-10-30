@@ -175,6 +175,112 @@
           "bytes": 20928
         }
       }
+    },
+    {
+      "version": "1.1.4",
+      "tag": "v1.1.4",
+      "publishedAt": "2026-10-30T20:42:47Z",
+      "readme": true,
+      "manifest": {
+        "name": "Requests",
+        "description": "Build, send and save HTTP requests in a pane: collections, environments and {{variables}}, pre- and post-request scripts, cURL import and export, history. Formerly Deck's HTTP tab; saved collections carry over.",
+        "icon": "Send",
+        "color": "#22d3ee",
+        "minDeck": "1.9.0",
+        "permissions": [
+          "files",
+          "network"
+        ]
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "m21.854 2.147-10.94 10.939"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "117c5fd3e3768cb6f992a9188a06bb8838cf71d28dc24ddfade87be7082c21d9",
+          "bytes": 411
+        },
+        "plugin.js": {
+          "sha256": "4c705f997c4ea6bf9829f9ff0b15043b44f5bb35e54f025a15e46592e98c53b4",
+          "bytes": 103423
+        },
+        "mcp.js": {
+          "sha256": "727aa6174886b3d81a1399a8452e83e905c6a4424354370079d72ef65f232518",
+          "bytes": 20928
+        }
+      },
+      "points": {
+        "total": 70,
+        "checks": [
+          {
+            "id": "readme-media",
+            "label": "The README shows it, with a screenshot or other image",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "changelog",
+            "label": "It has a changelog",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "license",
+            "label": "It has an open-source licence",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "lockfile",
+            "label": "Its lockfile installs only from npm, every package with a hash",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "build-verified",
+            "label": "The registry rebuilt it from its source and got the same files",
+            "max": 10,
+            "got": 0,
+            "fix": "Release what `npm ci && npm run build` makes at the tag, with no deck-plugin.config.mjs"
+          },
+          {
+            "id": "permissions",
+            "label": "It says what it uses",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "least-privilege",
+            "label": "It asks for nothing it does not use",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "typechecks",
+            "label": "It type-checks",
+            "max": 20,
+            "got": 0,
+            "fix": "Let the registry rebuild it, with a tsconfig.json, so it can be type-checked"
+          },
+          {
+            "id": "up-to-date",
+            "label": "It is built with a current SDK",
+            "max": 10,
+            "got": 10
+          }
+        ]
+      }
     }
   ]
 }

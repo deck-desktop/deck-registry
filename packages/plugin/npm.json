@@ -117,6 +117,124 @@
           "bytes": 11508
         }
       }
+    },
+    {
+      "version": "1.1.2",
+      "tag": "v1.1.2",
+      "publishedAt": "2026-10-30T20:41:38Z",
+      "readme": true,
+      "manifest": {
+        "name": "Scripts",
+        "description": "Run a package.json script, watch its output, and stop or restart it from the footer.",
+        "icon": "Package",
+        "color": "#ef4444",
+        "minDeck": "1.6.0",
+        "permissions": [
+          "files",
+          "processes",
+          "terminals",
+          "deck"
+        ]
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M12 22V12"
+          }
+        ],
+        [
+          "polyline",
+          {
+            "points": "3.29 7 12 12 20.71 7"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "m7.5 4.27 9 5.15"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "f3c7e34c8d889fbbd1d8174481578e112c14792a8ef3867b8f3d27437c96e905",
+          "bytes": 313
+        },
+        "plugin.js": {
+          "sha256": "0121c338742d1568aaf0eed1facf4b05adc1f2d999ac6315c5fd7e8cf41e7416",
+          "bytes": 20685
+        },
+        "mcp.js": {
+          "sha256": "86393ea9142dfa36f0a5c990f5ee97da628b00102f83e17f353e62628f1c8139",
+          "bytes": 11508
+        }
+      },
+      "points": {
+        "total": 100,
+        "checks": [
+          {
+            "id": "readme-media",
+            "label": "The README shows it, with a screenshot or other image",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "changelog",
+            "label": "It has a changelog",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "license",
+            "label": "It has an open-source licence",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "lockfile",
+            "label": "Its lockfile installs only from npm, every package with a hash",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "build-verified",
+            "label": "The registry rebuilt it from its source and got the same files",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "permissions",
+            "label": "It says what it uses",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "least-privilege",
+            "label": "It asks for nothing it does not use",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "typechecks",
+            "label": "It type-checks",
+            "max": 20,
+            "got": 20
+          },
+          {
+            "id": "up-to-date",
+            "label": "It is built with a current SDK",
+            "max": 10,
+            "got": 10
+          }
+        ]
+      }
     }
   ]
 }

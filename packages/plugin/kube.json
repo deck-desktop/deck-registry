@@ -290,6 +290,163 @@
           "bytes": 11684
         }
       }
+    },
+    {
+      "version": "1.1.2",
+      "tag": "v1.1.2",
+      "publishedAt": "2026-10-30T20:40:38Z",
+      "readme": true,
+      "manifest": {
+        "name": "Kubernetes",
+        "description": "Browse and manage Kubernetes clusters: workloads, logs, shells, port-forwards, YAML, metrics and Helm releases.",
+        "icon": "ShipWheel",
+        "color": "#326ce5",
+        "minDeck": "1.11.0",
+        "permissions": [
+          "processes",
+          "network"
+        ]
+      },
+      "iconNode": [
+        [
+          "circle",
+          {
+            "cx": "12",
+            "cy": "12",
+            "r": "8"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M12 2v7.5"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "m19 5-5.23 5.23"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M22 12h-7.5"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "m19 19-5.23-5.23"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M12 14.5V22"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M10.23 13.77 5 19"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M9.5 12H2"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M10.23 10.23 5 5"
+          }
+        ],
+        [
+          "circle",
+          {
+            "cx": "12",
+            "cy": "12",
+            "r": "2.5"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "ccdf3d37ec55cb4442142eb3c62feb31327118c697eba7437cf788038ebdb42d",
+          "bytes": 320
+        },
+        "plugin.js": {
+          "sha256": "10b6b6664a9ca41e38f5f3402dda1cbb7225cb95ca93fceca9e31d13004244fd",
+          "bytes": 83497
+        },
+        "mcp.js": {
+          "sha256": "36556b6542da71d4b521b8d730f1f3767c087a846b549af60e16176262fe8576",
+          "bytes": 11684
+        }
+      },
+      "points": {
+        "total": 90,
+        "checks": [
+          {
+            "id": "readme-media",
+            "label": "The README shows it, with a screenshot or other image",
+            "max": 10,
+            "got": 0,
+            "fix": "Add a screenshot to README.md"
+          },
+          {
+            "id": "changelog",
+            "label": "It has a changelog",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "license",
+            "label": "It has an open-source licence",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "lockfile",
+            "label": "Its lockfile installs only from npm, every package with a hash",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "build-verified",
+            "label": "The registry rebuilt it from its source and got the same files",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "permissions",
+            "label": "It says what it uses",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "least-privilege",
+            "label": "It asks for nothing it does not use",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "typechecks",
+            "label": "It type-checks",
+            "max": 20,
+            "got": 20
+          },
+          {
+            "id": "up-to-date",
+            "label": "It is built with a current SDK",
+            "max": 10,
+            "got": 10
+          }
+        ]
+      }
     }
   ]
 }

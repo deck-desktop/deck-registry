@@ -100,6 +100,157 @@
           "bytes": 21301
         }
       }
+    },
+    {
+      "version": "1.1.1",
+      "tag": "v1.1.1",
+      "publishedAt": "2026-10-30T20:36:48Z",
+      "readme": true,
+      "manifest": {
+        "name": "Calendar",
+        "description": "Your Google Calendar in a modal, with a reminder before each meeting.",
+        "icon": "CalendarDays",
+        "color": "#f87171",
+        "minDeck": "1.6.0",
+        "permissions": [
+          "secrets"
+        ]
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M8 2v3"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M16 2v3"
+          }
+        ],
+        [
+          "rect",
+          {
+            "x": "3",
+            "y": "3",
+            "width": "18",
+            "height": "18",
+            "rx": "2"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M3 9h18"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M8 13h.01"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M12 13h.01"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M16 13h.01"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M8 17h.01"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M12 17h.01"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M16 17h.01"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "4ca1d580189062c673d99d56ff0eb7f2da989544eff1d81e385c43588cb6d4a3",
+          "bytes": 265
+        },
+        "plugin.js": {
+          "sha256": "a5acf9c867fa85d968d19ddd304e029322c6fefa1059f0b28d34816798106d83",
+          "bytes": 21338
+        }
+      },
+      "points": {
+        "total": 100,
+        "checks": [
+          {
+            "id": "readme-media",
+            "label": "The README shows it, with a screenshot or other image",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "changelog",
+            "label": "It has a changelog",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "license",
+            "label": "It has an open-source licence",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "lockfile",
+            "label": "Its lockfile installs only from npm, every package with a hash",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "build-verified",
+            "label": "The registry rebuilt it from its source and got the same files",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "permissions",
+            "label": "It says what it uses",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "least-privilege",
+            "label": "It asks for nothing it does not use",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "typechecks",
+            "label": "It type-checks",
+            "max": 20,
+            "got": 20
+          },
+          {
+            "id": "up-to-date",
+            "label": "It is built with a current SDK",
+            "max": 10,
+            "got": 10
+          }
+        ]
+      }
     }
   ]
 }

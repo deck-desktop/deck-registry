@@ -85,6 +85,110 @@
           "bytes": 7519362
         }
       }
+    },
+    {
+      "version": "1.4.2",
+      "tag": "v1.4.2",
+      "publishedAt": "2026-10-30T20:37:40Z",
+      "readme": true,
+      "manifest": {
+        "name": "Canvas",
+        "description": "Excalidraw boards for each project, as tabs in a pane: sketch, diagram, paste screenshots and links, and share a board live with other Decks. Formerly Deck's Pinboard; existing boards carry over.",
+        "icon": "Pin",
+        "color": "#f472b6",
+        "minDeck": "1.9.0",
+        "permissions": [
+          "files",
+          "processes",
+          "network",
+          "deck"
+        ]
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M12 17v5"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "fb57a2ffcdb429886ffd4a81aab37ac8c6c5b13b8645d2b78b93a2d45d90fecb",
+          "bytes": 420
+        },
+        "plugin.js": {
+          "sha256": "2cace2af0b2aa36e3d116a3b87be927dfd808b6a7196e9c9da0e38182c76af39",
+          "bytes": 7519678
+        }
+      },
+      "points": {
+        "total": 70,
+        "checks": [
+          {
+            "id": "readme-media",
+            "label": "The README shows it, with a screenshot or other image",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "changelog",
+            "label": "It has a changelog",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "license",
+            "label": "It has an open-source licence",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "lockfile",
+            "label": "Its lockfile installs only from npm, every package with a hash",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "build-verified",
+            "label": "The registry rebuilt it from its source and got the same files",
+            "max": 10,
+            "got": 0,
+            "fix": "Release what `npm ci && npm run build` makes at the tag, with no deck-plugin.config.mjs"
+          },
+          {
+            "id": "permissions",
+            "label": "It says what it uses",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "least-privilege",
+            "label": "It asks for nothing it does not use",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "typechecks",
+            "label": "It type-checks",
+            "max": 20,
+            "got": 0,
+            "fix": "Let the registry rebuild it, with a tsconfig.json, so it can be type-checked"
+          },
+          {
+            "id": "up-to-date",
+            "label": "It is built with a current SDK",
+            "max": 10,
+            "got": 10
+          }
+        ]
+      }
     }
   ]
 }

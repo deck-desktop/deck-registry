@@ -242,6 +242,145 @@
           "bytes": 27580
         }
       }
+    },
+    {
+      "version": "1.2.3",
+      "tag": "v1.2.3",
+      "publishedAt": "2026-10-30T20:44:57Z",
+      "readme": true,
+      "manifest": {
+        "name": "Vault",
+        "description": "Browse and edit the Obsidian vault as live-preview markdown, with wikilinks and backlinks.",
+        "icon": "NotebookText",
+        "color": "#a78bfa",
+        "minDeck": "1.9.0",
+        "permissions": [
+          "files"
+        ]
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M2 6h4"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M2 10h4"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M2 14h4"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M2 18h4"
+          }
+        ],
+        [
+          "rect",
+          {
+            "width": "16",
+            "height": "20",
+            "x": "4",
+            "y": "2",
+            "rx": "2"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M9.5 8h5"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M9.5 12H16"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M9.5 16H14"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "bff5b88f40010391df0469042c308dafb5ddc9ed159cbc00e845758b522e15f3",
+          "bytes": 299
+        },
+        "plugin.js": {
+          "sha256": "531241d5615963c8dfae302f60540808d474adced35aba9f9c76c16b5d31d589",
+          "bytes": 27580
+        }
+      },
+      "points": {
+        "total": 100,
+        "checks": [
+          {
+            "id": "readme-media",
+            "label": "The README shows it, with a screenshot or other image",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "changelog",
+            "label": "It has a changelog",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "license",
+            "label": "It has an open-source licence",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "lockfile",
+            "label": "Its lockfile installs only from npm, every package with a hash",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "build-verified",
+            "label": "The registry rebuilt it from its source and got the same files",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "permissions",
+            "label": "It says what it uses",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "least-privilege",
+            "label": "It asks for nothing it does not use",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "typechecks",
+            "label": "It type-checks",
+            "max": 20,
+            "got": 20
+          },
+          {
+            "id": "up-to-date",
+            "label": "It is built with a current SDK",
+            "max": 10,
+            "got": 10
+          }
+        ]
+      }
     }
   ]
 }

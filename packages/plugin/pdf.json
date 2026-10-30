@@ -121,6 +121,124 @@
           "bytes": 5304616
         }
       }
+    },
+    {
+      "version": "0.2.2",
+      "tag": "v0.2.2",
+      "publishedAt": "2026-10-30T20:42:06Z",
+      "readme": true,
+      "manifest": {
+        "name": "PDF",
+        "description": "View PDFs, highlight, draw and add text and images on them, fill their forms, and retype their text in its own font.",
+        "icon": "FileText",
+        "color": "#f87171",
+        "minDeck": "1.6.0",
+        "permissions": [
+          "files",
+          "terminals"
+        ]
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M14 2v5a1 1 0 0 0 1 1h5"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M10 9H8"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M16 13H8"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M16 17H8"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "979056bf5e3068877161a14c0cb7cd0214d840b84368260eee8229ca4643f471",
+          "bytes": 313
+        },
+        "plugin.js": {
+          "sha256": "82458f9876027a19d7d190b32ea5589e0e7e43593ab680c817e0341007fef9d6",
+          "bytes": 5212418
+        }
+      },
+      "points": {
+        "total": 100,
+        "checks": [
+          {
+            "id": "readme-media",
+            "label": "The README shows it, with a screenshot or other image",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "changelog",
+            "label": "It has a changelog",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "license",
+            "label": "It has an open-source licence",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "lockfile",
+            "label": "Its lockfile installs only from npm, every package with a hash",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "build-verified",
+            "label": "The registry rebuilt it from its source and got the same files",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "permissions",
+            "label": "It says what it uses",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "least-privilege",
+            "label": "It asks for nothing it does not use",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "typechecks",
+            "label": "It type-checks",
+            "max": 20,
+            "got": 20
+          },
+          {
+            "id": "up-to-date",
+            "label": "It is built with a current SDK",
+            "max": 10,
+            "got": 10
+          }
+        ]
+      }
     }
   ]
 }

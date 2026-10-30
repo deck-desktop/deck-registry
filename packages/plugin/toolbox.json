@@ -104,6 +104,97 @@
           "bytes": 71713
         }
       }
+    },
+    {
+      "version": "1.2.2",
+      "tag": "v1.2.2",
+      "publishedAt": "2026-10-30T20:44:30Z",
+      "readme": true,
+      "manifest": {
+        "name": "Toolbox",
+        "description": "Developer conversions in one place: JSON (YAML, CSV, TypeScript and Dart models), JWT, Base64, URL, timestamps and timezones, UUID and ULID, hashes, regex, cron, case, diff, color, Unicode, passwords, number bases and HTTP status. Paste anything and the right tool opens.",
+        "icon": "Wrench",
+        "color": "#d4d4d8",
+        "minDeck": "1.10.0",
+        "permissions": []
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "09cd2f44821cfbab21ecfd21f2ef7f61c1577a253ed041522729dfb4383cbbc0",
+          "bytes": 443
+        },
+        "plugin.js": {
+          "sha256": "6a0534f2376c718f084503bfb1b63eee4354a864f05fd1459d3c035da4231e5b",
+          "bytes": 71713
+        }
+      },
+      "points": {
+        "total": 100,
+        "checks": [
+          {
+            "id": "readme-media",
+            "label": "The README shows it, with a screenshot or other image",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "changelog",
+            "label": "It has a changelog",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "license",
+            "label": "It has an open-source licence",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "lockfile",
+            "label": "Its lockfile installs only from npm, every package with a hash",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "build-verified",
+            "label": "The registry rebuilt it from its source and got the same files",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "permissions",
+            "label": "It says what it uses",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "least-privilege",
+            "label": "It asks for nothing it does not use",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "typechecks",
+            "label": "It type-checks",
+            "max": 20,
+            "got": 20
+          },
+          {
+            "id": "up-to-date",
+            "label": "It is built with a current SDK",
+            "max": 10,
+            "got": 10
+          }
+        ]
+      }
     }
   ]
 }

@@ -54,6 +54,111 @@
           "bytes": 21357
         }
       }
+    },
+    {
+      "version": "1.0.1",
+      "tag": "v1.0.1",
+      "publishedAt": "2026-10-30T20:43:47Z",
+      "readme": true,
+      "manifest": {
+        "name": "Sound",
+        "description": "Volume, speakers and microphone, and each app's level, from the footer; a microphone mute shortcut that works in every app.",
+        "icon": "Volume2",
+        "color": "#38bdf8",
+        "minDeck": "1.10.3",
+        "permissions": [
+          "system"
+        ]
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M16 9a5 5 0 0 1 0 6"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M19.364 18.364a9 9 0 0 0 0-12.728"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "074eadf4ff84e730506cbdeb60cbb5627f40a0ba4eb1b7de59c8c1893d0615b1",
+          "bytes": 308
+        },
+        "plugin.js": {
+          "sha256": "b50d64acc6b6f96a5500277d23706cf22120a82795c4d22af2f8feeaf3f0c6d7",
+          "bytes": 21357
+        }
+      },
+      "points": {
+        "total": 100,
+        "checks": [
+          {
+            "id": "readme-media",
+            "label": "The README shows it, with a screenshot or other image",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "changelog",
+            "label": "It has a changelog",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "license",
+            "label": "It has an open-source licence",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "lockfile",
+            "label": "Its lockfile installs only from npm, every package with a hash",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "build-verified",
+            "label": "The registry rebuilt it from its source and got the same files",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "permissions",
+            "label": "It says what it uses",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "least-privilege",
+            "label": "It asks for nothing it does not use",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "typechecks",
+            "label": "It type-checks",
+            "max": 20,
+            "got": 20
+          },
+          {
+            "id": "up-to-date",
+            "label": "It is built with a current SDK",
+            "max": 10,
+            "got": 10
+          }
+        ]
+      }
     }
   ]
 }

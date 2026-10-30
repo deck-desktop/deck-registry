@@ -135,6 +135,102 @@
           "bytes": 65923
         }
       }
+    },
+    {
+      "version": "0.2.2",
+      "tag": "v0.2.2",
+      "publishedAt": "2026-10-30T20:38:45Z",
+      "readme": true,
+      "manifest": {
+        "name": "Files",
+        "description": "A file explorer: your drives, pinned folders and servers, with tabs, a preview pane, search by name and inside files, and copy, move, rename and the Recycle Bin.",
+        "icon": "FolderOpen",
+        "color": "#60a5fa",
+        "minDeck": "1.11.0",
+        "permissions": [
+          "files",
+          "processes",
+          "network",
+          "terminals"
+        ]
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "906628e073f35412b4909526352bc5b5d7f23e017eb2908f5c13370617efe69f",
+          "bytes": 397
+        },
+        "plugin.js": {
+          "sha256": "b0e25667acb1fc8e6bfc6d45131accfe633bcc8f1a54fe46664d7d4fc3a63148",
+          "bytes": 65923
+        }
+      },
+      "points": {
+        "total": 100,
+        "checks": [
+          {
+            "id": "readme-media",
+            "label": "The README shows it, with a screenshot or other image",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "changelog",
+            "label": "It has a changelog",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "license",
+            "label": "It has an open-source licence",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "lockfile",
+            "label": "Its lockfile installs only from npm, every package with a hash",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "build-verified",
+            "label": "The registry rebuilt it from its source and got the same files",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "permissions",
+            "label": "It says what it uses",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "least-privilege",
+            "label": "It asks for nothing it does not use",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "typechecks",
+            "label": "It type-checks",
+            "max": 20,
+            "got": 20
+          },
+          {
+            "id": "up-to-date",
+            "label": "It is built with a current SDK",
+            "max": 10,
+            "got": 10
+          }
+        ]
+      }
     }
   ]
 }

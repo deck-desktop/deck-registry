@@ -52,6 +52,107 @@
           "bytes": 2321
         }
       }
+    },
+    {
+      "version": "1.2.0",
+      "tag": "v1.2.0",
+      "publishedAt": "2026-10-30T20:42:25Z",
+      "readme": true,
+      "manifest": {
+        "name": "Power Timer",
+        "description": "Shut down, restart, sleep, hibernate or lock the PC after a delay or at a time.",
+        "icon": "Power",
+        "color": "#f43f5e",
+        "minDeck": "1.13.0",
+        "permissions": []
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M12 2v10"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M18.4 6.6a9 9 0 1 1-12.77.04"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "ef2823862bc70ae21c25cf77a118fe78a35f840caba7c951a89000fa63a7c44e",
+          "bytes": 258
+        },
+        "plugin.js": {
+          "sha256": "ed92c50f01b207e8d0632d06e5eb43eef7c9b698db65cc251d4676ac3d206160",
+          "bytes": 16054
+        },
+        "mcp.js": {
+          "sha256": "45a93a5afcb37b3d6bc224a9c910e00ed27fe1777485788defe5f6805dc0f935",
+          "bytes": 2321
+        }
+      },
+      "points": {
+        "total": 100,
+        "checks": [
+          {
+            "id": "readme-media",
+            "label": "The README shows it, with a screenshot or other image",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "changelog",
+            "label": "It has a changelog",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "license",
+            "label": "It has an open-source licence",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "lockfile",
+            "label": "Its lockfile installs only from npm, every package with a hash",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "build-verified",
+            "label": "The registry rebuilt it from its source and got the same files",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "permissions",
+            "label": "It says what it uses",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "least-privilege",
+            "label": "It asks for nothing it does not use",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "typechecks",
+            "label": "It type-checks",
+            "max": 20,
+            "got": 20
+          },
+          {
+            "id": "up-to-date",
+            "label": "It is built with a current SDK",
+            "max": 10,
+            "got": 10
+          }
+        ]
+      }
     }
   ]
 }

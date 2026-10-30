@@ -293,6 +293,118 @@
           "bytes": 283230
         }
       }
+    },
+    {
+      "version": "1.6.0",
+      "tag": "v1.6.0",
+      "publishedAt": "2026-10-30T20:40:18Z",
+      "readme": true,
+      "manifest": {
+        "name": "Git",
+        "description": "A commit graph for each workspace: stage and commit, branches, tags and stashes, file history, diffs, and GitHub/GitLab pull requests with review comments. Formerly Deck's built-in Git Graph.",
+        "icon": "GitBranch",
+        "color": "#f97316",
+        "minDeck": "1.13.0",
+        "permissions": [
+          "files",
+          "processes",
+          "git",
+          "network"
+        ]
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M15 6a9 9 0 0 0-9 9V3"
+          }
+        ],
+        [
+          "circle",
+          {
+            "cx": "18",
+            "cy": "6",
+            "r": "3"
+          }
+        ],
+        [
+          "circle",
+          {
+            "cx": "6",
+            "cy": "18",
+            "r": "3"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "cacb18ac5cc0d8a503ac17abb5bb6a2c7666599e2a3a38743e55c3d1828d7cf2",
+          "bytes": 416
+        },
+        "plugin.js": {
+          "sha256": "98a2a24c7045b886914a845a3fd4ed331f4b04fc38ec221851d09f8d032de38c",
+          "bytes": 297134
+        }
+      },
+      "points": {
+        "total": 100,
+        "checks": [
+          {
+            "id": "readme-media",
+            "label": "The README shows it, with a screenshot or other image",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "changelog",
+            "label": "It has a changelog",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "license",
+            "label": "It has an open-source licence",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "lockfile",
+            "label": "Its lockfile installs only from npm, every package with a hash",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "build-verified",
+            "label": "The registry rebuilt it from its source and got the same files",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "permissions",
+            "label": "It says what it uses",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "least-privilege",
+            "label": "It asks for nothing it does not use",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "typechecks",
+            "label": "It type-checks",
+            "max": 20,
+            "got": 20
+          },
+          {
+            "id": "up-to-date",
+            "label": "It is built with a current SDK",
+            "max": 10,
+            "got": 10
+          }
+        ]
+      }
     }
   ]
 }

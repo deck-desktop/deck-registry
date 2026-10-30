@@ -78,6 +78,94 @@
           "bytes": 64671
         }
       }
+    },
+    {
+      "version": "1.2.0",
+      "tag": "v1.2.0",
+      "publishedAt": "2026-10-30T20:39:51Z",
+      "readme": true,
+      "manifest": {
+        "name": "Games",
+        "description": "Mini games in a pane: 2048, Minesweeper, Snake, Sudoku, Tetris, Words, Solitaire and Sokoban. Each is saved as you play and comes back after a restart.",
+        "icon": "icon.svg",
+        "color": "#a3e635",
+        "minDeck": "1.13.0",
+        "permissions": []
+      },
+      "iconSvg": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogIDx0aXRsZT5HYW1lczwvdGl0bGU+CiAgPHJlY3QgeD0iMyIgeT0iMyIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiByeD0iNCIvPgogIDxjaXJjbGUgY3g9IjgiIGN5PSI4IiByPSIxLjUiIGZpbGw9ImJsYWNrIiBzdHJva2U9Im5vbmUiLz4KICA8Y2lyY2xlIGN4PSIxNiIgY3k9IjgiIHI9IjEuNSIgZmlsbD0iYmxhY2siIHN0cm9rZT0ibm9uZSIvPgogIDxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEuNSIgZmlsbD0iYmxhY2siIHN0cm9rZT0ibm9uZSIvPgogIDxjaXJjbGUgY3g9IjgiIGN5PSIxNiIgcj0iMS41IiBmaWxsPSJibGFjayIgc3Ryb2tlPSJub25lIi8+CiAgPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMS41IiBmaWxsPSJibGFjayIgc3Ryb2tlPSJub25lIi8+Cjwvc3ZnPgo=",
+      "files": {
+        "plugin.json": {
+          "sha256": "a3fd8399dc9b09d35804ddb24d6fc10e174daf3cdebb850d932e06952d2156a9",
+          "bytes": 321
+        },
+        "plugin.js": {
+          "sha256": "4bd6bdb7693335da819332f3bf8c7276ad2d407ac872a758710d2f243ec34f35",
+          "bytes": 64713
+        },
+        "icon.svg": {
+          "sha256": "408458e48cf38d9e2a4bf55601c26c5b83eec113eb9df821d0a5c6f0e98af959",
+          "bytes": 545
+        }
+      },
+      "points": {
+        "total": 100,
+        "checks": [
+          {
+            "id": "readme-media",
+            "label": "The README shows it, with a screenshot or other image",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "changelog",
+            "label": "It has a changelog",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "license",
+            "label": "It has an open-source licence",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "lockfile",
+            "label": "Its lockfile installs only from npm, every package with a hash",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "build-verified",
+            "label": "The registry rebuilt it from its source and got the same files",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "permissions",
+            "label": "It says what it uses",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "least-privilege",
+            "label": "It asks for nothing it does not use",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "typechecks",
+            "label": "It type-checks",
+            "max": 20,
+            "got": 20
+          },
+          {
+            "id": "up-to-date",
+            "label": "It is built with a current SDK",
+            "max": 10,
+            "got": 10
+          }
+        ]
+      }
     }
   ]
 }

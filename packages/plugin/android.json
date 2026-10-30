@@ -53,6 +53,112 @@
           "bytes": 28710
         }
       }
+    },
+    {
+      "version": "0.1.1",
+      "tag": "v0.1.1",
+      "publishedAt": "2026-10-30T20:36:08Z",
+      "readme": true,
+      "manifest": {
+        "name": "Android",
+        "description": "A connected phone: its screen live and clickable, its log, screenshots, screen recordings and app installs, over adb.",
+        "icon": "Smartphone",
+        "color": "#3ddc84",
+        "minDeck": "1.11.1",
+        "permissions": [
+          "files",
+          "processes",
+          "network"
+        ]
+      },
+      "iconNode": [
+        [
+          "rect",
+          {
+            "width": "14",
+            "height": "20",
+            "x": "5",
+            "y": "2",
+            "rx": "2",
+            "ry": "2"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M12 18h.01"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "018f8f6aa5767d7039ed6aa442f0a9afec4b922853e85a5de2f1889583b8f91f",
+          "bytes": 361
+        },
+        "plugin.js": {
+          "sha256": "60da0f35c53a9b5cd3a4cb63b5a95ab25a57b919c853e92977aa16de53ddbdca",
+          "bytes": 28710
+        }
+      },
+      "points": {
+        "total": 100,
+        "checks": [
+          {
+            "id": "readme-media",
+            "label": "The README shows it, with a screenshot or other image",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "changelog",
+            "label": "It has a changelog",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "license",
+            "label": "It has an open-source licence",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "lockfile",
+            "label": "Its lockfile installs only from npm, every package with a hash",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "build-verified",
+            "label": "The registry rebuilt it from its source and got the same files",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "permissions",
+            "label": "It says what it uses",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "least-privilege",
+            "label": "It asks for nothing it does not use",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "typechecks",
+            "label": "It type-checks",
+            "max": 20,
+            "got": 20
+          },
+          {
+            "id": "up-to-date",
+            "label": "It is built with a current SDK",
+            "max": 10,
+            "got": 10
+          }
+        ]
+      }
     }
   ]
 }

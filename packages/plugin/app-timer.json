@@ -78,6 +78,135 @@
           "bytes": 2263
         }
       }
+    },
+    {
+      "version": "1.2.0",
+      "tag": "v1.2.0",
+      "publishedAt": "2026-10-30T20:36:28Z",
+      "readme": true,
+      "manifest": {
+        "name": "App Timer",
+        "description": "Close an app after a delay or at a time, once or on chosen days.",
+        "icon": "AlarmClock",
+        "color": "#c084fc",
+        "minDeck": "1.13.0",
+        "permissions": [
+          "system"
+        ]
+      },
+      "iconNode": [
+        [
+          "circle",
+          {
+            "cx": "12",
+            "cy": "13",
+            "r": "8"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M12 9v4l2 2"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M5 3 2 6"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "m22 6-3-3"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M6.38 18.7 4 21"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M17.64 18.67 20 21"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "d851f680cb757ef99a7817c26959cc826776015b7870ab9520578218b0919990",
+          "bytes": 260
+        },
+        "plugin.js": {
+          "sha256": "80b5b63935b9f97467279cd19be9a878b5c00a7ceb30f26468c02aa019ee989b",
+          "bytes": 18464
+        },
+        "mcp.js": {
+          "sha256": "fc3343ce6779df2c67880f5c76a1210353bbefe9337150cde63d65ab4af0e51e",
+          "bytes": 2263
+        }
+      },
+      "points": {
+        "total": 100,
+        "checks": [
+          {
+            "id": "readme-media",
+            "label": "The README shows it, with a screenshot or other image",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "changelog",
+            "label": "It has a changelog",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "license",
+            "label": "It has an open-source licence",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "lockfile",
+            "label": "Its lockfile installs only from npm, every package with a hash",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "build-verified",
+            "label": "The registry rebuilt it from its source and got the same files",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "permissions",
+            "label": "It says what it uses",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "least-privilege",
+            "label": "It asks for nothing it does not use",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "typechecks",
+            "label": "It type-checks",
+            "max": 20,
+            "got": 20
+          },
+          {
+            "id": "up-to-date",
+            "label": "It is built with a current SDK",
+            "max": 10,
+            "got": 10
+          }
+        ]
+      }
     }
   ]
 }

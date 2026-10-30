@@ -116,6 +116,106 @@
           "bytes": 8591
         }
       }
+    },
+    {
+      "version": "1.3.3",
+      "tag": "v1.3.3",
+      "publishedAt": "2026-10-30T20:39:09Z",
+      "readme": true,
+      "manifest": {
+        "name": "Flutter",
+        "description": "Launch a Flutter app on a device, then hot reload it from the footer.",
+        "icon": "Zap",
+        "color": "#38bdf8",
+        "minDeck": "1.6.0",
+        "permissions": [
+          "files",
+          "processes",
+          "terminals",
+          "deck"
+        ]
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "06008a8fd27a54d3c8beeeda0773bf60b30bcb7d9ef10eb48c75df9599b1e14d",
+          "bytes": 298
+        },
+        "plugin.js": {
+          "sha256": "1e819baf5438f2f80b23d4865a6cf65e22653fd9fbe93358420b66b9f5d2f531",
+          "bytes": 41425
+        },
+        "mcp.js": {
+          "sha256": "8459da48c950b47e23c8b2649b26dffb12426d1a6294f68d5c7e93315f5abf2b",
+          "bytes": 8591
+        }
+      },
+      "points": {
+        "total": 100,
+        "checks": [
+          {
+            "id": "readme-media",
+            "label": "The README shows it, with a screenshot or other image",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "changelog",
+            "label": "It has a changelog",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "license",
+            "label": "It has an open-source licence",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "lockfile",
+            "label": "Its lockfile installs only from npm, every package with a hash",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "build-verified",
+            "label": "The registry rebuilt it from its source and got the same files",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "permissions",
+            "label": "It says what it uses",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "least-privilege",
+            "label": "It asks for nothing it does not use",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "typechecks",
+            "label": "It type-checks",
+            "max": 20,
+            "got": 20
+          },
+          {
+            "id": "up-to-date",
+            "label": "It is built with a current SDK",
+            "max": 10,
+            "got": 10
+          }
+        ]
+      }
     }
   ]
 }
