@@ -59,6 +59,8 @@ for (const p of packages) {
     const d = {
       schema: 3, kind: p.kind, id: p.id, version: v.version, readme: readmeUrl(p, v), signature: null,
       files: Object.fromEntries(Object.entries(v.files).map(([name, f]) => [name, { url: fileUrl(p, v, name), sha256: f.sha256, bytes: f.bytes }])),
+      // Its points, check by check, as worked out when it was published (validate.mjs).
+      ...(v.points ? { points: v.points } : {}),
     };
     mine.set(v.version, d);
     details.push([detailPath(p, v), d]);
@@ -76,6 +78,8 @@ for (const p of packages) {
       ...(p.kind === "language" ? { requires: m.requires ?? null, extensions: m.extensions ?? [] } : {}),
       files: mine.get(v.version).files,
       ...(v.iconNode ? { iconNode: v.iconNode } : {}),
+      // Its own icon.svg, as a data URL: drawn as a mask in its colour, as a lucide one is.
+      ...(v.iconSvg ? { iconSvg: v.iconSvg } : {}),
     };
   };
   if (live[0]) {
@@ -86,6 +90,8 @@ for (const p of packages) {
       ...(live[0].publishedAt ? { published: live[0].publishedAt } : {}),
       // A submission that could not be rebuilt from its source (validate.mjs) says so.
       ...(live[0].buildVerified === false ? { buildVerified: false } : {}),
+      // Its points out of 100; the checks behind them are in its details.
+      ...(live[0].points ? { points: live[0].points.total } : {}),
       ...(p.discontinued ? { discontinued: true } : {}),
     });
   }

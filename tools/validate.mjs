@@ -8,7 +8,7 @@
 // package is the GitHub release `tag` of `repo`; validation checks it is well formed, that the
 // person submitting owns it, that its version is new, and, where that can be proven, that its
 // files are what its source builds to. Nothing here is a review of what a plugin does: points
-// (later) are advice, and these checks only decide whether it is a valid package.
+// are advice, and these checks only decide whether it is a valid package.
 //
 // SECURITY. This runs with a token that can merge and push (pull_request_target), so it never
 // runs the submitter's code:
@@ -31,7 +31,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 // `deck-plugin publish` runs on the author's machine before anything is public, so the two can
 // never disagree. This file adds what needs GitHub: who owns it, the release, the rebuild.
 import {
-  assetName, BUILD_RUNS, checkAssets as checkFiles, checkId, checkLockfile, checkPermissions, compareVersions, MAX_FILE, MAX_TOTAL, RESERVED, SEMVER,
+  assetName, BUILD_RUNS, checkAssets as checkFiles, checkIcon, checkId, checkLockfile, checkPermissions, compareVersions, fileFacts, ICON_FILE, MAX_FILE, MAX_TOTAL, points, RESERVED, SEMVER,
 } from "./node_modules/deck-plugin-sdk/validate.mjs";
 export { assetName, BUILD_RUNS, checkLockfile, checkPermissions, compareVersions, MAX_FILE, MAX_TOTAL, RESERVED };
 
@@ -67,6 +67,11 @@ export function loadPermissions() {
   return existsSync(at) ? JSON.parse(readFileSync(at, "utf8")) : null;
 }
 
+/** The newest deck-plugin-sdk on npm, for the up-to-date check; null when npm cannot be reached. */
+export async function newestSdk() {
+  try { return (await (await fetch("https://registry.npmjs.org/deck-plugin-sdk/latest")).json()).version ?? null; } catch { return null; }
+}
+
 const sha256 = (buf) => createHash("sha256").update(buf).digest("hex");
 const gh = (path) => JSON.parse(execFileSync("gh", ["api", path], { stdio: ["ignore", "pipe", "pipe"], maxBuffer: 64 << 20 }).toString());
 const ghOk = (path) => { try { execFileSync("gh", ["api", path], { stdio: "ignore" }); return true; } catch { return false; } };
@@ -77,6 +82,53 @@ async function iconNodeOf(icon) {
   if (typeof icon !== "string" || !/^[A-Z][A-Za-z0-9]*$/.test(icon) || !existsSync(file)) return null;
   const { __iconNode } = await import(pathToFileURL(file).href);
   return __iconNode.map(([tag, { key: _key, ...attrs }]) => [tag, attrs]);
+}
+
+/**
+ * Rebuild a plugin from its source at the tag, cloned in `dir`, and check the built files against
+ * the release's: `assets` has its asset names, `digest(name)` a released file's sha256. Then
+ * type-check it with the TypeScript its own lockfile installed. Shared with rescore.mjs, which
+ * scores the versions published before points existed.
+ */
+export function rebuildPlugin(dir, assets, digest) {
+  const errors = [], notes = [];
+  const has = (f) => existsSync(join(dir, f));
+  let buildVerified = false;
+  /** Whether `tsc --noEmit` passes: null when it could not be run (no rebuild, no tsconfig, no typescript). */
+  let typechecks = null;
+  if (has("deck-plugin.config.mjs")) {
+    notes.push("It has a deck-plugin.config.mjs, which the build runs, so its plugin.js could not be rebuilt here to check it matches the source. It is listed as **build not verified**.");
+  } else if (has(".npmrc")) {
+    errors.push("there is an .npmrc at the tag; the rebuild installs from registry.npmjs.org only, so remove it");
+  } else if (!has("package-lock.json")) {
+    errors.push("there is no package-lock.json at the tag; commit it, so the build can be repeated exactly");
+  } else {
+    const lockErrors = checkLockfile(JSON.parse(readFileSync(join(dir, "package-lock.json"), "utf8")));
+    errors.push(...lockErrors);
+    if (!lockErrors.length) {
+      try {
+        execFileSync("npm", ["ci", "--ignore-scripts", "--no-audit", "--no-fund", "--registry=https://registry.npmjs.org/"], { cwd: dir, stdio: "pipe", shell: process.platform === "win32" });
+        execFileSync(process.execPath, [join(dir, "node_modules", "deck-plugin-sdk", "bin", "deck-plugin.mjs"), "build"], { cwd: dir, stdio: "pipe" });
+        for (const f of ["plugin.js", "mcp.js"]) {
+          if (!assets.has(f) && !has(f)) continue;
+          if (!has(f)) errors.push(`the source builds no ${f}, but the release has one`);
+          else if (!assets.has(f)) errors.push(`the source builds ${f}, but the release has none`);
+          else if (sha256(readFileSync(join(dir, f))) !== digest(f)) {
+            errors.push(`the release's ${f} is not what the source builds to. Build it with \`npm ci && npm run build\` at the tag, then upload that file`);
+          }
+        }
+        buildVerified = !errors.length;
+        // Type-checked with the TypeScript its own lockfile installed: tsc reads the code, it never runs it.
+        const tsc = join(dir, "node_modules", "typescript", "bin", "tsc");
+        if (buildVerified && has("tsconfig.json") && existsSync(tsc)) {
+          try { execFileSync(process.execPath, [tsc, "--noEmit", "-p", "."], { cwd: dir, stdio: "pipe" }); typechecks = true; } catch { typechecks = false; }
+        }
+      } catch (e) {
+        errors.push(`the build failed: ${(e.stderr ?? e.message).toString().trim().split("\n").slice(-3).join(" ")}`);
+      }
+    }
+  }
+  return { errors, notes, buildVerified, typechecks };
 }
 
 /**
@@ -156,59 +208,64 @@ export async function validate(id, submission, author) {
     if (kind === "plugin" && (typeof m.minDeck !== "string" || !SEMVER.test(m.minDeck))) errors.push("`minDeck` must say which Deck it needs, such as \"1.7.0\"");
     if (m.color !== undefined && !/^#[0-9a-f]{6}$/i.test(m.color)) errors.push("`color` must be #rrggbb");
     const icon = m.icon ?? (kind === "plugin" ? "Package" : "FileCode");
-    const iconNode = await iconNodeOf(icon);
-    if (!iconNode) errors.push(`\`${icon}\` is not a lucide icon name (lucide.dev/icons, in PascalCase)`);
+    // An icon of its own (icon.svg) or a lucide one by name. Its own is carried inline, checked
+    // to be only shapes, and must be the released file: the one Deck installs.
+    let iconNode = null, iconSvg = null;
+    if (kind === "plugin" && icon === ICON_FILE) {
+      if (!has(ICON_FILE) || !assets.has(ICON_FILE)) errors.push(`plugin.json's icon is ${ICON_FILE}: put it in the source and in the release`);
+      else {
+        const svg = readFileSync(join(dir, ICON_FILE));
+        if (sha256(svg) !== digest(ICON_FILE)) errors.push(`the release's ${ICON_FILE} is not the one at the tag`);
+        errors.push(...checkIcon(svg.toString("utf8")));
+        iconSvg = `data:image/svg+xml;base64,${svg.toString("base64")}`;
+      }
+    } else {
+      iconNode = await iconNodeOf(icon);
+      if (!iconNode) errors.push(`\`${icon}\` is not a lucide icon name (lucide.dev/icons, in PascalCase), or ${ICON_FILE} for one of its own`);
+    }
 
     // The files: a language's are its source; a plugin's are rebuilt from it, when that proves anything.
     let buildVerified = false;
+    /** Whether `tsc --noEmit` passes: null when it could not be run (no rebuild, no tsconfig, no typescript). */
+    let typechecks = null;
     if (kind === "language") {
       const snippets = existsSync(join(dir, "snippets")) ? readdirSync(join(dir, "snippets")).filter((f) => f.endsWith(".json")).map((f) => `snippets/${f}`) : [];
       const want = new Set(["language.json", ...snippets].map(assetName));
       for (const a of assets.keys()) if (!want.has(a)) errors.push(`the release has \`${a}\`, which is not in the source`);
       for (const f of snippets) if (digest(f) !== sha256(readFileSync(join(dir, f)))) errors.push(`the release's ${f} is not the one at the tag`);
       buildVerified = true;
-    } else if (has("deck-plugin.config.mjs")) {
-      notes.push("It has a deck-plugin.config.mjs, which the build runs, so its plugin.js could not be rebuilt here to check it matches the source. It is listed as **build not verified**.");
-    } else if (has(".npmrc")) {
-      errors.push("there is an .npmrc at the tag; the rebuild installs from registry.npmjs.org only, so remove it");
-    } else if (!has("package-lock.json")) {
-      errors.push("there is no package-lock.json at the tag; commit it, so the build can be repeated exactly");
     } else {
-      const lockErrors = checkLockfile(JSON.parse(readFileSync(join(dir, "package-lock.json"), "utf8")));
-      errors.push(...lockErrors);
-      if (!lockErrors.length) {
-        try {
-          execFileSync("npm", ["ci", "--ignore-scripts", "--no-audit", "--no-fund", "--registry=https://registry.npmjs.org/"], { cwd: dir, stdio: "pipe", shell: process.platform === "win32" });
-          execFileSync(process.execPath, [join(dir, "node_modules", "deck-plugin-sdk", "bin", "deck-plugin.mjs"), "build"], { cwd: dir, stdio: "pipe" });
-          for (const f of ["plugin.js", "mcp.js"]) {
-            if (!assets.has(f) && !has(f)) continue;
-            if (!has(f)) errors.push(`the source builds no ${f}, but the release has one`);
-            else if (!assets.has(f)) errors.push(`the source builds ${f}, but the release has none`);
-            else if (sha256(readFileSync(join(dir, f))) !== digest(f)) {
-              errors.push(`the release's ${f} is not what the source builds to. Build it with \`npm ci && npm run build\` at the tag, then upload that file`);
-            }
-          }
-          buildVerified = !errors.length;
-        } catch (e) {
-          errors.push(`the build failed: ${(e.stderr ?? e.message).toString().trim().split("\n").slice(-3).join(" ")}`);
-        }
-      }
+      const r = rebuildPlugin(dir, assets, digest);
+      errors.push(...r.errors);
+      notes.push(...r.notes);
+      ({ buildVerified, typechecks } = r);
     }
     // What it may use: declared, and covering what its bundle calls (when Deck's table is here).
-    let permissions;
+    let permissions, used = [];
     if (kind === "plugin") {
       const table = loadPermissions();
       if (!table) notes.push("Its permissions were not checked: this registry's deck-plugin-sdk predates them.");
       else {
         const bundle = has("plugin.js") && buildVerified ? readFileSync(join(dir, "plugin.js"), "utf8")
           : Buffer.from(await (await fetch(assets.get("plugin.js").browser_download_url)).arrayBuffer()).toString("utf8");
-        const r = checkPermissions(m.permissions, bundle, table);
+        const r = checkPermissions(m.permissions, bundle, table, id);
         errors.push(...r.errors);
         notes.push(...r.notes);
+        used = r.used;
         if (Array.isArray(m.permissions)) permissions = [...new Set(m.permissions)];
       }
     }
     if (errors.length) return { errors, notes };
+
+    // Its points (a plugin's only: a language has no bundle to rebuild or check), worked out now
+    // and kept with the version, which never changes.
+    let score;
+    if (kind === "plugin") {
+      const read = (f) => (has(f) ? readFileSync(join(dir, f), "utf8") : null);
+      score = points({ ...fileFacts(read), buildVerified, typechecks, permissions: permissions ?? null, used, newestSdk: await newestSdk() });
+      notes.push(`Points: **${score.total}** of 100.${score.checks.filter((c) => c.fix).map((c) => `
+  - ${c.fix} (+${c.max})`).join("")}`);
+    }
 
     const record = {
       version, tag, publishedAt: rel.published_at, readme: true,
@@ -219,9 +276,11 @@ export async function validate(id, submission, author) {
         ...(permissions ? { permissions } : {}),
         ...(kind === "language" ? { requires: m.server?.command ?? m.server?.module ?? null, extensions: m.extensions ?? [] } : {}),
       },
-      iconNode,
+      ...(iconNode ? { iconNode } : {}),
+      ...(iconSvg ? { iconSvg } : {}),
       files: Object.fromEntries([...assets.values()].map((a) => [a.name.replace(/^snippets--/, "snippets/"), { sha256: a.digest.slice(7), bytes: a.size }])),
       buildVerified,
+      ...(score ? { points: score } : {}),
     };
     // Shown as its publisher: the name on the account's GitHub profile, else the account itself.
     let shown = owner.login;
