@@ -34,6 +34,9 @@ const table = loadPermissions();
 if (!table) { console.error("deck-plugin-sdk's permissions.json is missing: run npm ci in tools/"); process.exit(1); }
 const newest = await newestSdk();
 console.log(`newest deck-plugin-sdk on npm: ${newest ?? "unknown (offline); up-to-date scores 0"}`);
+// Points are stored once and never worked out again, so a lookup that failed must not cost every
+// version its up-to-date points for good.
+if (go && !newest) { console.error("npm could not be reached for the newest SDK: run again"); process.exit(1); }
 
 const dir = join(root, "packages", "plugin");
 let scored = 0, kept = 0, failed = 0;
