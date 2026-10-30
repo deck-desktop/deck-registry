@@ -26,7 +26,8 @@ try {
     files: { "plugin.json": { sha256: "a".repeat(64), bytes: 10 }, "plugin.js": { sha256: "b".repeat(64), bytes: 20 } },
     ...extra,
   });
-  pkg("plugin", "thing", [v("1.0.0"), v("1.10.0"), v("1.2.0"), v("2.0.0", { retracted: true })]);
+  const score = { total: 70, checks: [{ id: "changelog", label: "It has a changelog", max: 10, got: 0, fix: "Add a CHANGELOG.md" }] };
+  pkg("plugin", "thing", [v("1.0.0"), v("1.10.0", { points: score }), v("1.2.0"), v("2.0.0", { retracted: true })]);
   pkg("plugin", "gone", [v("1.0.0")], { removed: true });
   // Its latest needs a Deck that reads the catalogue; the one before is what older Decks get.
   const needs = (version, minDeck) => ({ ...v(version), manifest: { ...v(version).manifest, minDeck } });
@@ -53,12 +54,16 @@ try {
   assert.equal(thing.files, undefined, "no files in the catalogue");
   assert.equal(thing.published, "2026-10-19T00:00:00Z", "when the listed version was published");
   assert.equal(thing.buildVerified, undefined, "only an unverified build says so");
+  assert.equal(thing.points, 70, "the catalogue carries the total");
+  assert.equal(catalog.plugins.find((e) => e.id === "split").points, undefined, "and nothing for a version published before points");
 
   for (const ver of ["1.0.0", "1.10.0", "1.2.0", "2.0.0"]) read(`details/plugin/thing/${ver}.json`);
   read("details/plugin/gone/1.0.0.json");   // an install made from an older catalogue still has its files
   const d = read("details/plugin/thing/1.10.0.json");
   assert.equal(d.files["plugin.js"].url, "https://github.com/someone/deck-plugin-thing/releases/download/v1.10.0/plugin.js");
   assert.equal(d.readme, "https://raw.githubusercontent.com/someone/deck-plugin-thing/v1.10.0/README.md");
+  assert.deepEqual(d.points, score, "its details carry every check");
+  assert.equal(read("details/plugin/thing/1.2.0.json").points, undefined);
 
   const zig = read("details/language/zig/0.1.0.json");
   assert.equal(zig.files["snippets/zig.json"].url, "https://github.com/someone/deck-language-zig/releases/download/v0.1.0/snippets--zig.json",

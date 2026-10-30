@@ -8,7 +8,7 @@
 // package is the GitHub release `tag` of `repo`; validation checks it is well formed, that the
 // person submitting owns it, that its version is new, and, where that can be proven, that its
 // files are what its source builds to. Nothing here is a review of what a plugin does: points
-// (later) are advice, and these checks only decide whether it is a valid package.
+// are advice, and these checks only decide whether it is a valid package.
 //
 // SECURITY. This runs with a token that can merge and push (pull_request_target), so it never
 // runs the submitter's code:
@@ -31,7 +31,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 // `deck-plugin publish` runs on the author's machine before anything is public, so the two can
 // never disagree. This file adds what needs GitHub: who owns it, the release, the rebuild.
 import {
-  assetName, BUILD_RUNS, checkAssets as checkFiles, checkId, checkLockfile, checkPermissions, compareVersions, MAX_FILE, MAX_TOTAL, RESERVED, SEMVER,
+  assetName, BUILD_RUNS, checkAssets as checkFiles, checkId, checkLockfile, checkPermissions, compareVersions, fileFacts, MAX_FILE, MAX_TOTAL, points, RESERVED, SEMVER,
 } from "./node_modules/deck-plugin-sdk/validate.mjs";
 export { assetName, BUILD_RUNS, checkLockfile, checkPermissions, compareVersions, MAX_FILE, MAX_TOTAL, RESERVED };
 
@@ -65,6 +65,11 @@ export function checkSubmission(id, s) {
 export function loadPermissions() {
   const at = process.env.DECK_PERMISSIONS ?? join(root, "tools", "node_modules", "deck-plugin-sdk", "permissions.json");
   return existsSync(at) ? JSON.parse(readFileSync(at, "utf8")) : null;
+}
+
+/** The newest deck-plugin-sdk on npm, for the up-to-date check; null when npm cannot be reached. */
+async function newestSdk() {
+  try { return (await (await fetch("https://registry.npmjs.org/deck-plugin-sdk/latest")).json()).version ?? null; } catch { return null; }
 }
 
 const sha256 = (buf) => createHash("sha256").update(buf).digest("hex");
@@ -161,6 +166,8 @@ export async function validate(id, submission, author) {
 
     // The files: a language's are its source; a plugin's are rebuilt from it, when that proves anything.
     let buildVerified = false;
+    /** Whether `tsc --noEmit` passes: null when it could not be run (no rebuild, no tsconfig, no typescript). */
+    let typechecks = null;
     if (kind === "language") {
       const snippets = existsSync(join(dir, "snippets")) ? readdirSync(join(dir, "snippets")).filter((f) => f.endsWith(".json")).map((f) => `snippets/${f}`) : [];
       const want = new Set(["language.json", ...snippets].map(assetName));
@@ -189,13 +196,18 @@ export async function validate(id, submission, author) {
             }
           }
           buildVerified = !errors.length;
+          // Type-checked with the TypeScript its own lockfile installed: tsc reads the code, it never runs it.
+          const tsc = join(dir, "node_modules", "typescript", "bin", "tsc");
+          if (buildVerified && has("tsconfig.json") && existsSync(tsc)) {
+            try { execFileSync(process.execPath, [tsc, "--noEmit", "-p", "."], { cwd: dir, stdio: "pipe" }); typechecks = true; } catch { typechecks = false; }
+          }
         } catch (e) {
           errors.push(`the build failed: ${(e.stderr ?? e.message).toString().trim().split("\n").slice(-3).join(" ")}`);
         }
       }
     }
     // What it may use: declared, and covering what its bundle calls (when Deck's table is here).
-    let permissions;
+    let permissions, used = [];
     if (kind === "plugin") {
       const table = loadPermissions();
       if (!table) notes.push("Its permissions were not checked: this registry's deck-plugin-sdk predates them.");
@@ -205,10 +217,21 @@ export async function validate(id, submission, author) {
         const r = checkPermissions(m.permissions, bundle, table);
         errors.push(...r.errors);
         notes.push(...r.notes);
+        used = r.used;
         if (Array.isArray(m.permissions)) permissions = [...new Set(m.permissions)];
       }
     }
     if (errors.length) return { errors, notes };
+
+    // Its points (a plugin's only: a language has no bundle to rebuild or check), worked out now
+    // and kept with the version, which never changes.
+    let score;
+    if (kind === "plugin") {
+      const read = (f) => (has(f) ? readFileSync(join(dir, f), "utf8") : null);
+      score = points({ ...fileFacts(read), buildVerified, typechecks, permissions: permissions ?? null, used, newestSdk: await newestSdk() });
+      notes.push(`Points: **${score.total}** of 100.${score.checks.filter((c) => c.fix).map((c) => `
+  - ${c.fix} (+${c.max})`).join("")}`);
+    }
 
     const record = {
       version, tag, publishedAt: rel.published_at, readme: true,
@@ -222,6 +245,7 @@ export async function validate(id, submission, author) {
       iconNode,
       files: Object.fromEntries([...assets.values()].map((a) => [a.name.replace(/^snippets--/, "snippets/"), { sha256: a.digest.slice(7), bytes: a.size }])),
       buildVerified,
+      ...(score ? { points: score } : {}),
     };
     // Shown as its publisher: the name on the account's GitHub profile, else the account itself.
     let shown = owner.login;
