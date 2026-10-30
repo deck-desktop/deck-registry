@@ -31,7 +31,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 // `deck-plugin publish` runs on the author's machine before anything is public, so the two can
 // never disagree. This file adds what needs GitHub: who owns it, the release, the rebuild.
 import {
-  assetName, BUILD_RUNS, checkAssets as checkFiles, checkId, checkLockfile, checkPermissions, compareVersions, fileFacts, MAX_FILE, MAX_TOTAL, points, RESERVED, SEMVER,
+  assetName, BUILD_RUNS, checkAssets as checkFiles, checkIcon, checkId, checkLockfile, checkPermissions, compareVersions, fileFacts, ICON_FILE, MAX_FILE, MAX_TOTAL, points, RESERVED, SEMVER,
 } from "./node_modules/deck-plugin-sdk/validate.mjs";
 export { assetName, BUILD_RUNS, checkLockfile, checkPermissions, compareVersions, MAX_FILE, MAX_TOTAL, RESERVED };
 
@@ -208,8 +208,21 @@ export async function validate(id, submission, author) {
     if (kind === "plugin" && (typeof m.minDeck !== "string" || !SEMVER.test(m.minDeck))) errors.push("`minDeck` must say which Deck it needs, such as \"1.7.0\"");
     if (m.color !== undefined && !/^#[0-9a-f]{6}$/i.test(m.color)) errors.push("`color` must be #rrggbb");
     const icon = m.icon ?? (kind === "plugin" ? "Package" : "FileCode");
-    const iconNode = await iconNodeOf(icon);
-    if (!iconNode) errors.push(`\`${icon}\` is not a lucide icon name (lucide.dev/icons, in PascalCase)`);
+    // An icon of its own (icon.svg) or a lucide one by name. Its own is carried inline, checked
+    // to be only shapes, and must be the released file: the one Deck installs.
+    let iconNode = null, iconSvg = null;
+    if (kind === "plugin" && icon === ICON_FILE) {
+      if (!has(ICON_FILE) || !assets.has(ICON_FILE)) errors.push(`plugin.json's icon is ${ICON_FILE}: put it in the source and in the release`);
+      else {
+        const svg = readFileSync(join(dir, ICON_FILE));
+        if (sha256(svg) !== digest(ICON_FILE)) errors.push(`the release's ${ICON_FILE} is not the one at the tag`);
+        errors.push(...checkIcon(svg.toString("utf8")));
+        iconSvg = `data:image/svg+xml;base64,${svg.toString("base64")}`;
+      }
+    } else {
+      iconNode = await iconNodeOf(icon);
+      if (!iconNode) errors.push(`\`${icon}\` is not a lucide icon name (lucide.dev/icons, in PascalCase), or ${ICON_FILE} for one of its own`);
+    }
 
     // The files: a language's are its source; a plugin's are rebuilt from it, when that proves anything.
     let buildVerified = false;
@@ -263,7 +276,8 @@ export async function validate(id, submission, author) {
         ...(permissions ? { permissions } : {}),
         ...(kind === "language" ? { requires: m.server?.command ?? m.server?.module ?? null, extensions: m.extensions ?? [] } : {}),
       },
-      iconNode,
+      ...(iconNode ? { iconNode } : {}),
+      ...(iconSvg ? { iconSvg } : {}),
       files: Object.fromEntries([...assets.values()].map((a) => [a.name.replace(/^snippets--/, "snippets/"), { sha256: a.digest.slice(7), bytes: a.size }])),
       buildVerified,
       ...(score ? { points: score } : {}),

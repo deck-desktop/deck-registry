@@ -33,6 +33,8 @@ try {
   const needs = (version, minDeck) => ({ ...v(version), manifest: { ...v(version).manifest, minDeck } });
   pkg("plugin", "split", [needs("2.1.0", "1.6.0"), needs("2.1.1", "1.7.0")]);
   pkg("plugin", "newonly", [needs("0.1.0", "1.7.0")]);
+  const svg = "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIi8+";
+  pkg("plugin", "drawn", [{ ...needs("1.0.0", "1.13.0"), manifest: { ...v("1.0.0").manifest, icon: "icon.svg", minDeck: "1.13.0" }, iconSvg: svg }]);
   pkg("language", "zig", [{ ...v("0.1.0", { readme: false }), manifest: { name: "zig", description: ".zig", icon: "FileCode", requires: "zls", extensions: ["zig"] },
     files: { "language.json": { sha256: "c".repeat(64), bytes: 5 }, "snippets/zig.json": { sha256: "d".repeat(64), bytes: 6 } } }]);
 
@@ -42,7 +44,11 @@ try {
 
   assert.equal(catalog.schema, 3);
   assert.equal(index.schema, 2);
-  assert.deepEqual(catalog.plugins.map((e) => `${e.kind}:${e.id}`), ["plugin:newonly", "plugin:split", "plugin:thing", "language:zig"], "removed packages are not listed");
+  assert.deepEqual(catalog.plugins.map((e) => `${e.kind}:${e.id}`), ["plugin:drawn", "plugin:newonly", "plugin:split", "plugin:thing", "language:zig"], "removed packages are not listed");
+  const drawn = catalog.plugins.find((e) => e.id === "drawn");
+  assert.equal(drawn.icon, "icon.svg");
+  assert.equal(drawn.iconSvg, svg, "its own icon, inline");
+  assert.equal(catalog.plugins.find((e) => e.id === "thing").iconSvg, undefined);
   assert.equal(catalog.plugins.find((e) => e.id === "split").version, "2.1.1", "the catalogue offers the latest");
   assert.equal(index.plugins.find((e) => e.id === "split").version, "2.1.0", "index.json offers the newest an older Deck can run");
   assert.equal(index.plugins.find((e) => e.id === "newonly"), undefined, "and nothing when none can");

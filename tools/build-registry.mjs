@@ -78,6 +78,8 @@ for (const p of packages) {
       ...(p.kind === "language" ? { requires: m.requires ?? null, extensions: m.extensions ?? [] } : {}),
       files: mine.get(v.version).files,
       ...(v.iconNode ? { iconNode: v.iconNode } : {}),
+      // Its own icon.svg, as a data URL: drawn as a mask in its colour, as a lucide one is.
+      ...(v.iconSvg ? { iconSvg: v.iconSvg } : {}),
     };
   };
   if (live[0]) {
