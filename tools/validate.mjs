@@ -235,7 +235,7 @@ export async function validate(id, submission, author) {
       else {
         const bundle = has("plugin.js") && buildVerified ? readFileSync(join(dir, "plugin.js"), "utf8")
           : Buffer.from(await (await fetch(assets.get("plugin.js").browser_download_url)).arrayBuffer()).toString("utf8");
-        const r = checkPermissions(m.permissions, bundle, table);
+        const r = checkPermissions(m.permissions, bundle, table, id);
         errors.push(...r.errors);
         notes.push(...r.notes);
         used = r.used;

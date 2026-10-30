@@ -54,7 +54,7 @@ for (const file of readdirSync(dir).filter((f) => f.endsWith(".json")).sort()) {
       const res = await fetch(`https://github.com/${pkg.repo}/releases/download/${v.tag}/plugin.js`);
       if (!res.ok) throw new Error(`its released plugin.js answered ${res.status}`);
       const manifest = JSON.parse(read("plugin.json") ?? "{}");
-      const perms = checkPermissions(manifest.permissions, await res.text(), table);
+      const perms = checkPermissions(manifest.permissions, await res.text(), table, pkg.id);
       const score = points({
         ...fileFacts(read), buildVerified: build.buildVerified, typechecks: build.typechecks,
         permissions: Array.isArray(manifest.permissions) ? [...new Set(manifest.permissions)] : null, used: perms.used, newestSdk: newest,
