@@ -1,0 +1,79 @@
+{
+  "schema": 3,
+  "kind": "plugin",
+  "id": "clock",
+  "version": "1.1.1",
+  "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-clock/v1.1.1/README.md",
+  "signature": null,
+  "files": {
+    "plugin.json": {
+      "url": "https://github.com/deck-desktop/deck-plugin-clock/releases/download/v1.1.1/plugin.json",
+      "sha256": "1420aaea33254f81a9ba7ff03507a40b4cf18bb02c93b43689acebed3592ad2b",
+      "bytes": 215
+    },
+    "plugin.js": {
+      "url": "https://github.com/deck-desktop/deck-plugin-clock/releases/download/v1.1.1/plugin.js",
+      "sha256": "16a65668c44b55384172739463a691131377a0dd74cb4ff518fd37c5eb55c60e",
+      "bytes": 5130
+    }
+  },
+  "points": {
+    "total": 100,
+    "checks": [
+      {
+        "id": "readme-media",
+        "label": "The README shows it, with a screenshot or other image",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "changelog",
+        "label": "It has a changelog",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "license",
+        "label": "It has an open-source licence",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "lockfile",
+        "label": "Its lockfile installs only from npm, every package with a hash",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "build-verified",
+        "label": "The registry rebuilt it from its source and got the same files",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "permissions",
+        "label": "It says what it uses",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "least-privilege",
+        "label": "It asks for nothing it does not use",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "typechecks",
+        "label": "It type-checks",
+        "max": 20,
+        "got": 20
+      },
+      {
+        "id": "up-to-date",
+        "label": "It is built with a current SDK",
+        "max": 10,
+        "got": 10
+      }
+    ]
+  }
+}

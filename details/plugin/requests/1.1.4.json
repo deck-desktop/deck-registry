@@ -1,0 +1,86 @@
+{
+  "schema": 3,
+  "kind": "plugin",
+  "id": "requests",
+  "version": "1.1.4",
+  "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-requests/v1.1.4/README.md",
+  "signature": null,
+  "files": {
+    "plugin.json": {
+      "url": "https://github.com/deck-desktop/deck-plugin-requests/releases/download/v1.1.4/plugin.json",
+      "sha256": "117c5fd3e3768cb6f992a9188a06bb8838cf71d28dc24ddfade87be7082c21d9",
+      "bytes": 411
+    },
+    "plugin.js": {
+      "url": "https://github.com/deck-desktop/deck-plugin-requests/releases/download/v1.1.4/plugin.js",
+      "sha256": "4c705f997c4ea6bf9829f9ff0b15043b44f5bb35e54f025a15e46592e98c53b4",
+      "bytes": 103423
+    },
+    "mcp.js": {
+      "url": "https://github.com/deck-desktop/deck-plugin-requests/releases/download/v1.1.4/mcp.js",
+      "sha256": "727aa6174886b3d81a1399a8452e83e905c6a4424354370079d72ef65f232518",
+      "bytes": 20928
+    }
+  },
+  "points": {
+    "total": 70,
+    "checks": [
+      {
+        "id": "readme-media",
+        "label": "The README shows it, with a screenshot or other image",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "changelog",
+        "label": "It has a changelog",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "license",
+        "label": "It has an open-source licence",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "lockfile",
+        "label": "Its lockfile installs only from npm, every package with a hash",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "build-verified",
+        "label": "The registry rebuilt it from its source and got the same files",
+        "max": 10,
+        "got": 0,
+        "fix": "Release what `npm ci && npm run build` makes at the tag, with no deck-plugin.config.mjs"
+      },
+      {
+        "id": "permissions",
+        "label": "It says what it uses",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "least-privilege",
+        "label": "It asks for nothing it does not use",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "typechecks",
+        "label": "It type-checks",
+        "max": 20,
+        "got": 0,
+        "fix": "Let the registry rebuild it, with a tsconfig.json, so it can be type-checked"
+      },
+      {
+        "id": "up-to-date",
+        "label": "It is built with a current SDK",
+        "max": 10,
+        "got": 10
+      }
+    ]
+  }
+}
