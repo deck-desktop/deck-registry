@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-30T21:01:10.601Z",
+  "generated": "2026-10-31T17:10:03.408Z",
   "schema": 3,
   "plugins": [
     {
@@ -195,16 +195,16 @@
     {
       "kind": "plugin",
       "id": "canvas",
-      "version": "1.4.2",
+      "version": "1.5.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
       },
       "name": "Canvas",
-      "description": "Excalidraw boards for each project, as tabs in a pane: sketch, diagram, paste screenshots and links, and share a board live with other Decks. Formerly Deck's Pinboard; existing boards carry over.",
+      "description": "Excalidraw boards for each project, as tabs in a pane: sketch, diagram, paste screenshots and links, and share a board with your Deck team. Formerly Deck's Pinboard; existing boards carry over.",
       "icon": "Pin",
       "color": "#f472b6",
-      "minDeck": "1.9.0",
+      "minDeck": "1.14.0",
       "permissions": [
         "files",
         "processes",
@@ -226,9 +226,9 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-canvas",
-      "detail": "details/plugin/canvas/1.4.2.json",
-      "published": "2026-10-30T20:37:40Z",
-      "points": 70
+      "detail": "details/plugin/canvas/1.5.0.json",
+      "published": "2026-10-31T17:01:52Z",
+      "points": 100
     },
     {
       "kind": "plugin",
@@ -453,7 +453,7 @@
     {
       "kind": "plugin",
       "id": "git",
-      "version": "1.6.0",
+      "version": "1.7.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -462,7 +462,7 @@
       "description": "A commit graph for each workspace: stage and commit, branches, tags and stashes, file history, diffs, and GitHub/GitLab pull requests with review comments. Formerly Deck's built-in Git Graph.",
       "icon": "GitBranch",
       "color": "#f97316",
-      "minDeck": "1.13.0",
+      "minDeck": "1.14.0",
       "permissions": [
         "files",
         "processes",
@@ -494,8 +494,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-git",
-      "detail": "details/plugin/git/1.6.0.json",
-      "published": "2026-10-30T20:40:18Z",
+      "detail": "details/plugin/git/1.7.0.json",
+      "published": "2026-10-31T17:02:12Z",
       "points": 100
     },
     {
@@ -832,7 +832,7 @@
     {
       "kind": "plugin",
       "id": "requests",
-      "version": "1.1.4",
+      "version": "1.2.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -841,7 +841,7 @@
       "description": "Build, send and save HTTP requests in a pane: collections, environments and {{variables}}, pre- and post-request scripts, cURL import and export, history. Formerly Deck's HTTP tab; saved collections carry over.",
       "icon": "Send",
       "color": "#22d3ee",
-      "minDeck": "1.9.0",
+      "minDeck": "1.14.0",
       "permissions": [
         "files",
         "network"
@@ -861,9 +861,9 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-requests",
-      "detail": "details/plugin/requests/1.1.4.json",
-      "published": "2026-10-30T20:42:47Z",
-      "points": 70
+      "detail": "details/plugin/requests/1.2.0.json",
+      "published": "2026-10-31T17:02:31Z",
+      "points": 100
     },
     {
       "kind": "plugin",

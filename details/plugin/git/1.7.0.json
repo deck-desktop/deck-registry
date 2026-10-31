@@ -1,0 +1,79 @@
+{
+  "schema": 3,
+  "kind": "plugin",
+  "id": "git",
+  "version": "1.7.0",
+  "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-git/v1.7.0/README.md",
+  "signature": null,
+  "files": {
+    "plugin.json": {
+      "url": "https://github.com/deck-desktop/deck-plugin-git/releases/download/v1.7.0/plugin.json",
+      "sha256": "65c61386909074dcd31d992ef281ecaa6094b0adef94fd404bf10550f661e8bb",
+      "bytes": 416
+    },
+    "plugin.js": {
+      "url": "https://github.com/deck-desktop/deck-plugin-git/releases/download/v1.7.0/plugin.js",
+      "sha256": "50dc4dae5123bb2c9d97bb21b61f0fe98c97d8ae588e73263f11e3359c2e5e09",
+      "bytes": 299570
+    }
+  },
+  "points": {
+    "total": 100,
+    "checks": [
+      {
+        "id": "readme-media",
+        "label": "The README shows it, with a screenshot or other image",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "changelog",
+        "label": "It has a changelog",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "license",
+        "label": "It has an open-source licence",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "lockfile",
+        "label": "Its lockfile installs only from npm, every package with a hash",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "build-verified",
+        "label": "The registry rebuilt it from its source and got the same files",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "permissions",
+        "label": "It says what it uses",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "least-privilege",
+        "label": "It asks for nothing it does not use",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "typechecks",
+        "label": "It type-checks",
+        "max": 20,
+        "got": 20
+      },
+      {
+        "id": "up-to-date",
+        "label": "It is built with a current SDK",
+        "max": 10,
+        "got": 10
+      }
+    ]
+  }
+}
