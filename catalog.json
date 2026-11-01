@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-31T17:10:03.408Z",
+  "generated": "2026-11-01T15:01:15.183Z",
   "schema": 3,
   "plugins": [
     {
       "kind": "plugin",
       "id": "android",
-      "version": "0.1.1",
+      "version": "0.2.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -14,7 +14,7 @@
       "description": "A connected phone: its screen live and clickable, its log, screenshots, screen recordings and app installs, over adb.",
       "icon": "Smartphone",
       "color": "#3ddc84",
-      "minDeck": "1.11.1",
+      "minDeck": "1.15.0",
       "permissions": [
         "files",
         "processes",
@@ -40,14 +40,14 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-android",
-      "detail": "details/plugin/android/0.1.1.json",
-      "published": "2026-10-30T20:36:08Z",
+      "detail": "details/plugin/android/0.2.0.json",
+      "published": "2026-11-01T14:54:49Z",
       "points": 100
     },
     {
       "kind": "plugin",
       "id": "app-timer",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -56,7 +56,7 @@
       "description": "Close an app after a delay or at a time, once or on chosen days.",
       "icon": "AlarmClock",
       "color": "#c084fc",
-      "minDeck": "1.13.0",
+      "minDeck": "1.15.0",
       "permissions": [
         "system"
       ],
@@ -101,8 +101,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-app-timer",
-      "detail": "details/plugin/app-timer/1.2.0.json",
-      "published": "2026-10-30T20:36:28Z",
+      "detail": "details/plugin/app-timer/1.3.0.json",
+      "published": "2026-11-01T14:55:06Z",
       "points": 100
     },
     {
@@ -268,7 +268,7 @@
     {
       "kind": "plugin",
       "id": "db",
-      "version": "2.1.3",
+      "version": "2.2.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -277,7 +277,7 @@
       "description": "Browse SQLite files, Postgres, MySQL, SQL Server, Redis and MongoDB, and run queries against them.",
       "icon": "Database",
       "color": "#818cf8",
-      "minDeck": "1.7.0",
+      "minDeck": "1.15.0",
       "permissions": [
         "files",
         "processes",
@@ -307,23 +307,23 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-db",
-      "detail": "details/plugin/db/2.1.3.json",
-      "published": "2026-10-30T20:38:24Z",
+      "detail": "details/plugin/db/2.2.0.json",
+      "published": "2026-11-01T14:55:24Z",
       "points": 100
     },
     {
       "kind": "plugin",
       "id": "files",
-      "version": "0.2.2",
+      "version": "0.3.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
       },
       "name": "Files",
-      "description": "A file explorer: your drives, pinned folders and servers, with tabs, a preview pane, search by name and inside files, and copy, move, rename and the Recycle Bin.",
+      "description": "A file explorer: your drives, pinned folders and servers, with tabs, a preview pane, search by name and inside files, and copy, move, rename and delete.",
       "icon": "FolderOpen",
       "color": "#60a5fa",
-      "minDeck": "1.11.0",
+      "minDeck": "1.15.0",
       "permissions": [
         "files",
         "processes",
@@ -339,14 +339,14 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-files",
-      "detail": "details/plugin/files/0.2.2.json",
-      "published": "2026-10-30T20:38:45Z",
+      "detail": "details/plugin/files/0.3.0.json",
+      "published": "2026-11-01T14:55:41Z",
       "points": 100
     },
     {
       "kind": "plugin",
       "id": "flutter",
-      "version": "1.3.3",
+      "version": "1.4.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -355,7 +355,7 @@
       "description": "Launch a Flutter app on a device, then hot reload it from the footer.",
       "icon": "Zap",
       "color": "#38bdf8",
-      "minDeck": "1.6.0",
+      "minDeck": "1.15.0",
       "permissions": [
         "files",
         "processes",
@@ -371,23 +371,23 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-flutter",
-      "detail": "details/plugin/flutter/1.3.3.json",
-      "published": "2026-10-30T20:39:09Z",
+      "detail": "details/plugin/flutter/1.4.0.json",
+      "published": "2026-11-01T14:55:58Z",
       "points": 100
     },
     {
       "kind": "plugin",
       "id": "gallery",
-      "version": "1.2.1",
+      "version": "1.3.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
       },
       "name": "Gallery",
-      "description": "Every photo and video on this PC's drives, newest first and grouped by date, with Windows' own thumbnails. A full-size viewer and slideshow, favourites, move, copy and delete to the Recycle Bin.",
+      "description": "Every photo and video on this computer, newest first and grouped by date, with the system's own thumbnails. A full-size viewer and slideshow, favourites, move, copy and delete.",
       "icon": "Images",
       "color": "#e879f9",
-      "minDeck": "1.9.0",
+      "minDeck": "1.15.0",
       "permissions": [
         "files",
         "system"
@@ -426,8 +426,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-gallery",
-      "detail": "details/plugin/gallery/1.2.1.json",
-      "published": "2026-10-30T20:39:31Z",
+      "detail": "details/plugin/gallery/1.3.0.json",
+      "published": "2026-11-01T14:56:15Z",
       "points": 100
     },
     {
@@ -501,7 +501,7 @@
     {
       "kind": "plugin",
       "id": "kube",
-      "version": "1.1.2",
+      "version": "1.2.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -510,7 +510,7 @@
       "description": "Browse and manage Kubernetes clusters: workloads, logs, shells, port-forwards, YAML, metrics and Helm releases.",
       "icon": "ShipWheel",
       "color": "#326ce5",
-      "minDeck": "1.11.0",
+      "minDeck": "1.15.0",
       "permissions": [
         "processes",
         "network"
@@ -582,14 +582,14 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-kube",
-      "detail": "details/plugin/kube/1.1.2.json",
-      "published": "2026-10-30T20:40:38Z",
+      "detail": "details/plugin/kube/1.2.0.json",
+      "published": "2026-11-01T14:56:32Z",
       "points": 90
     },
     {
       "kind": "plugin",
       "id": "music",
-      "version": "1.2.1",
+      "version": "1.3.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -598,7 +598,7 @@
       "description": "A local music player for your own folders, with YouTube downloads and suggestions.",
       "icon": "Music",
       "color": "#fb7185",
-      "minDeck": "1.6.0",
+      "minDeck": "1.15.0",
       "permissions": [
         "files",
         "processes",
@@ -629,8 +629,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-music",
-      "detail": "details/plugin/music/1.2.1.json",
-      "published": "2026-10-30T20:40:57Z",
+      "detail": "details/plugin/music/1.3.0.json",
+      "published": "2026-11-01T14:56:50Z",
       "points": 100
     },
     {
@@ -695,7 +695,7 @@
     {
       "kind": "plugin",
       "id": "npm",
-      "version": "1.1.2",
+      "version": "1.2.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -704,7 +704,7 @@
       "description": "Run a package.json script, watch its output, and stop or restart it from the footer.",
       "icon": "Package",
       "color": "#ef4444",
-      "minDeck": "1.6.0",
+      "minDeck": "1.15.0",
       "permissions": [
         "files",
         "processes",
@@ -738,8 +738,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-npm",
-      "detail": "details/plugin/npm/1.1.2.json",
-      "published": "2026-10-30T20:41:38Z",
+      "detail": "details/plugin/npm/1.2.0.json",
+      "published": "2026-11-01T14:57:07Z",
       "points": 100
     },
     {
@@ -868,7 +868,7 @@
     {
       "kind": "plugin",
       "id": "script-runner",
-      "version": "1.2.1",
+      "version": "1.3.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -877,7 +877,7 @@
       "description": "Runs scripts on a schedule, here or on the VPS.",
       "icon": "Terminal",
       "color": "#2dd4bf",
-      "minDeck": "1.6.0",
+      "minDeck": "1.15.0",
       "permissions": [
         "processes",
         "network"
@@ -897,8 +897,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-script-runner",
-      "detail": "details/plugin/script-runner/1.2.1.json",
-      "published": "2026-10-30T20:43:05Z",
+      "detail": "details/plugin/script-runner/1.3.0.json",
+      "published": "2026-11-01T14:57:24Z",
       "points": 100
     },
     {
@@ -945,7 +945,7 @@
     {
       "kind": "plugin",
       "id": "sound",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -954,7 +954,7 @@
       "description": "Volume, speakers and microphone, and each app's level, from the footer; a microphone mute shortcut that works in every app.",
       "icon": "Volume2",
       "color": "#38bdf8",
-      "minDeck": "1.10.3",
+      "minDeck": "1.15.0",
       "permissions": [
         "system"
       ],
@@ -979,14 +979,14 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-sound",
-      "detail": "details/plugin/sound/1.0.1.json",
-      "published": "2026-10-30T20:43:47Z",
+      "detail": "details/plugin/sound/1.1.0.json",
+      "published": "2026-11-01T14:57:39Z",
       "points": 100
     },
     {
       "kind": "plugin",
       "id": "startup",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -995,7 +995,7 @@
       "description": "Programs to launch when you log in, each within its own days and time window.",
       "icon": "Rocket",
       "color": "#34d399",
-      "minDeck": "1.6.0",
+      "minDeck": "1.15.0",
       "permissions": [
         "system"
       ],
@@ -1026,8 +1026,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-startup",
-      "detail": "details/plugin/startup/1.1.1.json",
-      "published": "2026-10-30T20:44:09Z",
+      "detail": "details/plugin/startup/1.2.0.json",
+      "published": "2026-11-01T14:57:55Z",
       "points": 100
     },
     {
