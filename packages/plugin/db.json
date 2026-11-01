@@ -259,6 +259,116 @@
           }
         ]
       }
+    },
+    {
+      "version": "2.2.0",
+      "tag": "v2.2.0",
+      "publishedAt": "2026-11-01T14:55:24Z",
+      "readme": true,
+      "manifest": {
+        "name": "Databases",
+        "description": "Browse SQLite files, Postgres, MySQL, SQL Server, Redis and MongoDB, and run queries against them.",
+        "icon": "Database",
+        "color": "#818cf8",
+        "minDeck": "1.15.0",
+        "permissions": [
+          "files",
+          "processes",
+          "network"
+        ]
+      },
+      "iconNode": [
+        [
+          "ellipse",
+          {
+            "cx": "12",
+            "cy": "5",
+            "rx": "9",
+            "ry": "3"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M3 5V19A9 3 0 0 0 21 19V5"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M3 12A9 3 0 0 0 21 12"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "419c7f02d5eb67413be943d282a3409ce16a360d05d22178cf3fd2e23fb06f19",
+          "bytes": 316
+        },
+        "plugin.js": {
+          "sha256": "a4b39d2e351325e5d6387f696e1333c5be4f92fc9d287111a151a7018219c461",
+          "bytes": 175887
+        }
+      },
+      "points": {
+        "total": 100,
+        "checks": [
+          {
+            "id": "readme-media",
+            "label": "The README shows it, with a screenshot or other image",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "changelog",
+            "label": "It has a changelog",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "license",
+            "label": "It has an open-source licence",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "lockfile",
+            "label": "Its lockfile installs only from npm, every package with a hash",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "build-verified",
+            "label": "The registry rebuilt it from its source and got the same files",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "permissions",
+            "label": "It says what it uses",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "least-privilege",
+            "label": "It asks for nothing it does not use",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "typechecks",
+            "label": "It type-checks",
+            "max": 20,
+            "got": 20
+          },
+          {
+            "id": "up-to-date",
+            "label": "It is built with a current SDK",
+            "max": 10,
+            "got": 10
+          }
+        ]
+      }
     }
   ]
 }

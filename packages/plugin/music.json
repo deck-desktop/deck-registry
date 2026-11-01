@@ -177,6 +177,121 @@
           }
         ]
       }
+    },
+    {
+      "version": "1.3.0",
+      "tag": "v1.3.0",
+      "publishedAt": "2026-11-01T14:56:50Z",
+      "readme": true,
+      "manifest": {
+        "name": "Music",
+        "description": "A local music player for your own folders, with YouTube downloads and suggestions.",
+        "icon": "Music",
+        "color": "#fb7185",
+        "minDeck": "1.15.0",
+        "permissions": [
+          "files",
+          "processes",
+          "deck"
+        ]
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M9 18V5l12-2v13"
+          }
+        ],
+        [
+          "circle",
+          {
+            "cx": "6",
+            "cy": "18",
+            "r": "3"
+          }
+        ],
+        [
+          "circle",
+          {
+            "cx": "18",
+            "cy": "16",
+            "r": "3"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "7e6fae752bdcb2a7c64b6344c8760f0174e30a01e44832f3ebf00896d118593f",
+          "bytes": 293
+        },
+        "plugin.js": {
+          "sha256": "a9a6aa758f510d4f1830cb9cea6e1b7cc2bfcd5f03732f9760f3712b60058ebd",
+          "bytes": 52158
+        },
+        "mcp.js": {
+          "sha256": "a50f1ffc05a09ad1e63698e289d11e105988c1e37c74240bfa77659a506aca39",
+          "bytes": 3157
+        }
+      },
+      "points": {
+        "total": 100,
+        "checks": [
+          {
+            "id": "readme-media",
+            "label": "The README shows it, with a screenshot or other image",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "changelog",
+            "label": "It has a changelog",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "license",
+            "label": "It has an open-source licence",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "lockfile",
+            "label": "Its lockfile installs only from npm, every package with a hash",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "build-verified",
+            "label": "The registry rebuilt it from its source and got the same files",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "permissions",
+            "label": "It says what it uses",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "least-privilege",
+            "label": "It asks for nothing it does not use",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "typechecks",
+            "label": "It type-checks",
+            "max": 20,
+            "got": 20
+          },
+          {
+            "id": "up-to-date",
+            "label": "It is built with a current SDK",
+            "max": 10,
+            "got": 10
+          }
+        ]
+      }
     }
   ]
 }
