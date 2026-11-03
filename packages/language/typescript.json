@@ -67,6 +67,62 @@
           "bytes": 2129
         }
       }
+    },
+    {
+      "version": "1.2.0",
+      "tag": "v1.2.0",
+      "publishedAt": "2026-11-03T18:20:44Z",
+      "readme": true,
+      "manifest": {
+        "name": "typescript",
+        "description": ".ts, .tsx — typescript-language-server",
+        "icon": "FileType",
+        "color": "#4a90e2",
+        "minDeck": null,
+        "requires": "typescript-language-server",
+        "extensions": [
+          "ts",
+          "tsx"
+        ]
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M14 2v5a1 1 0 0 0 1 1h5"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M11 18h2"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M12 12v6"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M9 13v-.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v.5"
+          }
+        ]
+      ],
+      "files": {
+        "language.json": {
+          "sha256": "a45f11401f747d1e4e8787bf338a6719f0ca162d7c09c4e67dda08acd28cd0c2",
+          "bytes": 2580
+        }
+      }
     }
   ]
 }

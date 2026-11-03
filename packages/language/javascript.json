@@ -49,6 +49,44 @@
           "bytes": 2126
         }
       }
+    },
+    {
+      "version": "1.2.0",
+      "tag": "v1.2.0",
+      "publishedAt": "2026-11-03T18:20:25Z",
+      "readme": true,
+      "manifest": {
+        "name": "javascript",
+        "description": ".js, .jsx — typescript-language-server",
+        "icon": "Braces",
+        "color": "#f1e05a",
+        "minDeck": null,
+        "requires": "typescript-language-server",
+        "extensions": [
+          "js",
+          "jsx"
+        ]
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5c0 1.1.9 2 2 2h1"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1"
+          }
+        ]
+      ],
+      "files": {
+        "language.json": {
+          "sha256": "fa0a1a79c1e08097d6714b456076ae4d055b5a4f1aacfad337ca87f8fd2c1f52",
+          "bytes": 2577
+        }
+      }
     }
   ]
 }
