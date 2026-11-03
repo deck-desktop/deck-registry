@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-01T15:01:15.183Z",
+  "generated": "2026-11-03T18:22:27.228Z",
   "schema": 2,
   "plugins": [
     {
@@ -1241,13 +1241,13 @@
     {
       "kind": "language",
       "id": "javascript",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-javascript/v1.1.1/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-javascript/v1.2.0/README.md",
       "name": "javascript",
       "description": ".js, .jsx — typescript-language-server",
       "icon": "Braces",
@@ -1260,9 +1260,9 @@
       ],
       "files": {
         "language.json": {
-          "url": "https://github.com/deck-desktop/deck-language-javascript/releases/download/v1.1.1/language.json",
-          "sha256": "6a9ee3badd1d419f2ed72fd1c4b882fcc8b578caf7388b93b957154aebac78a3",
-          "bytes": 2126
+          "url": "https://github.com/deck-desktop/deck-language-javascript/releases/download/v1.2.0/language.json",
+          "sha256": "fa0a1a79c1e08097d6714b456076ae4d055b5a4f1aacfad337ca87f8fd2c1f52",
+          "bytes": 2577
         }
       },
       "iconNode": [
@@ -1283,13 +1283,13 @@
     {
       "kind": "language",
       "id": "php",
-      "version": "1.0.2",
+      "version": "1.1.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-php/v1.0.2/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-php/v1.1.0/README.md",
       "name": "php",
       "description": ".php, .phtml — intelephense",
       "icon": "Code",
@@ -1302,9 +1302,9 @@
       ],
       "files": {
         "language.json": {
-          "url": "https://github.com/deck-desktop/deck-language-php/releases/download/v1.0.2/language.json",
-          "sha256": "01d78e111d800d59fb43535a88ca2d43d81e436ba09053849ae3fb42490b513c",
-          "bytes": 1861
+          "url": "https://github.com/deck-desktop/deck-language-php/releases/download/v1.1.0/language.json",
+          "sha256": "6da8e6eec1bf1e41394165a64b377e9b86adcd8ea6c11e953d672d0ee2a64149",
+          "bytes": 2454
         }
       },
       "iconNode": [
@@ -1490,13 +1490,13 @@
     {
       "kind": "language",
       "id": "typescript",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
       },
       "signature": null,
-      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-typescript/v1.1.1/README.md",
+      "readme": "https://raw.githubusercontent.com/deck-desktop/deck-language-typescript/v1.2.0/README.md",
       "name": "typescript",
       "description": ".ts, .tsx — typescript-language-server",
       "icon": "FileType",
@@ -1509,9 +1509,9 @@
       ],
       "files": {
         "language.json": {
-          "url": "https://github.com/deck-desktop/deck-language-typescript/releases/download/v1.1.1/language.json",
-          "sha256": "729b20407d2973ff9c17050e64fd7c3cbbba0b97740d11376449a2adf9786ab6",
-          "bytes": 2129
+          "url": "https://github.com/deck-desktop/deck-language-typescript/releases/download/v1.2.0/language.json",
+          "sha256": "a45f11401f747d1e4e8787bf338a6719f0ca162d7c09c4e67dda08acd28cd0c2",
+          "bytes": 2580
         }
       },
       "iconNode": [

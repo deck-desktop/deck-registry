@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-01T15:01:15.183Z",
+  "generated": "2026-11-03T18:22:27.228Z",
   "schema": 3,
   "plugins": [
     {
@@ -1182,7 +1182,7 @@
     {
       "kind": "language",
       "id": "javascript",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -1212,13 +1212,13 @@
         ]
       ],
       "repo": "deck-desktop/deck-language-javascript",
-      "detail": "details/language/javascript/1.1.1.json",
-      "published": "2026-10-19T16:37:05Z"
+      "detail": "details/language/javascript/1.2.0.json",
+      "published": "2026-11-03T18:20:25Z"
     },
     {
       "kind": "language",
       "id": "php",
-      "version": "1.0.2",
+      "version": "1.1.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -1248,8 +1248,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-language-php",
-      "detail": "details/language/php/1.0.2.json",
-      "published": "2026-10-29T19:16:55Z"
+      "detail": "details/language/php/1.1.0.json",
+      "published": "2026-11-03T18:20:34Z"
     },
     {
       "kind": "language",
@@ -1407,7 +1407,7 @@
     {
       "kind": "language",
       "id": "typescript",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -1455,8 +1455,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-language-typescript",
-      "detail": "details/language/typescript/1.1.1.json",
-      "published": "2026-10-19T16:37:37Z"
+      "detail": "details/language/typescript/1.2.0.json",
+      "published": "2026-11-03T18:20:44Z"
     }
   ]
 }
