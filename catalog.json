@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-03T18:22:27.228Z",
+  "generated": "2026-11-05T17:09:02.226Z",
   "schema": 3,
   "plugins": [
     {
@@ -346,7 +346,7 @@
     {
       "kind": "plugin",
       "id": "flutter",
-      "version": "1.4.0",
+      "version": "1.5.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -371,8 +371,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-flutter",
-      "detail": "details/plugin/flutter/1.4.0.json",
-      "published": "2026-11-01T14:55:58Z",
+      "detail": "details/plugin/flutter/1.5.0.json",
+      "published": "2026-11-05T17:02:28Z",
       "points": 100
     },
     {
@@ -453,7 +453,7 @@
     {
       "kind": "plugin",
       "id": "git",
-      "version": "1.7.0",
+      "version": "1.8.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -462,11 +462,12 @@
       "description": "A commit graph for each workspace: stage and commit, branches, tags and stashes, file history, diffs, and GitHub/GitLab pull requests with review comments. Formerly Deck's built-in Git Graph.",
       "icon": "GitBranch",
       "color": "#f97316",
-      "minDeck": "1.14.0",
+      "minDeck": "1.15.0",
       "permissions": [
         "files",
         "processes",
         "git",
+        "terminals",
         "network"
       ],
       "iconNode": [
@@ -494,8 +495,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-git",
-      "detail": "details/plugin/git/1.7.0.json",
-      "published": "2026-10-31T17:02:12Z",
+      "detail": "details/plugin/git/1.8.0.json",
+      "published": "2026-11-05T17:02:47Z",
       "points": 100
     },
     {
