@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-05T17:09:02.226Z",
+  "generated": "2026-11-09T15:30:33.948Z",
   "schema": 3,
   "plugins": [
     {
@@ -696,7 +696,7 @@
     {
       "kind": "plugin",
       "id": "npm",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -739,8 +739,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-npm",
-      "detail": "details/plugin/npm/1.2.0.json",
-      "published": "2026-11-01T14:57:07Z",
+      "detail": "details/plugin/npm/1.2.1.json",
+      "published": "2026-11-09T15:28:37Z",
       "points": 100
     },
     {
