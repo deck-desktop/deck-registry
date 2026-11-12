@@ -471,6 +471,65 @@
           }
         ]
       }
+    },
+    {
+      "version": "1.3.0",
+      "tag": "v1.3.0",
+      "publishedAt": "2026-11-12T22:12:13Z",
+      "readme": true,
+      "manifest": {
+        "name": "Scripts",
+        "description": "Run a package.json script, watch its output, and stop or restart it from the footer.",
+        "icon": "Package",
+        "color": "#ef4444",
+        "minDeck": "1.17.3",
+        "permissions": [
+          "files",
+          "processes",
+          "terminals",
+          "deck"
+        ]
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "M12 22V12"
+          }
+        ],
+        [
+          "polyline",
+          {
+            "points": "3.29 7 12 12 20.71 7"
+          }
+        ],
+        [
+          "path",
+          {
+            "d": "m7.5 4.27 9 5.15"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "e5ff7e25bd8f0a08b7b8e938151209a7fa5b6a96c72b77af117e541d1c220afc",
+          "bytes": 314
+        },
+        "plugin.js": {
+          "sha256": "3b375cd9b9c637d2b68864ae26dd505943b3b0ed8f0056abecfed74f70d2515e",
+          "bytes": 21384
+        },
+        "mcp.js": {
+          "sha256": "d45b9cb89c4e7869f710008c1c819d71dea903480556e1fc8707967513027a41",
+          "bytes": 11545
+        }
+      }
     }
   ]
 }

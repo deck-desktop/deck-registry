@@ -327,6 +327,43 @@
           }
         ]
       }
+    },
+    {
+      "version": "0.4.0",
+      "tag": "v0.4.0",
+      "publishedAt": "2026-11-12T22:10:10Z",
+      "readme": true,
+      "manifest": {
+        "name": "Files",
+        "description": "A file explorer: your drives, pinned folders and servers, with tabs, a preview pane, search by name and inside files, and copy, move, rename and delete.",
+        "icon": "FolderOpen",
+        "color": "#60a5fa",
+        "minDeck": "1.17.3",
+        "permissions": [
+          "files",
+          "processes",
+          "network",
+          "terminals"
+        ]
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "01c13c060fb7d4a3ee5e4ce75d476acf9096f79d950c89d2355381a2cb4d11c3",
+          "bytes": 388
+        },
+        "plugin.js": {
+          "sha256": "2a3a4b2611dce63470b3af4be96dc8b5a663ad7573c2efc304ef3f0b4f682530",
+          "bytes": 66484
+        }
+      }
     }
   ]
 }
