@@ -1,0 +1,25 @@
+{
+  "schema": 3,
+  "kind": "plugin",
+  "id": "requests",
+  "version": "1.2.1",
+  "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-requests/v1.2.1/README.md",
+  "signature": null,
+  "files": {
+    "plugin.json": {
+      "url": "https://github.com/deck-desktop/deck-plugin-requests/releases/download/v1.2.1/plugin.json",
+      "sha256": "4119d7da3c723a79faf83c4d5987c959bd9d18d5b31d335c0f8c6de4720c65e4",
+      "bytes": 412
+    },
+    "plugin.js": {
+      "url": "https://github.com/deck-desktop/deck-plugin-requests/releases/download/v1.2.1/plugin.js",
+      "sha256": "40d68ea39ba7ca11b48d6d2700f2f6612c37f22efcc024b61f62451092026819",
+      "bytes": 118065
+    },
+    "mcp.js": {
+      "url": "https://github.com/deck-desktop/deck-plugin-requests/releases/download/v1.2.1/mcp.js",
+      "sha256": "727aa6174886b3d81a1399a8452e83e905c6a4424354370079d72ef65f232518",
+      "bytes": 20928
+    }
+  }
+}

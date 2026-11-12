@@ -1,0 +1,20 @@
+{
+  "schema": 3,
+  "kind": "plugin",
+  "id": "canvas",
+  "version": "1.5.1",
+  "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-canvas/v1.5.1/README.md",
+  "signature": null,
+  "files": {
+    "plugin.json": {
+      "url": "https://github.com/deck-desktop/deck-plugin-canvas/releases/download/v1.5.1/plugin.json",
+      "sha256": "3f47cafab7f82812670b78c5fd167b0f57d66dee66db1d79ce2208f4d591c20b",
+      "bytes": 419
+    },
+    "plugin.js": {
+      "url": "https://github.com/deck-desktop/deck-plugin-canvas/releases/download/v1.5.1/plugin.js",
+      "sha256": "1f290b60defe45b2d36677da93e5b168c8a4efdd452078bec0cbc5cd41475eac",
+      "bytes": 7518394
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema": 3,
+  "kind": "plugin",
+  "id": "music",
+  "version": "1.4.1",
+  "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-music/v1.4.1/README.md",
+  "signature": null,
+  "files": {
+    "plugin.json": {
+      "url": "https://github.com/deck-desktop/deck-plugin-music/releases/download/v1.4.1/plugin.json",
+      "sha256": "70db53dfac3425ed61754af6ab08fc73033098b0555d747a2c95efbc958c0650",
+      "bytes": 308
+    },
+    "plugin.js": {
+      "url": "https://github.com/deck-desktop/deck-plugin-music/releases/download/v1.4.1/plugin.js",
+      "sha256": "8161c449c4bfc58fb18d24b22fb9e8df658dfcbea74a9f719dc5119808b12ec9",
+      "bytes": 61429
+    },
+    "mcp.js": {
+      "url": "https://github.com/deck-desktop/deck-plugin-music/releases/download/v1.4.1/mcp.js",
+      "sha256": "a50f1ffc05a09ad1e63698e289d11e105988c1e37c74240bfa77659a506aca39",
+      "bytes": 3157
+    }
+  }
+}

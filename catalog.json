@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-12T13:02:42.313Z",
+  "generated": "2026-11-12T22:19:42.814Z",
   "schema": 3,
   "plugins": [
     {
@@ -195,7 +195,7 @@
     {
       "kind": "plugin",
       "id": "canvas",
-      "version": "1.5.0",
+      "version": "1.5.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -226,9 +226,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-canvas",
-      "detail": "details/plugin/canvas/1.5.0.json",
-      "published": "2026-10-31T17:01:52Z",
-      "points": 100
+      "detail": "details/plugin/canvas/1.5.1.json",
+      "published": "2026-11-12T22:09:49Z"
     },
     {
       "kind": "plugin",
@@ -314,7 +313,7 @@
     {
       "kind": "plugin",
       "id": "files",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -323,7 +322,7 @@
       "description": "A file explorer: your drives, pinned folders and servers, with tabs, a preview pane, search by name and inside files, and copy, move, rename and delete.",
       "icon": "FolderOpen",
       "color": "#60a5fa",
-      "minDeck": "1.15.0",
+      "minDeck": "1.17.3",
       "permissions": [
         "files",
         "processes",
@@ -339,14 +338,13 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-files",
-      "detail": "details/plugin/files/0.3.0.json",
-      "published": "2026-11-01T14:55:41Z",
-      "points": 100
+      "detail": "details/plugin/files/0.4.0.json",
+      "published": "2026-11-12T22:10:10Z"
     },
     {
       "kind": "plugin",
       "id": "flutter",
-      "version": "1.5.0",
+      "version": "1.6.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -355,7 +353,7 @@
       "description": "Launch a Flutter app on a device, then hot reload it from the footer.",
       "icon": "Zap",
       "color": "#38bdf8",
-      "minDeck": "1.15.0",
+      "minDeck": "1.17.3",
       "permissions": [
         "files",
         "processes",
@@ -371,9 +369,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-flutter",
-      "detail": "details/plugin/flutter/1.5.0.json",
-      "published": "2026-11-05T17:02:28Z",
-      "points": 100
+      "detail": "details/plugin/flutter/1.6.0.json",
+      "published": "2026-11-12T22:10:31Z"
     },
     {
       "kind": "plugin",
@@ -433,7 +430,7 @@
     {
       "kind": "plugin",
       "id": "games",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -446,14 +443,13 @@
       "permissions": [],
       "iconSvg": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogIDx0aXRsZT5HYW1lczwvdGl0bGU+CiAgPHJlY3QgeD0iMyIgeT0iMyIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiByeD0iNCIvPgogIDxjaXJjbGUgY3g9IjgiIGN5PSI4IiByPSIxLjUiIGZpbGw9ImJsYWNrIiBzdHJva2U9Im5vbmUiLz4KICA8Y2lyY2xlIGN4PSIxNiIgY3k9IjgiIHI9IjEuNSIgZmlsbD0iYmxhY2siIHN0cm9rZT0ibm9uZSIvPgogIDxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEuNSIgZmlsbD0iYmxhY2siIHN0cm9rZT0ibm9uZSIvPgogIDxjaXJjbGUgY3g9IjgiIGN5PSIxNiIgcj0iMS41IiBmaWxsPSJibGFjayIgc3Ryb2tlPSJub25lIi8+CiAgPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMS41IiBmaWxsPSJibGFjayIgc3Ryb2tlPSJub25lIi8+Cjwvc3ZnPgo=",
       "repo": "deck-desktop/deck-plugin-games",
-      "detail": "details/plugin/games/1.2.0.json",
-      "published": "2026-10-30T20:39:51Z",
-      "points": 100
+      "detail": "details/plugin/games/1.3.0.json",
+      "published": "2026-11-12T22:10:51Z"
     },
     {
       "kind": "plugin",
       "id": "git",
-      "version": "1.8.0",
+      "version": "1.9.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -462,7 +458,7 @@
       "description": "A commit graph for each workspace: stage and commit, branches, tags and stashes, file history, diffs, and GitHub/GitLab pull requests with review comments. Formerly Deck's built-in Git Graph.",
       "icon": "GitBranch",
       "color": "#f97316",
-      "minDeck": "1.15.0",
+      "minDeck": "1.17.3",
       "permissions": [
         "files",
         "processes",
@@ -495,9 +491,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-git",
-      "detail": "details/plugin/git/1.8.0.json",
-      "published": "2026-11-05T17:02:47Z",
-      "points": 100
+      "detail": "details/plugin/git/1.9.0.json",
+      "published": "2026-11-12T22:11:15Z"
     },
     {
       "kind": "plugin",
@@ -590,7 +585,7 @@
     {
       "kind": "plugin",
       "id": "music",
-      "version": "1.4.0",
+      "version": "1.4.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -631,14 +626,13 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-music",
-      "detail": "details/plugin/music/1.4.0.json",
-      "published": "2026-11-12T13:00:15Z",
-      "points": 100
+      "detail": "details/plugin/music/1.4.1.json",
+      "published": "2026-11-12T22:11:34Z"
     },
     {
       "kind": "plugin",
       "id": "notes",
-      "version": "1.2.1",
+      "version": "1.2.2",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -690,14 +684,13 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-notes",
-      "detail": "details/plugin/notes/1.2.1.json",
-      "published": "2026-10-30T20:41:20Z",
-      "points": 100
+      "detail": "details/plugin/notes/1.2.2.json",
+      "published": "2026-11-12T22:11:52Z"
     },
     {
       "kind": "plugin",
       "id": "npm",
-      "version": "1.2.1",
+      "version": "1.3.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -706,7 +699,7 @@
       "description": "Run a package.json script, watch its output, and stop or restart it from the footer.",
       "icon": "Package",
       "color": "#ef4444",
-      "minDeck": "1.15.0",
+      "minDeck": "1.17.3",
       "permissions": [
         "files",
         "processes",
@@ -740,9 +733,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-npm",
-      "detail": "details/plugin/npm/1.2.1.json",
-      "published": "2026-11-09T15:28:37Z",
-      "points": 100
+      "detail": "details/plugin/npm/1.3.0.json",
+      "published": "2026-11-12T22:12:13Z"
     },
     {
       "kind": "plugin",
@@ -834,7 +826,7 @@
     {
       "kind": "plugin",
       "id": "requests",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -863,9 +855,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-requests",
-      "detail": "details/plugin/requests/1.2.0.json",
-      "published": "2026-10-31T17:02:31Z",
-      "points": 100
+      "detail": "details/plugin/requests/1.2.1.json",
+      "published": "2026-11-12T22:12:33Z"
     },
     {
       "kind": "plugin",
