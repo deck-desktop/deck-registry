@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13T20:52:24.114Z",
+  "generated": "2026-11-13T20:52:59.944Z",
   "schema": 3,
   "plugins": [
     {
@@ -340,7 +340,8 @@
       ],
       "repo": "deck-desktop/deck-plugin-files",
       "detail": "details/plugin/files/0.5.0.json",
-      "published": "2026-11-13T20:49:52Z"
+      "published": "2026-11-13T20:49:52Z",
+      "points": 100
     },
     {
       "kind": "plugin",
@@ -371,7 +372,8 @@
       ],
       "repo": "deck-desktop/deck-plugin-flutter",
       "detail": "details/plugin/flutter/1.7.0.json",
-      "published": "2026-11-13T20:50:13Z"
+      "published": "2026-11-13T20:50:13Z",
+      "points": 100
     },
     {
       "kind": "plugin",
@@ -1130,7 +1132,8 @@
       ],
       "repo": "deck-desktop/deck-plugin-vault",
       "detail": "details/plugin/vault/1.3.0.json",
-      "published": "2026-11-13T20:50:33Z"
+      "published": "2026-11-13T20:50:33Z",
+      "points": 100
     },
     {
       "kind": "language",
