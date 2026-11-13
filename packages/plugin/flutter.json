@@ -516,6 +516,47 @@
           }
         ]
       }
+    },
+    {
+      "version": "1.7.0",
+      "tag": "v1.7.0",
+      "publishedAt": "2026-11-13T20:50:13Z",
+      "readme": true,
+      "manifest": {
+        "name": "Flutter",
+        "description": "Launch a Flutter app on a device, then hot reload it from the footer.",
+        "icon": "Zap",
+        "color": "#38bdf8",
+        "minDeck": "1.17.3",
+        "permissions": [
+          "files",
+          "processes",
+          "terminals",
+          "deck"
+        ]
+      },
+      "iconNode": [
+        [
+          "path",
+          {
+            "d": "M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z"
+          }
+        ]
+      ],
+      "files": {
+        "plugin.json": {
+          "sha256": "85c5930c1f574b451a40630582ebee328fdb26e663b5de77bc9bbe239d0f3fdb",
+          "bytes": 299
+        },
+        "plugin.js": {
+          "sha256": "f1e30d6e936dd1ec28f124a457f4744af6c9aa90fb15e9fe55e8a658c0c3062d",
+          "bytes": 51951
+        },
+        "mcp.js": {
+          "sha256": "411846e20ba866718ff195f9161e5b4ed99550078ed67a0102220382dfd12fce",
+          "bytes": 8608
+        }
+      }
     }
   ]
 }
