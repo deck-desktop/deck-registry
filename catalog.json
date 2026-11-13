@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-12T22:35:52.909Z",
+  "generated": "2026-11-13T16:02:08.290Z",
   "schema": 3,
   "plugins": [
     {
@@ -638,7 +638,7 @@
     {
       "kind": "plugin",
       "id": "notes",
-      "version": "1.2.2",
+      "version": "1.2.3",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -690,9 +690,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-notes",
-      "detail": "details/plugin/notes/1.2.2.json",
-      "published": "2026-11-12T22:11:52Z",
-      "points": 100
+      "detail": "details/plugin/notes/1.2.3.json",
+      "published": "2026-11-13T16:00:05Z"
     },
     {
       "kind": "plugin",
