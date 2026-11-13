@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13T16:02:29.331Z",
+  "generated": "2026-11-13T20:52:24.114Z",
   "schema": 3,
   "plugins": [
     {
@@ -314,7 +314,7 @@
     {
       "kind": "plugin",
       "id": "files",
-      "version": "0.4.0",
+      "version": "0.5.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -339,14 +339,13 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-files",
-      "detail": "details/plugin/files/0.4.0.json",
-      "published": "2026-11-12T22:10:10Z",
-      "points": 100
+      "detail": "details/plugin/files/0.5.0.json",
+      "published": "2026-11-13T20:49:52Z"
     },
     {
       "kind": "plugin",
       "id": "flutter",
-      "version": "1.6.0",
+      "version": "1.7.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -371,9 +370,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-flutter",
-      "detail": "details/plugin/flutter/1.6.0.json",
-      "published": "2026-11-12T22:10:31Z",
-      "points": 100
+      "detail": "details/plugin/flutter/1.7.0.json",
+      "published": "2026-11-13T20:50:13Z"
     },
     {
       "kind": "plugin",
@@ -1062,7 +1060,7 @@
     {
       "kind": "plugin",
       "id": "vault",
-      "version": "1.2.3",
+      "version": "1.3.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -1073,7 +1071,8 @@
       "color": "#a78bfa",
       "minDeck": "1.9.0",
       "permissions": [
-        "files"
+        "files",
+        "terminals"
       ],
       "iconNode": [
         [
@@ -1130,9 +1129,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-vault",
-      "detail": "details/plugin/vault/1.2.3.json",
-      "published": "2026-10-30T20:44:57Z",
-      "points": 100
+      "detail": "details/plugin/vault/1.3.0.json",
+      "published": "2026-11-13T20:50:33Z"
     },
     {
       "kind": "language",

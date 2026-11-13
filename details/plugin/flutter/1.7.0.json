@@ -1,0 +1,25 @@
+{
+  "schema": 3,
+  "kind": "plugin",
+  "id": "flutter",
+  "version": "1.7.0",
+  "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-flutter/v1.7.0/README.md",
+  "signature": null,
+  "files": {
+    "plugin.json": {
+      "url": "https://github.com/deck-desktop/deck-plugin-flutter/releases/download/v1.7.0/plugin.json",
+      "sha256": "85c5930c1f574b451a40630582ebee328fdb26e663b5de77bc9bbe239d0f3fdb",
+      "bytes": 299
+    },
+    "plugin.js": {
+      "url": "https://github.com/deck-desktop/deck-plugin-flutter/releases/download/v1.7.0/plugin.js",
+      "sha256": "f1e30d6e936dd1ec28f124a457f4744af6c9aa90fb15e9fe55e8a658c0c3062d",
+      "bytes": 51951
+    },
+    "mcp.js": {
+      "url": "https://github.com/deck-desktop/deck-plugin-flutter/releases/download/v1.7.0/mcp.js",
+      "sha256": "411846e20ba866718ff195f9161e5b4ed99550078ed67a0102220382dfd12fce",
+      "bytes": 8608
+    }
+  }
+}
