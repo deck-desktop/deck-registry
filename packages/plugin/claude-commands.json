@@ -1,0 +1,109 @@
+{
+  "kind": "plugin",
+  "id": "claude-commands",
+  "repo": "deck-desktop/deck-plugin-claude-commands",
+  "owner": {
+    "id": 336637908,
+    "login": "deck-desktop",
+    "type": "Organization"
+  },
+  "publisher": {
+    "name": "Hasan Zarif",
+    "verified": true
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "v1.0.0",
+      "publishedAt": "2026-11-14T20:21:22Z",
+      "readme": true,
+      "manifest": {
+        "name": "Claude commands",
+        "description": "A button under Claude's replies for each command they suggest, run in a terminal of its own beside the chat.",
+        "icon": "icon.svg",
+        "color": "#4ade80",
+        "minDeck": "1.18.0",
+        "permissions": [
+          "chat",
+          "terminals"
+        ]
+      },
+      "iconSvg": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogIDx0aXRsZT5DbGF1ZGUgY29tbWFuZHM8L3RpdGxlPgogIDxwYXRoIGQ9Ik01IDRoMTRhMiAyIDAgMCAxIDIgMnY5YTIgMiAwIDAgMS0yIDJoLThsLTUgNHYtNEg1YTIgMiAwIDAgMS0yLTJWNmEyIDIgMCAwIDEgMi0yeiIvPgogIDxwYXRoIGQ9Ik0xMCA3LjV2Nmw1LTN6Ii8+Cjwvc3ZnPgo=",
+      "files": {
+        "plugin.json": {
+          "sha256": "8eed09e24e4cc2094c955196c716458bdfbaf5f402c6984d60ea802e3eed8e7f",
+          "bytes": 317
+        },
+        "plugin.js": {
+          "sha256": "cb0ad10a35cb7d6609531fdc3a7797d1b6487d9f113cc4f4421e0f3f0c53598e",
+          "bytes": 6143
+        },
+        "icon.svg": {
+          "sha256": "0bcf77625d490789290574f62dd1cbcdaa5da210aae6dece547a4cf088d7f76d",
+          "bytes": 317
+        }
+      },
+      "points": {
+        "total": 80,
+        "checks": [
+          {
+            "id": "readme-media",
+            "label": "The README shows it, with a screenshot or other image",
+            "max": 10,
+            "got": 0,
+            "fix": "Add a screenshot to README.md"
+          },
+          {
+            "id": "changelog",
+            "label": "It has a changelog",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "license",
+            "label": "It has an open-source licence",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "lockfile",
+            "label": "Its lockfile installs only from npm, every package with a hash",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "build-verified",
+            "label": "The registry rebuilt it from its source and got the same files",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "permissions",
+            "label": "It says what it uses",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "least-privilege",
+            "label": "It asks for nothing it does not use",
+            "max": 10,
+            "got": 0,
+            "fix": "Remove chat from \"permissions\": its code never uses it"
+          },
+          {
+            "id": "typechecks",
+            "label": "It type-checks",
+            "max": 20,
+            "got": 20
+          },
+          {
+            "id": "up-to-date",
+            "label": "It is built with a current SDK",
+            "max": 10,
+            "got": 10
+          }
+        ]
+      }
+    }
+  ]
+}

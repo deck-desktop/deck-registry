@@ -1,0 +1,110 @@
+{
+  "kind": "plugin",
+  "id": "claude-tools",
+  "repo": "deck-desktop/deck-plugin-claude-tools",
+  "owner": {
+    "id": 336637908,
+    "login": "deck-desktop",
+    "type": "Organization"
+  },
+  "publisher": {
+    "name": "Hasan Zarif",
+    "verified": true
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "v1.0.0",
+      "publishedAt": "2026-11-14T20:22:14Z",
+      "readme": true,
+      "manifest": {
+        "name": "Claude tools",
+        "description": "Buttons in a Claude chat's message box: capture the phone's screen or snip this one into the message, and tidy your draft.",
+        "icon": "icon.svg",
+        "color": "#a78bfa",
+        "minDeck": "1.18.0",
+        "permissions": [
+          "chat",
+          "processes",
+          "files"
+        ]
+      },
+      "iconSvg": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogIDx0aXRsZT5DbGF1ZGUgdG9vbHM8L3RpdGxlPgogIDxwYXRoIGQ9Ik01IDRoMTRhMiAyIDAgMCAxIDIgMnY5YTIgMiAwIDAgMS0yIDJoLThsLTUgNHYtNEg1YTIgMiAwIDAgMS0yLTJWNmEyIDIgMCAwIDEgMi0yeiIvPgogIDxwYXRoIGQ9Ik0xMiA2LjVsMS4yIDIuOCAyLjggMS4yLTIuOCAxLjItMS4yIDIuOC0xLjItMi44TDggMTAuNWwyLjgtMS4yeiIvPgo8L3N2Zz4K",
+      "files": {
+        "plugin.json": {
+          "sha256": "b94be61059fa725f1d25411056ca6157114e086cea43c4b5653c77f55fd3b020",
+          "bytes": 334
+        },
+        "plugin.js": {
+          "sha256": "0bfb905fec9298fe2db758d52fad227149192de07ddf9a0405d70a601e6b04e2",
+          "bytes": 12949
+        },
+        "icon.svg": {
+          "sha256": "8c7731abd9c6c993ce2280155568de543016d6c9bc5487f5a0a1e14f2970d278",
+          "bytes": 363
+        }
+      },
+      "points": {
+        "total": 80,
+        "checks": [
+          {
+            "id": "readme-media",
+            "label": "The README shows it, with a screenshot or other image",
+            "max": 10,
+            "got": 0,
+            "fix": "Add a screenshot to README.md"
+          },
+          {
+            "id": "changelog",
+            "label": "It has a changelog",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "license",
+            "label": "It has an open-source licence",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "lockfile",
+            "label": "Its lockfile installs only from npm, every package with a hash",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "build-verified",
+            "label": "The registry rebuilt it from its source and got the same files",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "permissions",
+            "label": "It says what it uses",
+            "max": 10,
+            "got": 10
+          },
+          {
+            "id": "least-privilege",
+            "label": "It asks for nothing it does not use",
+            "max": 10,
+            "got": 0,
+            "fix": "Remove chat from \"permissions\": its code never uses it"
+          },
+          {
+            "id": "typechecks",
+            "label": "It type-checks",
+            "max": 20,
+            "got": 20
+          },
+          {
+            "id": "up-to-date",
+            "label": "It is built with a current SDK",
+            "max": 10,
+            "got": 10
+          }
+        ]
+      }
+    }
+  ]
+}
