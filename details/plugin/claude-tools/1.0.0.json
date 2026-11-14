@@ -1,0 +1,86 @@
+{
+  "schema": 3,
+  "kind": "plugin",
+  "id": "claude-tools",
+  "version": "1.0.0",
+  "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-claude-tools/v1.0.0/README.md",
+  "signature": null,
+  "files": {
+    "plugin.json": {
+      "url": "https://github.com/deck-desktop/deck-plugin-claude-tools/releases/download/v1.0.0/plugin.json",
+      "sha256": "b94be61059fa725f1d25411056ca6157114e086cea43c4b5653c77f55fd3b020",
+      "bytes": 334
+    },
+    "plugin.js": {
+      "url": "https://github.com/deck-desktop/deck-plugin-claude-tools/releases/download/v1.0.0/plugin.js",
+      "sha256": "0bfb905fec9298fe2db758d52fad227149192de07ddf9a0405d70a601e6b04e2",
+      "bytes": 12949
+    },
+    "icon.svg": {
+      "url": "https://github.com/deck-desktop/deck-plugin-claude-tools/releases/download/v1.0.0/icon.svg",
+      "sha256": "8c7731abd9c6c993ce2280155568de543016d6c9bc5487f5a0a1e14f2970d278",
+      "bytes": 363
+    }
+  },
+  "points": {
+    "total": 80,
+    "checks": [
+      {
+        "id": "readme-media",
+        "label": "The README shows it, with a screenshot or other image",
+        "max": 10,
+        "got": 0,
+        "fix": "Add a screenshot to README.md"
+      },
+      {
+        "id": "changelog",
+        "label": "It has a changelog",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "license",
+        "label": "It has an open-source licence",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "lockfile",
+        "label": "Its lockfile installs only from npm, every package with a hash",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "build-verified",
+        "label": "The registry rebuilt it from its source and got the same files",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "permissions",
+        "label": "It says what it uses",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "least-privilege",
+        "label": "It asks for nothing it does not use",
+        "max": 10,
+        "got": 0,
+        "fix": "Remove chat from \"permissions\": its code never uses it"
+      },
+      {
+        "id": "typechecks",
+        "label": "It type-checks",
+        "max": 20,
+        "got": 20
+      },
+      {
+        "id": "up-to-date",
+        "label": "It is built with a current SDK",
+        "max": 10,
+        "got": 10
+      }
+    ]
+  }
+}
