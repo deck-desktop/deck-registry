@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-16T10:39:05.994Z",
+  "generated": "2026-11-16T17:32:10.102Z",
   "schema": 3,
   "plugins": [
     {
@@ -279,7 +279,7 @@
     {
       "kind": "plugin",
       "id": "claude-status",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -295,8 +295,8 @@
       ],
       "iconSvg": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogIDx0aXRsZT5DbGF1ZGUgc3RhdHVzPC90aXRsZT4KICA8cGF0aCBkPSJNNSA0aDE0YTIgMiAwIDAgMSAyIDJ2OWEyIDIgMCAwIDEtMiAyaC04bC01IDR2LTRINWEyIDIgMCAwIDEtMi0yVjZhMiAyIDAgMCAxIDItMnoiLz4KICA8cGF0aCBkPSJNOCAxM3YtMk0xMiAxM1Y5TTE2IDEzVjciLz4KPC9zdmc+Cg==",
       "repo": "deck-desktop/deck-plugin-claude-status",
-      "detail": "details/plugin/claude-status/1.0.1.json",
-      "published": "2026-11-16T10:35:09Z",
+      "detail": "details/plugin/claude-status/1.0.2.json",
+      "published": "2026-11-16T17:29:22Z",
       "points": 80
     },
     {
