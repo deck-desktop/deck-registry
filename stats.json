@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-17T11:48:39.786Z",
+  "generated": "2026-11-18T11:38:25.397Z",
   "packages": {
     "language:dart": {
       "stars": 0,
@@ -39,23 +39,23 @@
     },
     "plugin:canvas": {
       "stars": 0,
-      "downloads": 22
+      "downloads": 23
     },
     "plugin:claude-commands": {
       "stars": 0,
-      "downloads": 2
+      "downloads": 3
     },
     "plugin:claude-next": {
       "stars": 0,
-      "downloads": 2
+      "downloads": 3
     },
     "plugin:claude-status": {
       "stars": 0,
-      "downloads": 6
+      "downloads": 7
     },
     "plugin:claude-tools": {
       "stars": 0,
-      "downloads": 2
+      "downloads": 3
     },
     "plugin:clock": {
       "stars": 0,
@@ -67,7 +67,7 @@
     },
     "plugin:files": {
       "stars": 0,
-      "downloads": 25
+      "downloads": 26
     },
     "plugin:flutter": {
       "stars": 0,
@@ -79,11 +79,11 @@
     },
     "plugin:games": {
       "stars": 0,
-      "downloads": 11
+      "downloads": 12
     },
     "plugin:git": {
       "stars": 0,
-      "downloads": 42
+      "downloads": 43
     },
     "plugin:kube": {
       "stars": 0,
@@ -95,11 +95,11 @@
     },
     "plugin:notes": {
       "stars": 0,
-      "downloads": 18
+      "downloads": 19
     },
     "plugin:npm": {
       "stars": 0,
-      "downloads": 19
+      "downloads": 20
     },
     "plugin:pdf": {
       "stars": 0,
@@ -111,7 +111,7 @@
     },
     "plugin:requests": {
       "stars": 0,
-      "downloads": 26
+      "downloads": 27
     },
     "plugin:script-runner": {
       "stars": 0,
@@ -135,7 +135,7 @@
     },
     "plugin:vault": {
       "stars": 0,
-      "downloads": 17
+      "downloads": 18
     }
   }
 }
