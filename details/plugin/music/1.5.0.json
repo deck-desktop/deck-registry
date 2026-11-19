@@ -1,0 +1,84 @@
+{
+  "schema": 3,
+  "kind": "plugin",
+  "id": "music",
+  "version": "1.5.0",
+  "readme": "https://raw.githubusercontent.com/deck-desktop/deck-plugin-music/v1.5.0/README.md",
+  "signature": null,
+  "files": {
+    "plugin.json": {
+      "url": "https://github.com/deck-desktop/deck-plugin-music/releases/download/v1.5.0/plugin.json",
+      "sha256": "45d8181ba05008f8af19fb1748908ad4c013f7b86b1d5030f59d8c1711f69f90",
+      "bytes": 329
+    },
+    "plugin.js": {
+      "url": "https://github.com/deck-desktop/deck-plugin-music/releases/download/v1.5.0/plugin.js",
+      "sha256": "96cc7430434dfd413f7dbb67070f7e465776c605d49c2e681741d3daf0b28091",
+      "bytes": 66391
+    },
+    "mcp.js": {
+      "url": "https://github.com/deck-desktop/deck-plugin-music/releases/download/v1.5.0/mcp.js",
+      "sha256": "a50f1ffc05a09ad1e63698e289d11e105988c1e37c74240bfa77659a506aca39",
+      "bytes": 3157
+    }
+  },
+  "points": {
+    "total": 100,
+    "checks": [
+      {
+        "id": "readme-media",
+        "label": "The README shows it, with a screenshot or other image",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "changelog",
+        "label": "It has a changelog",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "license",
+        "label": "It has an open-source licence",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "lockfile",
+        "label": "Its lockfile installs only from npm, every package with a hash",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "build-verified",
+        "label": "The registry rebuilt it from its source and got the same files",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "permissions",
+        "label": "It says what it uses",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "least-privilege",
+        "label": "It asks for nothing it does not use",
+        "max": 10,
+        "got": 10
+      },
+      {
+        "id": "typechecks",
+        "label": "It type-checks",
+        "max": 20,
+        "got": 20
+      },
+      {
+        "id": "up-to-date",
+        "label": "It is built with a current SDK",
+        "max": 10,
+        "got": 10
+      }
+    ]
+  }
+}

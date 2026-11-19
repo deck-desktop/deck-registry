@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-16T17:32:10.102Z",
+  "generated": "2026-11-19T11:27:22.701Z",
   "schema": 3,
   "plugins": [
     {
@@ -683,7 +683,7 @@
     {
       "kind": "plugin",
       "id": "music",
-      "version": "1.4.1",
+      "version": "1.5.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -692,7 +692,7 @@
       "description": "A local music player for your own folders, with YouTube downloads and suggestions.",
       "icon": "Music",
       "color": "#fb7185",
-      "minDeck": "1.15.0",
+      "minDeck": "1.18.7",
       "permissions": [
         "files",
         "processes",
@@ -724,8 +724,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-music",
-      "detail": "details/plugin/music/1.4.1.json",
-      "published": "2026-11-12T22:11:34Z",
+      "detail": "details/plugin/music/1.5.0.json",
+      "published": "2026-11-19T11:24:17Z",
       "points": 100
     },
     {
