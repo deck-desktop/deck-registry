@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-26T17:26:55.125Z",
+  "generated": "2026-11-26T17:27:35.013Z",
   "schema": 3,
   "plugins": [
     {
@@ -433,7 +433,8 @@
       ],
       "repo": "deck-desktop/deck-plugin-files",
       "detail": "details/plugin/files/0.7.0.json",
-      "published": "2026-11-26T17:25:02Z"
+      "published": "2026-11-26T17:25:02Z",
+      "points": 100
     },
     {
       "kind": "plugin",
