@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22T20:23:47.425Z",
+  "generated": "2026-11-26T13:27:51.788Z",
   "schema": 3,
   "plugins": [
     {
@@ -546,7 +546,7 @@
     {
       "kind": "plugin",
       "id": "git",
-      "version": "1.10.0",
+      "version": "1.11.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -555,7 +555,7 @@
       "description": "A commit graph for each workspace: stage and commit, branches, tags and stashes, file history, diffs, and GitHub/GitLab pull requests with review comments. Formerly Deck's built-in Git Graph.",
       "icon": "GitBranch",
       "color": "#f97316",
-      "minDeck": "1.17.3",
+      "minDeck": "1.19.0",
       "permissions": [
         "files",
         "processes",
@@ -588,8 +588,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-git",
-      "detail": "details/plugin/git/1.10.0.json",
-      "published": "2026-11-22T20:18:10Z",
+      "detail": "details/plugin/git/1.11.0.json",
+      "published": "2026-11-26T13:22:51Z",
       "points": 100
     },
     {
