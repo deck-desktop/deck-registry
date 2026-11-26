@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-26T13:27:51.788Z",
+  "generated": "2026-11-26T17:26:55.125Z",
   "schema": 3,
   "plugins": [
     {
@@ -407,7 +407,7 @@
     {
       "kind": "plugin",
       "id": "files",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -416,7 +416,7 @@
       "description": "A file explorer: your drives, pinned folders and servers, with tabs, a preview pane, search by name and inside files, and copy, move, rename and delete.",
       "icon": "FolderOpen",
       "color": "#60a5fa",
-      "minDeck": "1.18.0",
+      "minDeck": "1.19.1",
       "permissions": [
         "files",
         "processes",
@@ -432,9 +432,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-files",
-      "detail": "details/plugin/files/0.6.0.json",
-      "published": "2026-11-14T20:22:32Z",
-      "points": 100
+      "detail": "details/plugin/files/0.7.0.json",
+      "published": "2026-11-26T17:25:02Z"
     },
     {
       "kind": "plugin",
