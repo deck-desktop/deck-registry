@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-26T17:27:35.013Z",
+  "generated": "2026-11-27T18:36:39.101Z",
   "schema": 3,
   "plugins": [
     {
@@ -439,7 +439,7 @@
     {
       "kind": "plugin",
       "id": "flutter",
-      "version": "1.7.0",
+      "version": "1.8.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -448,7 +448,7 @@
       "description": "Launch a Flutter app on a device, then hot reload it from the footer.",
       "icon": "Zap",
       "color": "#38bdf8",
-      "minDeck": "1.17.3",
+      "minDeck": "1.20.0",
       "permissions": [
         "files",
         "processes",
@@ -464,8 +464,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-flutter",
-      "detail": "details/plugin/flutter/1.7.0.json",
-      "published": "2026-11-13T20:50:13Z",
+      "detail": "details/plugin/flutter/1.8.0.json",
+      "published": "2026-11-27T18:33:01Z",
       "points": 100
     },
     {
@@ -790,7 +790,7 @@
     {
       "kind": "plugin",
       "id": "npm",
-      "version": "1.3.0",
+      "version": "1.4.0",
       "publisher": {
         "name": "Hasan Zarif",
         "verified": true
@@ -799,7 +799,7 @@
       "description": "Run a package.json script, watch its output, and stop or restart it from the footer.",
       "icon": "Package",
       "color": "#ef4444",
-      "minDeck": "1.17.3",
+      "minDeck": "1.20.0",
       "permissions": [
         "files",
         "processes",
@@ -833,8 +833,8 @@
         ]
       ],
       "repo": "deck-desktop/deck-plugin-npm",
-      "detail": "details/plugin/npm/1.3.0.json",
-      "published": "2026-11-12T22:12:13Z",
+      "detail": "details/plugin/npm/1.4.0.json",
+      "published": "2026-11-27T18:33:23Z",
       "points": 100
     },
     {
