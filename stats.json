@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-24T13:39:43.575Z",
+  "generated": "2026-11-27T12:14:27.884Z",
   "packages": {
     "language:dart": {
       "stars": 0,
@@ -67,7 +67,7 @@
     },
     "plugin:files": {
       "stars": 0,
-      "downloads": 26
+      "downloads": 28
     },
     "plugin:flutter": {
       "stars": 0,
@@ -83,7 +83,7 @@
     },
     "plugin:git": {
       "stars": 0,
-      "downloads": 48
+      "downloads": 51
     },
     "plugin:kube": {
       "stars": 0,
